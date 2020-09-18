@@ -10,12 +10,13 @@ body {
 h1,
 h2 {
     font-family: "Permanent Marker", cursive, sans-serif;
+    padding: 0;
 }
 
 header {
     background-color: rgb(182, 166, 197);
     border-radius: 20px;
-    color: black;
+    color: rgb(22, 22, 22);
     height: 100px;
 }
 
