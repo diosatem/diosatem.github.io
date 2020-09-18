@@ -25,7 +25,7 @@ header img {
 }
 
 header h1 {
-    text-align: center;
+    text-align: match-parent;
 }
 h2 {
     border-bottom: black;
