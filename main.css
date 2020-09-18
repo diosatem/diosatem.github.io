@@ -13,7 +13,7 @@ h2 {
 
 
 #content {
-    max-width: 960px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -21,13 +21,13 @@ header {
     background-color: midnightblue;
     border-radius: 30px;
     color: navajowhite;
-    height: 200px;
+    height: 300px;
 
 }
 
 header img {
     float: right;
-    margin: 5px;
+    margin: 20px;
 }
 header h1 {
     margin: 0 auto;
