@@ -38,7 +38,8 @@ hr {
 }
 footer {
     background-color: rgb(182, 166, 197);
-    border-radius: 20px;
+    border-radius: 10px;
     color: rgb(22, 22, 22);
     height: 50px;
+    font: 1em sans-serif;
 }
