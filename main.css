@@ -36,3 +36,9 @@ hr {
     color: gray;
     background-color: gray
 }
+footer {
+    background-color: rgb(182, 166, 197);
+    border-radius: 20px;
+    color: rgb(22, 22, 22);
+    height: 50px;
+}
