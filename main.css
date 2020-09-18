@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 body {
     font-family: "Roboto", Helvetica, sans-serif;
@@ -9,7 +9,7 @@ body {
 
 h1,
 h2 {
-    font-family: "Permanent Marker", cursive, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     padding: 0;
 }
 
