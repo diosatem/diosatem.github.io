@@ -3,32 +3,26 @@
 body {
     font-family: "Roboto", Helvetica, sans-serif;
     font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 h1,
 h2 {
     font-family: "Permanent Marker", cursive, sans-serif;
-
-}
-
-
-#content {
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 header {
-    background-color: midnightblue;
+    background-color: rgb(182, 166, 197);
     border-radius: 30px;
-    color: navajowhite;
+    color: darkslategray;
     height: 100px;
-
 }
 
 header img {
     float: right;
     margin: 10px;
 }
-header h1 {
-    margin-left: 100px;
+
+
 }
