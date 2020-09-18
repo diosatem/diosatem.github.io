@@ -27,3 +27,10 @@ header img {
 header h1 {
     text-align: match-parent;
 }
+
+hr {
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray
+}
