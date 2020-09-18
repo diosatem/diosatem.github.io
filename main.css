@@ -21,9 +21,11 @@ header {
     background-color: midnightblue;
     border-radius: 30px;
     color: navajowhite;
+    height: auto;
+
 }
 
 header img {
     float: right;
-    margin: -25px 0 0 5px;
+    margin: 5px;
 }
