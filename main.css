@@ -10,7 +10,7 @@ h2 {
     font-family: "Permanent Marker", cursive, sans-serif;
 
 }
- 
+
 
 #content {
     max-width: 960px;
@@ -21,4 +21,9 @@ header {
     background-color: midnightblue;
     border-radius: 30px;
     color: navajowhite;
+}
+
+header img {
+    float: right;
+    margin: -25px 0 0 5px;
 }
