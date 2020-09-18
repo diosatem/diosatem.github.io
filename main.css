@@ -14,8 +14,8 @@ h2 {
 
 header {
     background-color: rgb(182, 166, 197);
-    border-radius: 30px;
-    color: darkslategray;
+    border-radius: 20px;
+    color: black;
     height: 100px;
 }
 
@@ -24,3 +24,9 @@ header img {
     margin: 10px;
 }
 
+header h1 {
+    text-align: center;
+}
+h2 {
+    border-bottom: black;
+}
