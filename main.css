@@ -21,7 +21,7 @@ header {
     background-color: midnightblue;
     border-radius: 30px;
     color: navajowhite;
-    height: 300px;
+    height: 100px;
 
 }
 
@@ -30,5 +30,5 @@ header img {
     margin: 20px;
 }
 header h1 {
-    margin: 0 auto;
+    margin-left: 50px;
 }
