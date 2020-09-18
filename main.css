@@ -26,7 +26,8 @@ header img {
 }
 
 header h1 {
-    text-align: match-parent;
+    text-align: center;
+    
 }
 
 hr {
