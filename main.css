@@ -21,11 +21,14 @@ header {
     background-color: midnightblue;
     border-radius: 30px;
     color: navajowhite;
-    height: 500px;
+    height: 200px;
 
 }
 
 header img {
     float: right;
     margin: 5px;
+}
+header h1 {
+    margin: 0 auto;
 }
