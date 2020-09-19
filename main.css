@@ -10,7 +10,6 @@ body {
 h1,
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
 header {
@@ -31,13 +30,15 @@ header h1 {
 
 hr {
     height: 2px;
-    border-width: 700px;
+    border-width: auto;
+    color: gray;
+    background-color: gray
 }
 footer {
     background-color: rgb(182, 166, 197);
     border-radius: 10px;
     color: rgb(22, 22, 22);
     height: 50px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: center;
 }
