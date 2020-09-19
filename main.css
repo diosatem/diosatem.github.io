@@ -10,7 +10,7 @@ body {
 h1,
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0;
+    
 }
 
 header {
@@ -31,7 +31,7 @@ header h1 {
 
 hr {
     height: 2px;
-    border-width: auto;
+    border-width: 700px;
 }
 footer {
     background-color: rgb(182, 166, 197);
