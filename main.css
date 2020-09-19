@@ -21,7 +21,6 @@ header {
 
 header img {
     float: right;
-    padding: 10px;
 }
 
 header h1 {
@@ -34,7 +33,7 @@ hr {
     border-width: 0;
     color: gray;
     background-color: gray;
-    margin-top: -5px;
+    margin-top: -15px;
 }
 footer {
     background-color: rgb(182, 166, 197);
