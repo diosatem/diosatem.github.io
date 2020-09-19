@@ -22,7 +22,7 @@ header {
 header img {
     float: right;
     margin: 10px;
-    box-shadow: 10px 10px 2px rgb(27, 27, 27);
+    box-shadow: 5px 5px 2px rgb(27, 27, 27);
 }
 
 header h1 {
