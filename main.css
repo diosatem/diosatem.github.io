@@ -30,7 +30,7 @@ header h1 {
 
 hr {
     height: 2px;
-    border-width: auto;
+    border-width: 0;
     color: gray;
     background-color: gray
 }
