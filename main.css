@@ -32,7 +32,7 @@ header h1 {
 
 hr {
     height: 2px;
-    border-width: 0;
+    border-width: auto;
     color: gray;
     background-color: gray
 }
