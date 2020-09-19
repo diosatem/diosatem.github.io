@@ -21,6 +21,7 @@ header {
 
 header img {
     float: right;
+    margin: 10px;
 }
 
 header h1 {
