@@ -27,14 +27,11 @@ header img {
 
 header h1 {
     text-align: center;
-    
 }
 
 hr {
     height: 2px;
     border-width: auto;
-    color: gray;
-    background-color: gray
 }
 footer {
     background-color: rgb(182, 166, 197);
