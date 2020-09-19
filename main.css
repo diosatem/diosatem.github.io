@@ -29,7 +29,7 @@ header h1 {
 }
 
 hr {
-    height: 1px;
+    height: .5px;
     border-width: 0;
     color: gray;
     background-color: gray;
