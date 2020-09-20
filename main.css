@@ -14,20 +14,26 @@ h2 {
 
 header {
     background-color: rgb(182, 166, 197);
-    border-radius: 20px;
+    border-radius: 10px;
     color: rgb(22, 22, 22);
     height: 100px;
+    margin-top: 50px;
+}
+
+main {
+    margin: 0 30px;
 }
 
 header img {
     float: right;
-    margin: 10px;
-    box-shadow: 5px 5px 2px rgb(27, 27, 27);
+    margin: -80px 10px 10px 10px;
+    box-shadow: 5px 5px 2px rgb(27, 27, 27)
 }
 
-header h1 {
+h1 {
     text-align: center;
-    margin-bottom: -20px;
+    padding-top: 25px;
+    padding-right: 150px;
 }
 
 hr {
@@ -35,7 +41,10 @@ hr {
     border-width: 0;
     color: gray;
     background-color: gray;
+
+
 }
+
 footer {
     background-color: rgb(182, 166, 197);
     border-radius: 10px;
@@ -43,4 +52,14 @@ footer {
     height: 50px;
     font-size: 0.8em;
     text-align: center;
+    line-height: .2em;
+
+}
+
+footer p {
+    padding-top: 15px;
+}
+
+footer div {
+    color: crimson;
 }
