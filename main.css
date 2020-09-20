@@ -13,9 +13,9 @@ h2 {
 }
 
 header {
-    background-color: rgb(182, 166, 197);
+    background-color: #C52184;
     border-radius: 10px;
-    color: rgb(22, 22, 22);
+    color: white;
     height: 100px;
     margin-top: 50px;
 }
@@ -46,9 +46,9 @@ hr {
 }
 
 footer {
-    background-color: rgb(182, 166, 197);
+    background-color:#C52184;
     border-radius: 10px;
-    color: rgb(22, 22, 22);
+    color: white;
     height: 50px;
     font-size: 0.8em;
     text-align: center;
@@ -61,5 +61,5 @@ footer p {
 }
 
 footer div {
-    color: crimson;
+    color: #F9B4ED;
 }
