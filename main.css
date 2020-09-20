@@ -41,7 +41,8 @@ hr {
     border-width: 0;
     color: gray;
     background-color: gray;
-
+    margin-top:-20px;
+    
 
 }
 
@@ -61,15 +62,15 @@ footer p {
 }
 
 footer div {
-    color: #F9B4ED;
+    color: aqua;
 }
 
-a {
+footer a {
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+footer a:hover {
     color: #00A0C6;
     text-decoration: none;
     cursor: pointer;
