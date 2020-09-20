@@ -46,7 +46,7 @@ hr {
 }
 
 footer {
-    background-color:#C52184;
+    background-color: #C52184;
     border-radius: 10px;
     color: white;
     height: 50px;
@@ -62,4 +62,15 @@ footer p {
 
 footer div {
     color: #F9B4ED;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
 }
