@@ -37,6 +37,10 @@ h1 {
     padding-right: 150px;
 }
 
+h2 {
+    font-size: .8em;
+}
+
 hr {
     height: .5px;
     border-width: 0;
