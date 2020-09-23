@@ -10,7 +10,7 @@
     }
     header img {
         float: right;
-        box-shadow: 0 0 5px 5px rgb(27, 27, 27);
+        box-shadow: 0 0 5px 3px rgb(27, 27, 27);
         margin: -80px 10px 10px 10px;
     }
     footer {
