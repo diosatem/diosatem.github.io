@@ -13,9 +13,6 @@ h2 {
 }
 
 header {
-    background-color: #C52184;
-    border-radius: 10px;
-    color: white;
     height: 100px;
     margin-top: 50px;
 }
@@ -27,7 +24,7 @@ main {
 header img {
     float: right;
     margin: -80px 10px 10px 10px;
-    box-shadow: 5px 5px 2px rgb(27, 27, 27)
+    box-shadow: 0 0 20px 20px rgb(27, 27, 27)
 }
 
 h1 {
@@ -50,11 +47,11 @@ hr {
     
 
 }
-
-footer {
+header, footer {
     background-color: #C52184;
-    border-radius: 10px;
     color: white;
+}
+footer {
     height: 50px;
     font-size: 0.8em;
     text-align: center;
