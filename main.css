@@ -67,7 +67,7 @@ footer div {
 
 footer a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 footer a:hover {
