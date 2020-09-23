@@ -9,7 +9,8 @@ body {
     font-size: 1.2em;
     max-width: 700px;
     margin: 0 auto;
-    line-height: 1.5em;
+    line-height: 1.5;
+    color: burlywood;
 }
 
 h1,
@@ -35,6 +36,10 @@ h1 {
     text-align: center;
     padding-top: 25px;
     padding-right: 150px;
+}
+
+.subheading {
+    font-size: .5em;
 }
 
 h2 {
