@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
-    margin: 0 auto;
+    margin: auto;
     box-sizing: border-box;
 }
 
@@ -10,37 +10,34 @@ body {
     font-size: 1.2em;
     line-height: 1.5;
     max-width: 700px;
-    
+    margin-top: 30px;
 }
 
 h1,
 h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
 header {
-    height: 100px;
-    margin-top: 50px;
+    box-sizing: border-box;
+    text-align: center;
 }
-
-main {
-    margin: 0 30px;
-}
-
 
 h1 {
     font-size: 1.2em;
-    text-align: center;
-    padding-top: 25px;
-    padding-right: 150px;
 }
 
-.subheading {
-    font-size: .5em;
+main {
+    margin: 10px;
 }
 
 h2 {
+    font-size: 1em;
+}
+
+nav li {
     font-size: .8em;
+    margin-left: -15px;
 }
 
 hr {
@@ -48,24 +45,20 @@ hr {
     border-width: 0;
     color: gray;
     background-color: gray;
-    margin-top:-20px;
-    
-
+    margin: 10px 0;
 }
-header, footer {
+
+header,
+footer {
     background-color: #C52184;
     color: white;
+    height: auto;
+    padding: 10px;
 }
+
 footer {
-    height: 50px;
-    font-size: 0.8em;
+    font-size: 0.5em;
     text-align: center;
-    
-
-}
-
-footer p {
-    padding-top: 15px;
 }
 
 footer div {
