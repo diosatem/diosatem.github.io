@@ -15,4 +15,3 @@ const currentdate = dayName + ", " + todaysdate.getDate() + monthName + ", " + t
 
 document.getElementById('currentdate').textContent = currentdate;
 
-document.getElementById("currentYear").textContent = year;
