@@ -1,2 +1,3 @@
-let currentYear = document.lastModified;
-document.getElementById("currentDate").innerHTML = currentYear;
+let date = new Date();
+let year = date.getFullYear();
+document.getElementById("currentYear").innerHTML = year;
