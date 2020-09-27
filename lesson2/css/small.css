@@ -1,0 +1,61 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+header {
+    background-color: #62466B;
+    color: #FBFBFF;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+header h1, h2 {
+    margin: 0;
+}
+
+header h2 {
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+main section {
+    background-color: #F6F3F7;
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px gray;
+}
+
+main h2 {
+    background-color: #2D2327;
+    color: white;
+}
+
+img {
+    margin: 10px 0;
+    width: 200px;
+}
+
+p {
+    text-align: left;
+    margin: 0;
+}
