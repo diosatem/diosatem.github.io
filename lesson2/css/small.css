@@ -1,5 +1,5 @@
 * {
-    
+
     box-sizing: border-box;
 }
 
@@ -11,22 +11,26 @@ body {
     margin: 20px auto;
 }
 
-header {
+header h1 {
+
+
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+header,
+footer {
     background-color: #62466B;
     color: #FBFBFF;
     height: auto;
     padding: 10px;
     text-align: center;
-    font-family: 'Cedarville Cursive', cursive;
 }
 
-header h1, h2 {
+header h1,
+h2 {
     margin: 0;
 }
 
-header h2 {
-    font-family: 'Karla', sans-serif;
-}
 
 main {
     display: grid;
@@ -37,7 +41,7 @@ main {
 }
 
 main section {
-    background-color: #F6F3F7;
+    background-color: #FFFEEB;
     text-align: center;
     height: 100%;
     padding: 10px;
@@ -58,4 +62,19 @@ img {
 p {
     text-align: left;
     margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a:hover {
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
 }

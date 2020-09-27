@@ -2,15 +2,15 @@
     main {
         grid-template-columns: 1fr 1fr;
         row-gap: 20px;
-	}
+    }
 
-	main section:nth-child(2) {
-		display: block;
-	}
+    main section:nth-child(2) {
+        display: block;
+    }
 
-	main section:nth-child(3) {
-		grid-column: span 2;
-	}
+    main section:nth-child(3) {
+        grid-column: span 2;
+    }
 
-	
+
 }
