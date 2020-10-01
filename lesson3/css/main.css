@@ -43,18 +43,19 @@ section {
 
 .colors {
     width: 100%;
-    min-width: 200px;
     margin: auto;
     text-align: center;
-  }
-  .colors th {
+}
+
+.colors th {
     background-color: #999;
-  }
-  .colors td {
+}
+
+.colors td {
     width: 25%;
     height: 3em;
-  }
+}
 
-  header {
-      line-height: 1;
-  }
+header {
+    line-height: 1;
+}
