@@ -22,3 +22,10 @@ td, th {
   section {
       margin: 10px 0;
   }
+
+  :root {
+    --primary-color: #031926;
+    --secondary-color: #468189;
+    --accent1-color: #8BE8CB;
+    --accent2-color: #EEC584;
+  }
