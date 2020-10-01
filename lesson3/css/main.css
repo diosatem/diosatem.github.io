@@ -12,4 +12,9 @@ td, th {
   
   th {
     background-color: #dddddd;
+    width: 30%;
+  }
+
+  section {
+      margin: 10px 0;
   }
