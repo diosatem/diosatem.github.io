@@ -15,6 +15,10 @@ td, th {
     width: 30%;
   }
 
+  table {
+    border: 1px solid darkgray;
+  }
+
   section {
       margin: 10px 0;
   }
