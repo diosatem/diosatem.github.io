@@ -4,28 +4,39 @@ body {
     line-height: 1.5;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-  th {
+}
+
+th {
     background-color: #dddddd;
     width: 30%;
-  }
+}
 
-  table {
+table {
     border: 1px solid darkgray;
-  }
+}
 
-  section {
-      margin: 10px 0;
-  }
+section {
+    margin: 10px 0;
+}
 
-  :root {
-    --primary-color: #031926;
-    --secondary-color: #468189;
-    --accent1-color: #8BE8CB;
-    --accent2-color: #EEC584;
-  }
+
+.primary {
+    background-color: #031926;
+}
+
+.secondary {
+    background-color: #468189;
+}
+
+.accent1 {
+    background-color: #8BE8CB;
+}
+
+.accent2 {
+    background-color: #EEC584;
+}
