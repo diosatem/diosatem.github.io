@@ -43,7 +43,7 @@ section {
 
 .colors {
     width: 100%;
-    min-width: 350px;
+    min-width: 200px;
     margin: auto;
     text-align: center;
   }
@@ -53,4 +53,8 @@ section {
   .colors td {
     width: 25%;
     height: 3em;
+  }
+
+  header {
+      line-height: 1;
   }
