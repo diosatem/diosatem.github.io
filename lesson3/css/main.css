@@ -1,7 +1,7 @@
 body {
     max-width: 960px;
     margin: 0 auto;
-    line-height: normal;
+    line-height: 1.5;
 }
 
 td, th {
@@ -10,6 +10,6 @@ td, th {
     padding: 8px;
   }
   
-  tr:nth-child(even) {
+  th {
     background-color: #dddddd;
   }
