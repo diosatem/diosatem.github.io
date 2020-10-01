@@ -4,16 +4,16 @@ body {
     line-height: 1.5;
 }
 
-td,
+.personas td,
 th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
-th {
+.personas th {
     background-color: #dddddd;
-    width: 30%;
+    width: 20%;
 }
 
 .personas {
