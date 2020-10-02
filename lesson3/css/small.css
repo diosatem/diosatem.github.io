@@ -123,7 +123,8 @@ nav a:visited {
     text-decoration: none;
 }
 
-nav a:hover, .navbold {
+nav a:hover,
+.navbold {
     color: black;
     background-color: #EEC584;
     text-shadow: 1px 1px whitesmoke;
@@ -140,7 +141,6 @@ footer {
     font-size: .8rem;
     margin: 20px 0;
 }
-
 
 footer div {
     color: yellow;

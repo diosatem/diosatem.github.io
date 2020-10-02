@@ -1,27 +1,26 @@
 @media only screen and (min-width: 37.5em) {
     nav ul {
         flex-flow: row;
-        flex-wrap: wrap;  
-    }
-    
-    nav ul li {
-        flex-basis: 50%;  
+        flex-wrap: wrap;
     }
 
-    nav a:hover, .navbold {
+    nav ul li {
+        flex-basis: 50%;
+    }
+
+    nav a:hover,
+    .navbold {
         font-size: 120%;
         font-weight: bold;
         box-shadow: 0 2px 15px gray;
     }
 
-    main, header {
+    main,
+    header {
         font-size: 1.2rem;
     }
 
     footer {
         font-size: .9rem;
     }
-
-    
-    
 }
