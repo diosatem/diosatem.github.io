@@ -13,10 +13,6 @@ body {
 }
 
 /*general*/
-main {
-    background-color: beige;
-}
-
 main,
 header {
     font-size: 1rem;
