@@ -16,6 +16,7 @@ body {
 main {
     background-color: beige;
 }
+
 main,
 header {
     font-size: 1rem;
@@ -63,7 +64,7 @@ section {
 .secondary {
     background-color: #468189;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .accent1 {
