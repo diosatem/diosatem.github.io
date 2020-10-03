@@ -60,6 +60,7 @@ section {
 .secondary {
     background-color: #468189;
     color: white;
+    font-weight: bold;
 }
 
 .accent1 {
