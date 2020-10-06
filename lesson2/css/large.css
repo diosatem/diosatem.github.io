@@ -6,4 +6,8 @@
     main section:nth-child(3) {
         grid-column: span 1;
     }
+
+    .whitespace {
+        padding-top: 15px;
+    }
 }
