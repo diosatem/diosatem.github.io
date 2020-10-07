@@ -110,6 +110,7 @@ nav ul {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 nav ul li a {
