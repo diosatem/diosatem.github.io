@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+header { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.1;
+    padding: 20px;
+}
+
+header img {
+    width: 60px;   
+    margin-right: 20px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.headings h1, main h1 {
+    font-size: 1.8rem;
+}
+
+.headings p {
+    font-size: .8rem;
+    margin-top: -10px;
+}
+
+/*header nav*/
+nav {
+    background-color: #031926;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1rem;
+    margin: 30px 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    width: 100%;
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+}
+
+nav a:hover,
+.navbold {
+    color: black;
+    background-color: #EEC584;
+    text-shadow: 1px 1px whitesmoke;
+    font-weight: bold;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    margin: 10px;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*footer*/
+footer {
+    background-color: #031926;
+    color: white;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: .8rem;
+    margin: 0 auto;
+    max-width: 820px;
+}
+
+footer div {
+    color: yellow;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.placeholder {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 760px;
+    text-align: center;
+}

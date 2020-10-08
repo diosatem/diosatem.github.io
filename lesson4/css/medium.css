@@ -1,0 +1,33 @@
+@media only screen and (min-width: 37.5em) {
+    header img {
+        width: 80px;
+    }
+
+    .headings h1, main h1 {
+        font-size: 1.8rem;
+    }
+    
+    .headings p {
+        font-size: 1.1rem;  
+    }
+
+    nav ul {
+        flex-flow: row;
+    }
+    
+    nav button {
+        display: none;
+    }
+    
+    nav li {
+        flex: 1 1 100%;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    
+
+    
+}

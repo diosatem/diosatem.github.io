@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Town Page</title>
-    <meta name="description"
-        content="Preston Town Page">
+    <title>How's the Weather? | Preston Town Page</title>
+    <meta name="description" content="Preston Town Page">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
+
 <body>
     <header>
-        <h1>Preston Town Page</h1>
+        <img src="images/2415345-16.png" alt="How's the Weather? logo">
+        <section class="headings">
+            <h1>How's the Weather?</h1>
+            <p>Stay informed. Stay safe.</p>
+        </section>
+
     </header>
     <main>
         <nav>
-
+            <button onclick="toggleMenu()">&#9776</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="navbold">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
         </nav>
+        
+        <section class="content">
+            <h1>Preston Town</h1>
+            <div class="placeholder">HERO WITH WEATHER SUMMARY</div>
+            <div class="placeholder">FIVE DAY FORECAST</div>
+            <div class="placeholder">ARTICLE</div>
+            <div class="placeholder">CONTACT INFORMAITON</div>
+        </section>
     </main>
     <footer>
-
+        <p>&copy; How's the Weather? | | Diosa T. Jamorol</p>
+        <div>Last Updated: <span id="currentDate"></span></div>
     </footer>
+    <script src='js/lastmodified.js'></script>
+    <script src="js/currentyear.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

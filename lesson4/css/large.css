@@ -1,0 +1,19 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        width: 100px;
+    }
+
+    .headings h1 {
+        font-size: 2rem;
+    }
+
+    .headings p {
+        font-size: 1.3rem;
+    }
+
+    header {
+        line-height: .8;
+    }
+
+
+}
