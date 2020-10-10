@@ -13,28 +13,23 @@ body {
 
 header {
     display: flex;
-
-
     line-height: 1.1;
     padding: 20px;
-
 }
 
 header img {
     width: 60px;
     margin-right: 20px;
-
 }
 
 .headings {
     display: flex;
     flex-direction: column;
     padding: 0;
-
 }
 
 .headings h1,
-main h1 {
+main h2 {
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -50,7 +45,6 @@ nav {
     line-height: 3em;
     text-align: center;
     font-size: 1rem;
-
 }
 
 nav li {
