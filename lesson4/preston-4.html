@@ -21,12 +21,13 @@
             <h1>How's the Weather?</h1>
             <p>Stay informed. Stay safe.</p>
         </section>
+        <button onclick="toggleMenu()">&#9776;</button>
     </header>
 
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+
         <ul id="primaryNav" class="hide">
-            <li><a href="#">Menu</a></li>
+            <li onclick="toggleMenu()"><a href="#">Menu</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#" class="navbold">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
