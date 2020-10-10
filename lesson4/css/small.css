@@ -28,14 +28,15 @@ header img {
     padding: 0;
 }
 
-.headings h1,
-main h2 {
+.headings h1 {
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
 }
 
 main h2 {
     margin-top: 20px;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .headings p {

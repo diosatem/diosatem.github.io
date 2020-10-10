@@ -7,9 +7,12 @@
         margin-top: 20px;
     }
 
-    .headings h1,
-    main h1 {
-        font-size: 1.8rem;
+    .headings h1 {
+        font-size: 1.9rem;
+    }
+
+    main h2 {
+        font-size: 1.7rem;
     }
 
     .headings p {
