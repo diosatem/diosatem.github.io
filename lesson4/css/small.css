@@ -62,7 +62,6 @@ nav li:first-child {
     background: linear-gradient(90deg, rgba(3, 25, 38, 1) 10%, rgba(70, 129, 137, 1) 50%, rgba(0, 0, 0, 1) 90%);
     font-weight: bold;
     font-size: 1.3rem;
-
     line-height: .8em;
 }
 

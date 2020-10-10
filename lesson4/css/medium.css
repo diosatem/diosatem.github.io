@@ -23,7 +23,7 @@
         flex-flow: row;
     }
 
-    nav button {
+    button {
         display: none;
         float: none;
         margin: 0;
@@ -40,9 +40,4 @@
     nav li:first-child {
         display: none;
     }
-
-
-
-
-
 }
