@@ -36,6 +36,7 @@ header img {
 .headings h1,
 main h1 {
     font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .headings p {

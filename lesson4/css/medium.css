@@ -3,6 +3,10 @@
         width: 80px;
     }
 
+    .headings {
+        margin-top: 20px;
+    }
+
     .headings h1, main h1 {
         font-size: 1.8rem;
     }
