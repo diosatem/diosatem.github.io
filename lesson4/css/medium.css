@@ -7,24 +7,25 @@
         margin-top: 20px;
     }
 
-    .headings h1, main h1 {
+    .headings h1,
+    main h1 {
         font-size: 1.8rem;
     }
-    
+
     .headings p {
-        font-size: 1.1rem;  
+        font-size: 1.1rem;
     }
 
     nav ul {
         flex-flow: row;
     }
-    
+
     nav button {
         display: none;
         float: none;
         margin: 0;
     }
-    
+
     nav li {
         flex: 1 1 100%;
     }
@@ -38,7 +39,7 @@
     }
 
 
-    
 
-    
+
+
 }

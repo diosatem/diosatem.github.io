@@ -13,7 +13,7 @@ body {
 
 header {
     display: flex;
-    
+
 
     line-height: 1.1;
     padding: 20px;
@@ -23,7 +23,7 @@ header {
 header img {
     width: 60px;
     margin-right: 20px;
-   
+
 }
 
 .headings {
@@ -60,7 +60,7 @@ nav li {
 }
 
 nav li:first-child {
-    background-color:#468189;
+    background-color: #468189;
     font-weight: bold;
     font-size: 1.3rem;
 }
