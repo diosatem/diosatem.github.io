@@ -19,21 +19,23 @@
             <h1>How's the Weather?</h1>
             <p>Stay informed. Stay safe.</p>
         </section>
-
     </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="navbold">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
     <main>
-        <nav>
-            <button onclick="toggleMenu()">&#9776</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="navbold">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
-        
+
+
         <section class="content">
             <h1>Preston Town</h1>
             <div class="placeholder">HERO WITH WEATHER SUMMARY</div>
@@ -43,11 +45,10 @@
         </section>
     </main>
     <footer>
-        <p>&copy; How's the Weather? | | Diosa T. Jamorol</p>
-        <div>Last Updated: <span id="currentDate"></span></div>
+        <p>&copy; How's the Weather? | Attribution | Diosa T. Jamorol</p>
+        <div><span id="currentDate"></span></div>
     </footer>
     <script src='js/lastmodified.js'></script>
-    <script src="js/currentyear.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

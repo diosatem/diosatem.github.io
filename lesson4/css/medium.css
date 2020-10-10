@@ -17,6 +17,8 @@
     
     nav button {
         display: none;
+        float: none;
+        margin: 0;
     }
     
     nav li {
@@ -26,6 +28,11 @@
     nav ul.hide {
         display: flex;
     }
+
+    nav li:first-child {
+        display: none;
+    }
+
 
     
 

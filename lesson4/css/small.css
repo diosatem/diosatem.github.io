@@ -8,28 +8,33 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2em;
     line-height: 1.5;
+    background-color: floralwhite;
 }
 
-header { 
+header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
+
     line-height: 1.1;
     padding: 20px;
+
 }
 
 header img {
-    width: 60px;   
+    width: 60px;
     margin-right: 20px;
+   
 }
 
 .headings {
     display: flex;
     flex-direction: column;
     padding: 0;
+
 }
 
-.headings h1, main h1 {
+.headings h1,
+main h1 {
     font-size: 1.8rem;
 }
 
@@ -44,14 +49,19 @@ nav {
     line-height: 3em;
     text-align: center;
     font-size: 1rem;
-    margin: 30px 0;
-    padding: 0;
+
 }
 
 nav li {
     list-style-type: none;
     width: 100%;
     flex: 1;
+}
+
+nav li:first-child {
+    background-color:#468189;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 nav ul {
@@ -87,9 +97,9 @@ nav a:hover,
 nav button {
     background-color: transparent;
     border: none;
-    font-size: 1.6rem;
-    color: white;
-    margin: 10px;
+    font-size: 1.8rem;
+    margin: -60px 50px 0 0;
+    float: right;
 }
 
 nav ul.hide {
@@ -127,10 +137,18 @@ footer a:hover {
     margin: 10px 0;
     padding: 20px;
     background-color: lightblue;
+    border: 1px dashed grey;
 }
 
 .content {
     margin: 0 auto;
     max-width: 760px;
     text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
