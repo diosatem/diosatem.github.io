@@ -1,6 +1,7 @@
 @media only screen and (min-width: 37.5em) {
     header img {
         width: 80px;
+        height: 80px;
     }
 
     .headings {
