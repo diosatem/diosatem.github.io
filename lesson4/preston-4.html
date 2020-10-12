@@ -21,12 +21,13 @@
             <h1>How's the Weather?</h1>
             <p>Stay informed. Stay safe.</p>
         </section>
+        <button onclick="toggleMenu()">&#9776;</button>
     </header>
 
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+
         <ul id="primaryNav" class="hide">
-            <li><a href="#">Menu</a></li>
+            <li onclick="toggleMenu()"><a href="#">Menu</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#" class="navbold">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -36,8 +37,6 @@
         </ul>
     </nav>
     <main>
-
-
         <section class="content">
             <h2>Preston Town</h2>
             <div class="placeholder">HERO WITH WEATHER SUMMARY</div>
@@ -47,10 +46,11 @@
         </section>
     </main>
     <footer>
-        <p>&copy; How's the Weather? | Attribution | Diosa T. Jamorol</p>
+        <p>&copy; How's the Weather? | Attribution | Diosa Temblor Jamorol</p>
         <div><span id="currentDate"></span></div>
     </footer>
     <script src='js/currentdate.js'></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,19 @@
 @media only screen and (min-width: 37.5em) {
     header img {
         width: 80px;
+        height: 80px;
     }
 
     .headings {
         margin-top: 20px;
     }
 
-    .headings h1,
-    main h1 {
-        font-size: 1.8rem;
+    .headings h1 {
+        font-size: 1.9rem;
+    }
+
+    main h2 {
+        font-size: 1.7rem;
     }
 
     .headings p {
@@ -20,7 +24,7 @@
         flex-flow: row;
     }
 
-    nav button {
+    button {
         display: none;
         float: none;
         margin: 0;
@@ -37,9 +41,4 @@
     nav li:first-child {
         display: none;
     }
-
-
-
-
-
 }
