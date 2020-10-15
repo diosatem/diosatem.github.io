@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How's the Weather? | Preston Town Page</title>
+    <meta name="description" content="Preston Town Page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="How's the Weather? logo">
+        <section class="headings">
+            <h1>How's the Weather?</h1>
+            <p>Stay informed. Stay safe.</p>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li onclick="toggleMenu()"><a href="#">Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="navbold">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content">
+            <h2>Preston Town</h2>
+            <div class="placeholder">HERO WITH WEATHER SUMMARY</div>
+            <div class="placeholder">FIVE DAY FORECAST</div>
+            <div class="placeholder">ARTICLE</div>
+            <div class="placeholder">CONTACT INFORMAITON</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; How's the Weather? | Attribution | Diosa Temblor Jamorol</p>
+        <div><span id="currentDate"></span></div>
+    </footer>
+    <script src='js/currentdate.js'></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
