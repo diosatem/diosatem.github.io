@@ -1,0 +1,44 @@
+@media only screen and (min-width: 37.5em) {
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .headings {
+        margin-top: 20px;
+    }
+
+    .headings h1 {
+        font-size: 1.9rem;
+    }
+
+    main h2 {
+        font-size: 1.7rem;
+    }
+
+    .headings p {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        flex-flow: row;
+    }
+
+    button {
+        display: none;
+        float: none;
+        margin: 0;
+    }
+
+    nav li {
+        flex: 1 1 100%;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+}
