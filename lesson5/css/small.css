@@ -139,7 +139,6 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: .8rem;
-    display: block;
 }
 
 footer div {
@@ -270,20 +269,20 @@ footer a:hover {
 /*contact*/
 .contact {
     background-color: #468189;
-    
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    
-  
+}
+
+.sectioncontact {
+    margin: 500px 0;
 }
 
 .divicons {
     display: flex;
     flex-direction: column;
     margin: 0 50px;
-    
 }
 
 .icons {
@@ -306,6 +305,7 @@ footer a:hover {
     padding: 2px;
     font-size: 30px;
 }
+
 
 
 
