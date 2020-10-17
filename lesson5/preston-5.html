@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How's the Weather? | Preston Town Page</title>
     <meta name="description" content="Preston Town Page">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo.png">
     <script src="https://kit.fontawesome.com/c3b1c66e3b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div id="notice">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
         <img src="images/logo.png" alt="How's the Weather? logo">
         <section class="headings">
             <h1>How's the Weather?</h1>
-            <p>Stay informed. Stay safe.</p>
+            <p>Stay informed. Stay safe. </p>
         </section>
         <button onclick="toggleMenu()">&#9776;</button>
     </header>
+    <div id="notice">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
 
     <nav class="clearfix">
 
@@ -43,8 +43,6 @@
             <h2>Preston Town</h2>
             <div class="divhero">
                 <img src="images/preston town banner.jpg" alt="Preston Town hero image">
-
-
                 <table class="tablehero">
                     <tr>
                         <th colspan="2" id="tableheader">Weather Summary</th>
@@ -72,7 +70,7 @@
                 </table>
 
             </div>
-            <h3>5-day Forecast</h3>
+            <h3 class="h3">5-day Forecast</h3>
             <div class="forecast">
                 <div class="forecastitem">
                     <span class="day">Saturday</span>
@@ -107,7 +105,7 @@
             </div>
             <div class="article">
                 <div class="articlehead">
-                    <h3>Festival of Lights</h3>
+                    <h3 class="h3">Festival of Lights</h3>
                     <span>by Wiki Pedia</span>
                 </div>
                 <p> <img src="images/festival of lights.jpg" alt="Festival of Lights">
@@ -122,34 +120,46 @@
             </div>
             </div>
         </section>
-       
+
         <div class="contact">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853449966!2d-111.91534448376476!3d42.09974162637448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1602891068200!5m2!1sen!2sph"
-                width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-            <div class="divicons">
-                <div class="icons">
-                    <i class="fas fa-envelope"></i>
-                    <span> 5487 E Hwy 36<br>
-                        Preston, ID 83263<br>
-                        USA</span></div>
-                <div class="icons">
-                    <i class="fas fa-phone-alt"> </i>
-                    <span>208-123-4567</span>
+            <h3 class="h3">Contact Information</h3>
+            <div class="contactitems">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853449966!2d-111.91534448376476!3d42.09974162637448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1602891068200!5m2!1sen!2sph"
+                    width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+
+                <div class="divicons">
+                    <div class="icons">
+                        <i class="fas fa-envelope"></i>
+                        <span> 5487 E Hwy 36<br>
+                            Preston, ID 83263<br>
+                            USA</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>diosatemblor@gmail.com</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-phone-alt"> </i>
+                        <span>208-123-4567</span>
+                    </div>
+                    <div class="socials">
+                        <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    </div>
                 </div>
-                <div class="socials">
-                    <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
-                    <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                </div>
+
             </div>
-       
+        </div>
+
     </main>
     <footer>
         <p>&copy; How's the Weather? | Attribution | Diosa Temblor Jamorol</p>
         <div><span id="currentDate"></span></div>
     </footer>
+    <script src="js/currentdate.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
