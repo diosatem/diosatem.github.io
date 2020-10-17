@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="css/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/c3b1c66e3b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <div class="notice">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+
         <img src="images/logo.png" alt="How's the Weather? logo">
         <section class="headings">
             <h1>How's the Weather?</h1>
@@ -39,7 +42,7 @@
     <main>
         <section class="content">
             <h2>Preston Town</h2>
-            <div class="hero">
+            <div class="divhero">
                 <img src="images/preston town banner.jpg" alt="Preston Town hero image">
 
 
@@ -72,28 +75,81 @@
 
 
             </div>
+            <h3>5-day Forecast</h3>
             <div class="forecast">
-                <h3>5-day Forecast</h3>
-                <table>
-                    <th>Saturday</th>
-                    <th>Sunday</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <tr>
-                        <td>89 °F</td>
-                        <td>87 °F</td>
-                        <td>83 °F</td>
-                        <td>90 °F</td>
-                        <td>85 °F</td>
-                    </tr>
-                    
-                   
-                </table>
+                <div class="forecastitem">
+                    <span class="day">Saturday</span>
+                    <img src="images/sunny.png" alt=sunny">
+                    <span class="degrees">89 °F</span>
+                </div>
+
+                <div class="forecastitem">
+                    <span class="day">Sunday</span>
+                    <img src="images/sunny.png" alt="sunny">
+                    <span class="degrees">87 °F</span>
+                </div>
+
+                <div class="forecastitem">
+                    <span class="day">Monday</span>
+                    <img src="images/sunny cloudy.png" alt="cloudy">
+                    <span class="degrees">83 °F</span>
+                </div>
+
+                <div class="forecastitem">
+                    <span class="day">Tuesday</span>
+                    <img src="images/sunny.png" alt="sunny">
+                    <span class="degrees">90 °F</span>
+                </div>
+
+                <div class="forecastitem">
+                    <span class="day">Wednesday</span>
+                    <img src="images/cloudy.png" alt="cloudy">
+                    <span class="degrees">85 °F</span>
+                </div>
+
             </div>
-            <div class="placeholder">ARTICLE</div>
-            <div class="placeholder">CONTACT INFORMAITON</div>
+            <div class="article">
+                <div class="articlehead">
+                    <h3>Festival of Lights</h3>
+                    <span>by Diosa Temblor</span>
+                </div>
+
+                <p> <img src="images/festival of lights.jpg" alt="Festival of Lights">
+                    Each year Preston holds the "Idaho Festival of Lights", which starts the day after Thanksgiving
+                    and goes until December 31. The festival was started by two local business men (Wayne Bell and
+                    Walter Ross) along with many other community organizations to help celebrate Christmas within the
+                    community. The festival consists of a lighted parade, fireworks, and displays in the city park. The
+                    merchants along the main street of Preston have their store fronts decorated with Christmas lights
+                    during the festival.</p>
+                <p>A key event of the festival is the International Bed Race, which is held on the Saturday following
+                    Thanksgiving on the main street of Preston. Additional events are a kids' parade and free movie.</p>
+            </div>
+
+            </div>
+
         </section>
+        <div class="contact">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853449966!2d-111.91534448376476!3d42.09974162637448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1602891068200!5m2!1sen!2sph"
+                width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <div class="divicons">
+                <div class="icons">
+                    <i class="fas fa-envelope"></i>
+                    <span> 5487 E Hwy 36<br>
+                        Preston, ID 83263<br>
+                        USA</span></div>
+                <div class="icons">
+                    <i class="fas fa-phone-alt"> </i>
+                    <span>208-123-4567</span>
+                </div>
+                <div class="socials">
+                    <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+
     </main>
     <footer>
         <p>&copy; How's the Weather? | Attribution | Diosa Temblor Jamorol</p>
