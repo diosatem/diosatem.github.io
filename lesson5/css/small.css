@@ -80,7 +80,7 @@ nav li {
     flex: 1;
 }
 
-nav li:first-child {
+nav a:active {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1.3rem;
