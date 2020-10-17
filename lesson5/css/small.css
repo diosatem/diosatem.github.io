@@ -80,7 +80,7 @@ nav li {
     flex: 1;
 }
 
-nav a:active {
+nav li:first-child {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1.3rem;
@@ -122,6 +122,11 @@ nav a:hover,
     background-color: #EEC584;
     text-shadow: 1px 1px whitesmoke;
     font-weight: bold;
+}
+
+#primaryNav a:active,
+.socials a:active {
+    color: green;
 }
 
 nav ul.hide {
