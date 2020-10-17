@@ -20,7 +20,7 @@ function toggleMenu() {
 var d = new Date();
 var x = d.getDay();
 
-if (x == 5) {
+if (x == 6) {
     document.getElementById('notice').style.display = "block";
 }
 else {
