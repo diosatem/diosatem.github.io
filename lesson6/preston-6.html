@@ -42,7 +42,12 @@
         <section class="content">
             <h2>Preston Town</h2>
             <div class="divhero">
-                <img src="images/preston-town-banner.jpg" alt="Preston Town hero image">
+                <picture class="heroimage">
+                    <source media="(max-width: 200px)" srcset="images/hero-small.jpg">
+                    <source media="(max-width: 400px)" srcset="images/hero-medium.jpg">
+                    <img src="images/hero.jpg" alt="Preston Town hero image">
+                </picture>
+
                 <table class="tablehero">
                     <tr>
                         <th colspan="2" id="tableheader">Weather Summary</th>
@@ -157,7 +162,7 @@
         <div><span id="currentDate"></span></div>
     </footer>
     <script src="js/scripts.js"></script>
-    
+
 </body>
 
 </html>
