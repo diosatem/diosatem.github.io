@@ -5,7 +5,7 @@
     }
 
     .headings {
-        margin-top: 20px;
+        margin: 20px 0 0 10px;
     }
 
     .headings h1 {
@@ -41,4 +41,32 @@
     nav li:first-child {
         display: none;
     }
+
+    .h3 {
+        font-size: 1.2rem;
+    }
+
+    .forecastitem,
+    .tablehero,
+    .article p,
+    .articlehead span,
+    .icons {
+        font-size: 1rem;
+    }
+
+    .contactitems {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactitems img {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .contact {
+        padding: 20px 0;
+    }
+
 }
