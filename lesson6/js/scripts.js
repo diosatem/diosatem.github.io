@@ -27,3 +27,25 @@ if (x == 5) {
     document.getElementById("notice").style.display = "none";
     document.getElementsByTagName("header")[0].style.marginTop = "0";
 }
+
+//web font loader
+WebFont.load({
+    google: {
+        families: [
+            'Pacific'
+        ]
+    }
+});
+
+//wind chill
+
+let temperature = parseFloat(document.getElementById("temp").value);
+let windSpeed = parseFloat(document.getElementById("speed").value);
+let chillResult = windChill(temperature, windSpeed);
+
+document.getElementById("chill").innerHTML = chillResult.toFixed(2);
+
+function windChill(tempF, speedF) {
+    let factor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speedF, 0.16) + 0.4275 * tempF * Math.pow(speedF, 0.16);
+    return factor;
+}
