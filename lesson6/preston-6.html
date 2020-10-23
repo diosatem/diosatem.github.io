@@ -42,7 +42,13 @@
         <section class="content">
             <h2>Preston Town</h2>
             <div class="divhero">
-                <img src="images/preston-town-banner.jpg" alt="Preston Town hero image">
+                <picture class="heroimage">
+                    <source media="(max-width: 600px)" srcset="images/hero-small.jpg">
+                    <source media="(max-width: 960px)" srcset="images/hero-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/hero.jpg">
+                    <img src="images/hero.jpg" alt="Preston Town hero image">
+                </picture>
+
                 <table class="tablehero">
                     <tr>
                         <th colspan="2" id="tableheader">Weather Summary</th>
@@ -53,11 +59,11 @@
                     </tr>
                     <tr>
                         <td class="leftcol">High:</td>
-                        <td class="rightcol">76 °F</td>
+                        <td class="rightcol"><span>50</span> °F</td>
                     </tr>
                     <tr>
                         <td class="leftcol">Wind Chill:</td>
-                        <td class="rightcol">°F</td>
+                        <td class="rightcol chillF"><span id="chill"></span> °F</td>
                     </tr>
                     <tr>
                         <td class="leftcol">Humidity:</td>
@@ -65,7 +71,7 @@
                     </tr>
                     <tr>
                         <td class="leftcol">Wind Speed:</td>
-                        <td class="rightcol">5 mph</td>
+                        <td class="rightcol"><span>4.0</span> mph</td>
                     </tr>
                 </table>
 
@@ -157,7 +163,8 @@
         <div><span id="currentDate"></span></div>
     </footer>
     <script src="js/scripts.js"></script>
-    
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 </body>
 
 </html>
