@@ -1,5 +1,3 @@
-//wind chill
-
 let temperature = document.getElementsByTagName("span")[0].innerText;
 let windSpeed = document.getElementsByTagName("span")[2].innerText;
 let chillResult = windChill(temperature, windSpeed);
