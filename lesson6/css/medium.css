@@ -63,10 +63,19 @@
     .contactitems img {
         display: inline-block;
         margin: 0;
+        max-width: 298px;
     }
 
     .contact {
         padding: 20px 0;
+    }
+
+    .article img {
+        max-width: 250px;
+    }
+
+    .divicons {
+        padding-left: 50px;
     }
 
 }

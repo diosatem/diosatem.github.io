@@ -195,7 +195,7 @@ footer a:hover {
 /*content*/
 .content {
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 1140px;
     text-align: center;
 }
 
@@ -253,6 +253,9 @@ footer a:hover {
     float: right;
     margin: 5px 5px 0 0;
     padding: 0 0 5px 5px;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
 }
 
 .articlehead {
@@ -284,7 +287,7 @@ footer a:hover {
     color: black;
     flex-direction: column;
     justify-content: center;
-    padding-left: 60px;
+    padding-left: 10px;
 }
 
 .icons {
@@ -307,6 +310,9 @@ footer a:hover {
 .contactitems img {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
 }
 
 .forecastitem,

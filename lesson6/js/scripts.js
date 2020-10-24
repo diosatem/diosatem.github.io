@@ -29,11 +29,5 @@ if (x == 5) {
 }
 
 //web font loader
-WebFont.load({
-    google: {
-        families: [
-            'Pacific'
-        ]
-    }
-});
+WebFont.load({google: {families: ['Poppins']}});
 
