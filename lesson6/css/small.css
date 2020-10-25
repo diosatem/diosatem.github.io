@@ -29,7 +29,7 @@ header img {
 .headings {
     position: absolute;
     top: 25px;
-    left: 100px;
+    left: 90px;
     display: flex;
     flex-direction: column;
 }
