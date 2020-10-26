@@ -116,7 +116,13 @@ nav a:visited {
     text-decoration: none;
 }
 
-nav a:hover,
+nav a:hover {
+    color: black;
+    background-color: hsl(37, 76%, 73%, .7);
+    font-weight: bold;
+}
+
+
 .navbold {
     color: black;
     background-color: #EEC584;
@@ -127,7 +133,7 @@ nav a:hover,
 #primaryNav a:active,
 .socials a:active {
     color: green;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 nav ul.hide {
@@ -196,11 +202,7 @@ footer a:hover {
 
 /*5-day forecast*/
 .forecast {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-flow: row wrap;
-    row-gap: 10px;
+    display: none;
 }
 
 .forecastitem {
@@ -229,6 +231,7 @@ footer a:hover {
 }
 
 .h3 {
+    display: none;
     font-size: 1rem;
 }
 

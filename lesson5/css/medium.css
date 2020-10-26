@@ -44,6 +44,7 @@
 
     .h3 {
         font-size: 1.2rem;
+        display: block;
     }
 
     .forecastitem,
@@ -67,6 +68,14 @@
 
     .contact {
         padding: 20px 0;
+    }
+
+    .forecast {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-flow: row wrap;
+        row-gap: 10px;
     }
 
 }
