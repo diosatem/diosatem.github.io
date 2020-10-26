@@ -1,5 +1,3 @@
-//wind chill
-
 let temperature = document.getElementsByTagName("span")[0].innerText;
 let windSpeed = document.getElementsByTagName("span")[2].innerText;
 let chillResult = windChill(temperature, windSpeed);
@@ -10,7 +8,7 @@ function windChill(tempF, speedF) {
 }
 
 if (temperature <= 50 & windSpeed > 3) {
-    document.getElementById("chill").textContent = chillResult.toFixed(2);
+    document.getElementById("chill").textContent = chillResult.toFixed(2) + " °F";
 } else {
     document.getElementById("chill").textContent = "N/A";
 }

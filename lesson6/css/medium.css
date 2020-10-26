@@ -5,7 +5,8 @@
     }
 
     .headings {
-        margin: 20px 0 0 10px;
+        top: 38px;
+        left: 120px;
     }
 
     .headings h1 {
@@ -63,10 +64,19 @@
     .contactitems img {
         display: inline-block;
         margin: 0;
+        max-width: 298px;
     }
 
     .contact {
         padding: 20px 0;
+    }
+
+    .article img {
+        max-width: 250px;
+    }
+
+    .divicons {
+        padding-left: 50px;
     }
 
 }
