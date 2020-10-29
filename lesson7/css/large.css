@@ -1,0 +1,79 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        width: 100px;
+        height: 100px;
+        margin-top: -3px;
+    }
+
+    .headings h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    .headings p {
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+
+    header {
+        line-height: .8;
+    }
+
+    .headings {
+        top: 30px;
+        left: 135px;
+    }
+
+    .h3 {
+        font-size: 1.3rem;
+    }
+
+    .forecastitem,
+    .tablehero,
+    .article p,
+    .articlehead span,
+    .icons {
+        font-size: 1rem;
+    }
+
+    .divhero {
+        position: relative;
+    }
+
+    .tablehero {
+        width: 230px;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        line-height: 1rem;
+        box-shadow: 1px 1px 10px 2px white;
+        border-radius: 10px;
+    }
+
+    .rightcol {
+        padding-right: 5px;
+    }
+
+    iframe {
+        display: inline-block;
+        box-shadow: 0px 0px 2px black;
+    }
+
+    .article {
+        margin-bottom: 20px;
+    }
+
+    .socials i {
+        padding: 5px;
+        font-size: 40px;
+    }
+
+    .divicons {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery | How's the Weather?</title>
+    <meta name="description" content="Weather gallery for the Preston Town community.">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="How's the Weather? logo">
+        <section class="headings">
+            <h1>How's the Weather?</h1>
+            <p>Stay informed. Stay safe. </p>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li onclick="toggleMenu()"><a href="#">X</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="navbold">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Weather Gallery</h2>
+        <section class="content">
+            <figure><img src="images/placeholder2.png" data-src="images/rain-windshield.jpg" alt="rain on windshield">
+                <figcaption>Rain on windshield</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/beach-pineapple.jpg"
+                    alt="pineapple on the beach">
+                <figcaption>Pineapple on the beach</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/boats-shore.jpg" alt="boats on the shore">
+                <figcaption>Boats on the shore</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/umbrellas.jpg" alt="umbrellas">
+                <figcaption>Umbrellas</figcaption>
+            </figure>
+
+            <figure><img src="images/placeholder2.png" data-src="images/girl-rain.jpg" alt="girl in the rain">
+                <figcaption>Girl in the Rain</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/rainbow.jpg" alt="rainbow">
+                <figcaption>Rainbow</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/rays-of-light.jpg" alt="rays of light">
+                <figcaption>Rays of light</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/relaxing-beach.jpg" alt="relaxing beach">
+                <figcaption>Relaxing beach</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/starry-night.jpg" alt="starry night">
+                <figcaption>Starry night</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/thunderstorm.jpg" alt="thunderstorm">
+                <figcaption>Thunderstorm</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/tornado.jpg" alt="tornado">
+                <figcaption>Tornado</figcaption>
+            </figure>
+            <figure><img src="images/placeholder2.png" data-src="images/foggy-road.jpg" alt="foggy road">
+                <figcaption>Foggy road</figcaption>
+            </figure>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; How's the Weather? | Attribution | Diosa Temblor Jamorol</p>
+        <div><span id="currentDate"></span></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
