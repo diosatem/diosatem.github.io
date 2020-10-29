@@ -105,7 +105,6 @@ nav a:visited {
     text-decoration: none;
 }
 
-nav a:hover,
 .navbold {
     color: black;
     background-color: #EEC584;
@@ -113,10 +112,14 @@ nav a:hover,
     font-weight: bold;
 }
 
+nav a:hover {
+    background-color: hsl(37, 76%, 73%, .5);
+}
+
 #primaryNav a:active,
 .socials a:active {
-    color: green;
-    font-size: 1.2rem;
+    color: black;
+    font-size: 1.1rem;
 }
 
 nav ul.hide {

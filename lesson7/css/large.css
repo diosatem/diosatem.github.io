@@ -1,7 +1,6 @@
 @media only screen and (min-width: 60em) {
     header img {
         width: 100px;
-        height: 100px;
         margin-top: -3px;
     }
 
@@ -15,7 +14,7 @@
 
     .headings p {
         font-size: 1.3rem;
-        margin-top: 5px;
+        margin: -20px 0 0 0;
     }
 
     header {
@@ -23,13 +22,22 @@
     }
 
     .headings {
-        top: 30px;
+        top: 25px;
         left: 135px;
     }
 
     .content {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+    }
+
+    figure figcaption {
+        display: block;
+        margin: -10px 0 20px 0;
+    }
+
+    figure:hover {
+        box-shadow: 0 0 10px 2px #333;
     }
 
 }
