@@ -33,11 +33,15 @@
 
     figure figcaption {
         display: block;
-        margin: -10px 0 20px 0;
+        margin-top: -10px;
     }
 
     figure:hover {
         box-shadow: 0 0 10px 2px #333;
+    }
+
+    figure {
+        margin-bottom: 20px;
     }
 
 }
