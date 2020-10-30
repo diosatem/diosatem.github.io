@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/*header*/
+header {
+    position: relative;
+    line-height: 1.1;
+    padding: 20px;
+}
+
+header img {
+    width: 60px;
+    margin: 20px 20px 0 0;
+    position: relative;
+}
+
+.headings {
+    position: absolute;
+    top: 43px;
+    left: 90px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.headings h1 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.headings p {
+    font-size: .7rem;
+    margin: 0;
+}
+
+main h2 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*header nav*/
+nav {
+    background-color: #031926;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1rem;
+}
+
+nav li {
+    list-style-type: none;
+    width: 100%;
+    flex: 1;
+}
+
+nav li:first-child {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1em;
+}
+
+nav ul {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    float: right;
+    margin-top: 60px;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+}
+
+.navbold {
+    color: black;
+    background-color: #EEC584;
+    text-shadow: 1px 1px whitesmoke;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: hsl(37, 76%, 73%, .5);
+}
+
+#primaryNav a:active,
+.socials a:active {
+    color: black;
+    font-size: 1.1rem;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*content*/
+.content {
+    margin: 0 auto;
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+figure img {
+    width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 5px 0;
+}
+
+figure figcaption {
+    display: none;
+}
+
+/*footer*/
+footer {
+    background-color: #031926;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+footer div {
+    color: yellow;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*lazy loading*/
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
