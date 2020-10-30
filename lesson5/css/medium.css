@@ -63,6 +63,7 @@
     .contactitems img {
         display: inline-block;
         margin: 0;
+        width: 298px;
     }
 
     .contact {
@@ -72,6 +73,10 @@
     .forecast {
         display: flex;
         margin-top: 20px;
+    }
+
+    .article img {
+        width: 250px;
     }
 
 }
