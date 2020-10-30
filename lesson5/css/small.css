@@ -28,9 +28,10 @@ header img {
 .headings {
     position: absolute;
     top: 25px;
-    left: 100px;
+    left: 85px;
     display: flex;
     flex-direction: column;
+    z-index: -1;
 }
 
 .headings h1 {
