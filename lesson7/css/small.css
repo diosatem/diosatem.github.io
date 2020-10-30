@@ -26,7 +26,7 @@ header img {
 
 .headings {
     position: absolute;
-    top: 30px;
+    top: 43px;
     left: 90px;
     display: flex;
     flex-direction: column;
@@ -40,12 +40,13 @@ header img {
 
 .headings p {
     font-size: .7rem;
-    margin: -20px 0 0 0;
+    margin: 0;
 }
 
 main h2 {
     margin-top: 20px;
     font-size: 1.3rem;
+    text-align: center;
 }
 
 h1,
@@ -138,6 +139,9 @@ nav ul.hide {
 
 figure img {
     width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 5px 0;
 }
 
 figure figcaption {
@@ -173,10 +177,7 @@ img[data-src] {
     filter: blur(0.2em);
   }
   
-img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-  }
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
