@@ -15,19 +15,19 @@ body {
 header {
     position: relative;
     line-height: 1.1;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
 }
 
 header img {
-    width: 60px;
-    margin: 20px 20px 0 0;
+    width: 40px;
+    margin: 10px 20px 0 0;
     position: relative;
 }
 
 .headings {
     position: absolute;
-    top: 43px;
-    left: 90px;
+    top: 28px;
+    left: 70px;
     display: flex;
     flex-direction: column;
     z-index: -1;
@@ -35,12 +35,12 @@ header img {
 
 .headings h1 {
     font-size: 1.5rem;
-    margin: 5px 0;
+    margin: 0;
 }
 
 .headings p {
     font-size: .7rem;
-    margin: 0;
+    
 }
 
 main h2 {
@@ -90,7 +90,7 @@ button {
     border: none;
     font-size: 1.5rem;
     float: right;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 nav ul li a {
@@ -131,6 +131,9 @@ nav ul.hide {
 .content {
     margin: 0 auto;
     max-width: 1140px;
+}
+
+.figurediv {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -175,8 +178,8 @@ footer a:hover {
 /*lazy loading*/
 img[data-src] {
     filter: blur(0.2em);
-  }
-  
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
