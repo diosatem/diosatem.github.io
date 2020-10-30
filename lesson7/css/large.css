@@ -26,7 +26,7 @@
         left: 135px;
     }
 
-    .content {
+    .figurediv {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }

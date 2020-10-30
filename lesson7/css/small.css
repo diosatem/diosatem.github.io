@@ -131,6 +131,9 @@ nav ul.hide {
 .content {
     margin: 0 auto;
     max-width: 1140px;
+}
+
+.figurediv {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -175,8 +178,8 @@ footer a:hover {
 /*lazy loading*/
 img[data-src] {
     filter: blur(0.2em);
-  }
-  
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
