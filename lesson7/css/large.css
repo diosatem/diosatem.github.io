@@ -14,7 +14,7 @@
 
     .headings p {
         font-size: 1.3rem;
-        margin: -20px 0 0 0;
+        margin-top: 10px;
     }
 
     header {
@@ -22,7 +22,7 @@
     }
 
     .headings {
-        top: 25px;
+        top: 40px;
         left: 135px;
     }
 
