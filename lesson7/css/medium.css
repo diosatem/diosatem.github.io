@@ -1,11 +1,11 @@
 @media only screen and (min-width: 37.5em) {
     header img {
-        width: 80px;
+        width: 60px;
     }
 
     .headings {
-        top: 50px;
-        left: 120px;
+        top: 32px;
+        left: 90px;
     }
 
     .headings h1 {
