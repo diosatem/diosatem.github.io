@@ -45,7 +45,7 @@ tbody tr:nth-child(odd) {
 }
 
 thead {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 tfoot {
