@@ -12,7 +12,7 @@ body {
 
 table {
     padding: 50px;
-    width: 350px;
+    width: 300px;
     text-align: center;
     box-shadow: 10px 10px 20px #628ca6;
 }
@@ -20,7 +20,7 @@ table {
 table,
 td,
 th {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid lightgray;
     border-collapse: collapse;
 }
@@ -48,8 +48,9 @@ thead {
     font-weight: bold;
 }
 
-thead th {
-    font-size: 1.5rem;
+thead tr th {
+    font-size: 1.7rem;
+    font-weight: bolder;
 }
 
 tfoot {
