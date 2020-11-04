@@ -48,6 +48,10 @@ thead {
     font-weight: bold;
 }
 
+thead th {
+    font-size: 1.5rem;
+}
+
 tfoot {
     font-size: .8rem;
 }
