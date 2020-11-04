@@ -6,14 +6,15 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.5;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 50px;
 }
 
 table {
     padding: 50px;
-    width: 300px;
+    width: 350px;
     text-align: center;
+    box-shadow: 10px 10px 20px #628ca6;
 }
 
 table,
