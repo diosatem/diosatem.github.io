@@ -30,8 +30,7 @@ tfoot {
     background-color: #7fb9c2;
 }
 
-thead td,
-#highest {
+thead td, tbody tr:nth-child(4) td:nth-child(3) {
     background-color: #628ca6;
     color: white;
 }
@@ -55,4 +54,8 @@ thead tr th {
 
 tfoot {
     font-size: .8rem;
+}
+
+tbody tr:nth-child(5) td:first-child {
+    font-style: italic;
 }
