@@ -22,3 +22,7 @@ WebFont.load({
         families: ['Poppins']
     }
 });
+
+function adjustRating(rating) {
+    document.getElementById("rangevalue").innerHTML = rating;
+}

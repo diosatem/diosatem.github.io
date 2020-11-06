@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery | How's the Weather?</title>
+    <meta name="description" content="Weather gallery for the Preston Town community.">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="How's the Weather? logo">
+        <section class="headings">
+            <h1>How's the Weather?</h1>
+            <p>Stay informed. Stay safe. </p>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li onclick="toggleMenu()"><a href="#">X</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="navbold">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="thanksdiv">
+            <h2>Thank you</h2>
+            <p>We've received your message and we'll get back to you within 24 hours. Stay safe!</p>.
+        </div>
+    </main>
+    <footer>
+        <p>&copy; How's the Weather? | Attribution | Diosa Temblor Jamorol</p>
+        <div><span id="currentDate"></span></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
