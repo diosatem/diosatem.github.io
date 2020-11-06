@@ -47,11 +47,4 @@
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-
-    form label.sbs {
-        padding: 0;
-    }
-
-    
-
 }

@@ -46,7 +46,11 @@
     }
 
     form label.sbs {
-        padding: 0;
+        padding: .2rem 0;
+    }
+
+    form label.top, form div {
+        font-size: 1rem;
     }
 
 }
