@@ -48,6 +48,10 @@
         gap: 10px;
     }
 
+    form label.sbs {
+        padding: 0;
+    }
+
     
 
 }
