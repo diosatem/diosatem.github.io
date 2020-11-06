@@ -183,13 +183,13 @@ img[data-src] {
 /*form*/
 form fieldset {
     margin: 2rem 0;
-    border: 1.5px solid #468189;
+    border: 1.5px solid #031926;
     border-radius: 10px;
     padding: 1rem 2%;
 }
 
 form legend {
-    color: #468189;
+    color: #031926;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-weight: 5;
@@ -224,8 +224,8 @@ form label.sbs {
 
 form input.subbutton {
     border: none;
-    background-color: #EEC584;
-    color: black;
+    background-color: #031926;
+    color: white;
     border-radius: 5rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
