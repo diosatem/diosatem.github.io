@@ -56,15 +56,15 @@
                     <legend>Storm Information</legend>
                     <label class="top">Storm Date <input type="date" name="sdate"></label>
                     <label for="stype" class="top">Storm Type
-                        <input name="stype" list="typelist">
-                    <datalist id="typelist">
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                    </datalist>
-                </label>
+                        <input name="stype" list="typelist"></label>
+                        <datalist id="typelist">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    
                     <label class="top">Storm Severity
                         <input name="srange" type="range" value="1" min="1" max="10" step="1" list="tickmarks"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
@@ -99,7 +99,8 @@
                     <label class="sbs"><input type="radio" name="level" value="no"> No</label>
 
                     <label class="top">Additional Information <br>
-                        <textarea name="additional" id="additional" placeholder="Your additional comments..."></textarea>
+                        <textarea name="additional" id="additional"
+                            placeholder="Your additional comments..."></textarea>
                     </label>
                 </fieldset>
                 <input type="submit" value="Send My Storm Report" class="subbutton">
