@@ -192,7 +192,6 @@ form legend {
     color: #031926;
     margin: 0 1rem;
     padding: 0 .5rem;
-    font-weight: 5;
 }
 
 form label.top,
@@ -238,9 +237,6 @@ form input.subbutton:hover {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24), 0 5px 20px 0 rgba(0,0,0, .5);
 }
 
-
-
-
 form label.top input:required {
     border-left: red solid 6px;
 }
@@ -253,7 +249,7 @@ form textarea {
     padding: 10px;
     width: 100%;
     max-width: 20rem;
-    height: 200px;
+    height: 150px;
     background-color: hsl(195, 53%, 79%, .5);
 }
 
