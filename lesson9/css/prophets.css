@@ -8,10 +8,10 @@ body {
     line-height: 1.2;
     text-align: center;
     margin: 0 auto;
+    max-width: 1500px;
 }
 
 main {
-    max-width: 1500px;
     text-align: center;
     margin: 20px;
 }
