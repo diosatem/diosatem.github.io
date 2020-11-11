@@ -32,6 +32,7 @@ main {
     box-shadow: 1px 1px 10px black;
     margin: 10px;
     border: 1px solid darkslategray;
+    
 }
 
 .cards img {
@@ -57,6 +58,7 @@ footer {
 @media only screen and (min-width: 37.5em) {
     .cards {
         flex-flow: row wrap;
+        flex: 0 1 auto;
     }
 
     .cards section {
@@ -67,6 +69,8 @@ footer {
 
 @media only screen and (min-width: 60em) {
     .cards section {
-        order: 4;
+        flex: 1 0 21%;
     }
+
+    
 }
