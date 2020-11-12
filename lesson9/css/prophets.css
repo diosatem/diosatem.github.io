@@ -20,7 +20,8 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 .cards section {
@@ -29,7 +30,6 @@ main {
     height: 350px;
     color: black;
     box-shadow: 1px 1px 10px black;
-    margin: 10px 0;
     border: 1px solid darkslategray;
 }
 
