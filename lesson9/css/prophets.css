@@ -73,7 +73,7 @@ footer {
     }
 
     .cards section:nth-child(17) {
-        max-width: 337.50px;
+        flex: none;
     }
     
 }
