@@ -72,5 +72,8 @@ footer {
         flex: 1 0 21%;
     }
 
+    .cards section:nth-child(17) {
+        max-width: 337.50px;
+    }
     
 }
