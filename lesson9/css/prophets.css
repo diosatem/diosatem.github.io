@@ -20,8 +20,7 @@ main {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
 }
 
 .cards section {
@@ -30,9 +29,8 @@ main {
     height: 350px;
     color: black;
     box-shadow: 1px 1px 10px black;
-    margin: 10px;
+    margin: 10px 0;
     border: 1px solid darkslategray;
-    
 }
 
 .cards img {
@@ -69,11 +67,7 @@ footer {
 
 @media only screen and (min-width: 60em) {
     .cards section {
-        flex: 1 0 21%;
+        flex: 0 0 23%;
     }
 
-    .cards section:nth-child(17) {
-        flex: none;
-    }
-    
 }
