@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c3b1c66e3b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,18 +30,18 @@
 
         <ul id="primaryNav" class="hide">
             <li onclick="toggleMenu()"><a href="#">X</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" class="navbold">Preston</a></li>
+            <li><a href="#"  class="navbold">Home</a></li>
+            <li><a href="https://diosatem.github.io/lesson6/preston-6.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="https://diosatem.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://diosatem.github.io/lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
 
         <section class="content">
-            <h2>Preston Town</h2>
+            <h2></h2>
             <div class="divhero">
                 <picture class="heroimage">
                     <source media="(max-width: 600px)" srcset="images/hero-small.jpg">
@@ -52,35 +51,51 @@
                 </picture>
             </div>
 
-            <div class="towndata">
+            <div class="towndata"></div>
 
+            <div class="article">
+                <div class="articlehead">
+                    <h3>Free Online Sign Language Classes</h3>
+                    <span>by Diosa Temblor</span>
+                </div>
+                <p><img src="images/deaf.jpg" alt="Deaf">
+                    Good news! Online sign language classes are now available for free! Thanks to the Idaho Foundation
+                    for the Deaf, everyone has a chance to learn American Sign Language (ASL) without a cost for 3
+                    months. This is offered with a fee by certain public and private organizations in Idaho and the said
+                    foundation took the initiative to give more people access to learning the language for free for a
+                    limited time. This initiative is expected to result in more people getting interested in learning
+                    ASL, thus, helping our deaf and hard of hearing community.</p>
+                <p><a href="#">Learn more.</a></p>
             </div>
+
             <div class="contact">
                 <h3 class="h3">Contact Information</h3>
                 <div class="contactitems">
-                    <img src="images/map.PNG" alt="Preston Town map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2466461700074!2d-111.86879658501078!3d42.102188159340685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e508b3087f%3A0x7791eafad84ab17a!2s5487%20E%20Hwy%2036%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1605237895500!5m2!1sen!2sph"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
                     <div class="divicons">
                         <div class="icons">
-                            <i class="fas fa-envelope"></i>
+                            <img src="images/pin.png" alt="address">
                             <span> 5487 E Hwy 36<br>
                                 Preston, ID 83263<br>
                                 USA</span>
                         </div>
                         <div class="icons">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <img src="images/mail.png" alt="email">
                             <span>diosatemblor@gmail.com</span>
                         </div>
                         <div class="icons">
-                            <i class="fas fa-phone-alt"> </i>
+                            <img src="images/phone.png" alt="phone">
                             <span>208-123-4567</span>
                         </div>
                         <div class="socials">
-                            <a href="https://www.facebook.com" target="_blank"><i
-                                    class="fab fa-facebook-square"></i></a>
-                            <a href="https://www.instagram.com" target="_blank"><i
-                                    class="fab fa-instagram-square"></i></a>
-                            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                                    alt=""></a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"
+                                    alt=""></a>
+                            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt=""></a>
                         </div>
                     </div>
 
@@ -94,9 +109,8 @@
         <div><span id="currentDate"></span></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/towndata.js"></script>
 </body>
 
 </html>

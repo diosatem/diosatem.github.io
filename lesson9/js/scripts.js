@@ -35,3 +35,97 @@ WebFont.load({
         families: ['Poppins']
     }
 });
+
+//windchill
+let temperature = document.getElementsByTagName("span")[0].innerText;
+let windSpeed = document.getElementsByTagName("span")[2].innerText;
+let chillResult = windChill(temperature, windSpeed);
+
+function windChill(tempF, speedF) {
+    let factor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speedF, 0.16) + 0.4275 * tempF * Math.pow(speedF, 0.16);
+    return factor;
+}
+
+if (temperature <= 50 & windSpeed > 3) {
+    document.getElementById("chill").textContent = chillResult.toFixed(2) + " °F";
+} else {
+    document.getElementById("chill").textContent = "N/A";
+}
+
+//lazy loading
+let imagesToLoad = document.querySelectorAll('img[data-src]');
+
+const imgOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -100px 0px"
+};
+
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+        image.removeAttribute('data-src');
+    };
+};
+
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    });
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+} else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
+
+//town data for index.html
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        
+
+        const towns = jsonObject['towns'];
+        for (let i = 0; i < towns.length; i++) {
+
+            let box = document.createElement('section');
+
+            let h2 = document.createElement('h2');
+            h2.textContent = towns[i].name;
+            box.appendChild(h2);
+
+            let h3 = document.createElement('h3');
+            h3.textContent = towns[i].motto;
+            box.appendChild(h3);
+
+            let year = document.createElement('p');
+            year.textContent = towns[i].yearFounded;
+            box.appendChild(year);
+
+            let pop = document.createElement('p');
+            pop.textContent = towns[i].currentPopulation;
+            box.appendChild(pop);
+
+            let rainfall = document.createElement('p');
+            rainfall.textContent = towns[i].averageRainfall;
+            box.appendChild(rainfall);
+
+            let image = document.createElement('img');
+            image.setAttribute('src', town[i].photo);
+            image.alt = town[i].name + ' ' + town[i].lastname + '-' + prophets[i].order;
+            box.appendChild(image);
+
+            document.querySelector('div.towndata').appendChild(box);
+        }
+    });
+

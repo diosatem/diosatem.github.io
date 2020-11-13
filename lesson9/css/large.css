@@ -1,12 +1,12 @@
 @media only screen and (min-width: 60em) {
+
+    /*header*/
     header img {
-        width: 100px;
-        height: 100px;
-        margin-top: -3px;
+        width: 90px;
     }
 
     .headings h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     main h2 {
@@ -14,8 +14,8 @@
     }
 
     .headings p {
-        font-size: 1.3rem;
-        margin-top: 5px;
+        font-size: 1.2rem;
+        margin-top: 15px;
     }
 
     header {
@@ -23,14 +23,31 @@
     }
 
     .headings {
-        top: 33px;
-        left: 135px;
+        top: 55px;
+        left: 130px;
     }
 
-    .h3 {
-        font-size: 1.3rem;
+    /*header nav*/
+
+    /*header hero*/
+    .tablehero {
+        width: 230px;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        line-height: 1rem;
+        box-shadow: 1px 1px 10px 2px white;
+        border-radius: 10px;
     }
 
+    .rightcol {
+        padding-right: 5px;
+    }
+
+    /*site-wide notice*/
+
+    /*content*/
     .figurediv {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
@@ -50,40 +67,25 @@
         padding: 10px;
     }
 
-    form label.sbs {
-        padding: .2rem 0;
-    }
-
-    form label.top,
-    form div {
-        font-size: .9rem;
-    }
-
-    .tablehero {
-        width: 230px;
-        height: auto;
-        position: absolute;
-        top: 20px;
-        left: 10px;
-        line-height: 1rem;
-        box-shadow: 1px 1px 10px 2px white;
-        border-radius: 10px;
-    }
-
-    .rightcol {
-        padding-right: 5px;
-    }
-
-    iframe {
-        display: inline-block;
-        box-shadow: 0px 0px 2px black;
+    /*article*/
+    .article img {
+        padding: 0 20px 20px 0;
     }
 
     .article {
-        margin-bottom: 20px;
+        padding: 20px;
     }
 
-    .socials i {
+    .articlehead h3 {
+        font-size: 1.2rem;
+    }
+
+    /*contact*/
+    .h3 {
+        font-size: 1.3rem;
+    }
+
+    .socials img {
         padding: 5px;
         font-size: 40px;
     }
@@ -92,4 +94,28 @@
         flex-direction: column;
     }
 
+    .contactitems iframe {
+        display: inline-block;
+        box-shadow: 0px 0px 2px black;
+    }
+
+    .forecastitem,
+    .tablehero,
+    .article p,
+    .articlehead span,
+    .icons {
+        font-size: 1.2rem;
+    }
+
+    /*footer*/
+
+    /*form*/
+    form label.sbs {
+        padding: .2rem 0;
+    }
+
+    form label.top,
+    form div {
+        font-size: .9rem;
+    }
 }
