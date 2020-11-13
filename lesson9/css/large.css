@@ -1,6 +1,7 @@
 @media only screen and (min-width: 60em) {
     header img {
-        width: 80px;
+        width: 100px;
+        height: 100px;
         margin-top: -3px;
     }
 
@@ -14,7 +15,7 @@
 
     .headings p {
         font-size: 1.3rem;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     header {
@@ -23,7 +24,11 @@
 
     .headings {
         top: 33px;
-        left: 110px;
+        left: 135px;
+    }
+
+    .h3 {
+        font-size: 1.3rem;
     }
 
     .figurediv {
@@ -49,8 +54,42 @@
         padding: .2rem 0;
     }
 
-    form label.top, form div {
+    form label.top,
+    form div {
         font-size: .9rem;
+    }
+
+    .tablehero {
+        width: 230px;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        line-height: 1rem;
+        box-shadow: 1px 1px 10px 2px white;
+        border-radius: 10px;
+    }
+
+    .rightcol {
+        padding-right: 5px;
+    }
+
+    iframe {
+        display: inline-block;
+        box-shadow: 0px 0px 2px black;
+    }
+
+    .article {
+        margin-bottom: 20px;
+    }
+
+    .socials i {
+        padding: 5px;
+        font-size: 40px;
+    }
+
+    .divicons {
+        flex-direction: column;
     }
 
 }
