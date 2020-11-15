@@ -1,0 +1,56 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        width: 80px;
+        margin-top: -3px;
+    }
+
+    .headings h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    .headings p {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    header {
+        line-height: .8;
+    }
+
+    .headings {
+        top: 33px;
+        left: 110px;
+    }
+
+    .figurediv {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    figure figcaption {
+        display: block;
+        margin-top: -10px;
+    }
+
+    figure:hover {
+        box-shadow: 0 0 10px 2px #333;
+    }
+
+    figure {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    form label.sbs {
+        padding: .2rem 0;
+    }
+
+    form label.top, form div {
+        font-size: .9rem;
+    }
+
+}
