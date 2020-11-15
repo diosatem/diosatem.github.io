@@ -129,7 +129,7 @@ nav ul.hide {
 
 /*content*/
 .content {
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     max-width: 1140px;
     text-align: center;
 }
@@ -277,6 +277,10 @@ form textarea {
     width: 100%;
 }
 
+.divhero {
+    margin-bottom: 10px;
+}
+
 .tablehero {
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -407,7 +411,7 @@ form textarea {
     justify-content: center;
     text-align: center;
     box-shadow: 1px 1px 5px black;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
