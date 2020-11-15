@@ -77,17 +77,16 @@
     }
 
     .articlehead h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     /*contact*/
     .h3 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .socials img {
-        padding: 5px;
-        font-size: 40px;
+        width: 100%;
     }
 
     .divicons {
@@ -117,5 +116,16 @@
     form label.top,
     form div {
         font-size: .9rem;
+    }
+
+    /*towndata*/
+    .towndata section {
+        display: inline-block;
+        max-width: 360px;;
+        margin: 10px;
+    }
+
+    .towndata section img {
+        padding: 20px 0;
     }
 }

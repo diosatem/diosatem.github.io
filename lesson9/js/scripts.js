@@ -46,12 +46,6 @@ function windChill(tempF, speedF) {
     return factor;
 }
 
-if (temperature <= 50 & windSpeed > 3) {
-    document.getElementById("chill").textContent = chillResult.toFixed(2) + " °F";
-} else {
-    document.getElementById("chill").textContent = "N/A";
-}
-
 //lazy loading
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
@@ -99,24 +93,24 @@ fetch(reqURL)
             if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
                 let box = document.createElement('section');
 
-                let h2 = document.createElement('h2');
-                h2.textContent = towns[i].name;
-                box.appendChild(h2);
+                let title = document.createElement('h2');
+                title.textContent = towns[i].name;
+                box.appendChild(title);
 
                 let h3 = document.createElement('h3');
                 h3.textContent = towns[i].motto;
                 box.appendChild(h3);
 
                 let year = document.createElement('p');
-                year.textContent = towns[i].yearFounded;
+                year.textContent = 'Year Founded:' + ' ' + towns[i].yearFounded;
                 box.appendChild(year);
 
                 let pop = document.createElement('p');
-                pop.textContent = towns[i].currentPopulation;
+                pop.textContent = 'Population:' + ' ' + towns[i].currentPopulation;
                 box.appendChild(pop);
 
                 let rainfall = document.createElement('p');
-                rainfall.textContent = towns[i].averageRainfall;
+                rainfall.textContent = 'Annual Rainfall:' + ' ' + towns[i].averageRainfall;
                 box.appendChild(rainfall);
 
                 let image = document.createElement('img');
