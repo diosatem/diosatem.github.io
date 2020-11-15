@@ -121,7 +121,7 @@ fetch(reqURL)
 
                 let image = document.createElement('img');
                 image.setAttribute('src', '/lesson9/images/' + towns[i].photo);
-                image.alt = town[i].name;
+                image.alt = towns[i].name;
                 box.appendChild(image);
 
                 document.querySelector('div.towndata').appendChild(box);
