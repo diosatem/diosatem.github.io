@@ -4,7 +4,11 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
 
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
+
+        let valNum = jsObject.main.temp;
+        document.getElementById('current-temp').textContent = (((valNum - 273.15) * 1.8) + 32).toFixed(2);
+
+
 
 
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
