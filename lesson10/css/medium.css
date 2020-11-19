@@ -15,7 +15,7 @@
         margin: 0;
     }
 
-    main h2 {
+    .content h2 {
         font-size: 1.7rem;
     }
 
@@ -48,6 +48,9 @@
     }
 
     /*header hero*/
+    .divhero {
+        margin-bottom: 200px;
+    }
 
     /*site-wide notice*/
 

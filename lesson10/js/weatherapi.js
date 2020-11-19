@@ -1,3 +1,4 @@
+//api test
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=78e17b7d76d50d7fdea902505c1a1377';
 fetch(apiURL)
     .then((response) => response.json())
@@ -12,4 +13,22 @@ fetch(apiURL)
         document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
         document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
         document.getElementById('icon').setAttribute('alt', desc);
+    });
+
+    //weather summary for preston page
+    const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=78e17b7d76d50d7fdea902505c1a1377';
+fetch(weatherURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+
+        let weatherDesc = jsObject.weather[0].description;
+        document.getElementById('currentWeather').textContent = weatherDesc;
+
+        let valNum = jsObject.main.temp_max;
+        document.getElementById('high').textContent = (((valNum - 273.15) * 1.8) + 32).toFixed(2);
+
+
+
+        
     });

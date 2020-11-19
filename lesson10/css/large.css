@@ -9,7 +9,7 @@
         font-size: 1.5rem;
     }
 
-    main h2 {
+    .content h2 {
         font-size: 1.8rem;
     }
 
@@ -34,9 +34,8 @@
         width: 230px;
         height: auto;
         position: absolute;
-        top: 20px;
-        left: 10px;
-        line-height: 1rem;
+        top: 50px;
+        left: 50px;
         box-shadow: 1px 1px 10px 2px white;
         border-radius: 10px;
     }
@@ -44,6 +43,12 @@
     .rightcol {
         padding-right: 5px;
     }
+
+    .divhero {
+        margin-bottom: 0;
+    }
+
+    /*5-day forecast*/
 
     /*site-wide notice*/
 
@@ -121,7 +126,8 @@
     /*towndata*/
     .towndata section {
         display: inline-block;
-        max-width: 360px;;
+        max-width: 360px;
+        ;
         margin: 10px;
     }
 

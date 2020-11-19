@@ -43,12 +43,6 @@ header img {
 
 }
 
-main h2 {
-    margin-top: 20px;
-    font-size: 1rem;
-    text-align: center;
-}
-
 h1,
 h2,
 h3 {
@@ -278,10 +272,18 @@ form textarea {
 }
 
 .divhero {
-    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 180px;
+}
+
+.content h2 {
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .tablehero {
+    position: absolute;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     background-color: hsl(202, 85%, 8%, .8);
@@ -303,6 +305,40 @@ form textarea {
 .rightcol {
     text-align: left;
     padding-right: 50px;
+}
+
+/*5-day forecast*/
+.forecast {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+    row-gap: 10px;
+}
+
+.forecastitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(37, 76%, 73%, .5);
+    flex-flow: column wrap;
+    margin: 0 5px;
+    min-width: 100px;
+    border: 1px solid #333;
+    box-shadow: 0px 1px 5px black;
+}
+
+.day {
+    padding: 5px 0;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+.forecastitem img,
+.degrees {
+    padding: 5px;
+    min-height: 40px;
 }
 
 /*article*/
@@ -342,7 +378,7 @@ form textarea {
 
 .h3 {
     text-align: center;
-    margin: -3px 0 10px 0;
+    margin: 0 0 10px 0;
     font-size: 1rem;
 }
 
@@ -378,7 +414,7 @@ form textarea {
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
-    margin-top: 10px;
+    margin: 10px 0 0 40px;
 }
 
 .socials img {
@@ -390,7 +426,7 @@ form textarea {
     margin: 0 auto;
     width: 100%;
     height: 200px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 0 0 5px black;
 }
 
 .forecastitem,
@@ -416,8 +452,8 @@ form textarea {
 }
 
 .towndata img {
- max-width: 100%;
- margin-top: 20px;
+    max-width: 100%;
+    margin-top: 20px;
 }
 
 .towndata h2 {
