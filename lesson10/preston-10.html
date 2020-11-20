@@ -59,7 +59,7 @@
                     </tr>
                     <tr>
                         <td class="leftcol">High:</td>
-                        <td class="rightcol"><span id="high">50</span> °F</td>
+                        <td class="rightcol"><span id="high"></span> °F</td>
                     </tr>
                     <tr>
                         <td class="leftcol">Wind Chill:</td>
@@ -67,45 +67,23 @@
                     </tr>
                     <tr>
                         <td class="leftcol">Humidity:</td>
-                        <td class="rightcol">69%</td>
+                        <td class="rightcol"><span id="humidity"></span>%</td>
                     </tr>
                     <tr>
                         <td class="leftcol">Wind Speed:</td>
-                        <td class="rightcol"><span>4.0</span> mph</td>
+                        <td class="rightcol"><span id="windSpeed"></span> mph</td>
                     </tr>
                 </table>
             </div>
             <h3 class="h3">5-day Forecast</h3>
             <div class="forecast">
                 <div class="forecastitem">
-                    <span class="day">Saturday</span>
-                    <img src="images/sunny.png" alt="sunny">
-                    <span class="degrees">89 °F</span>
+                    <span class="day" id="dayId"></span>
+                    <span id="dayIcon"></span>
+                    <span class="degrees" id="dayTemp"> °F</span>
                 </div>
 
-                <div class="forecastitem">
-                    <span class="day">Sunday</span>
-                    <img src="images/sunny.png" alt="sunny">
-                    <span class="degrees">87 °F</span>
-                </div>
-
-                <div class="forecastitem">
-                    <span class="day">Monday</span>
-                    <img src="images/sunny-cloudy.png" alt="cloudy">
-                    <span class="degrees">83 °F</span>
-                </div>
-
-                <div class="forecastitem">
-                    <span class="day">Tuesday</span>
-                    <img src="images/sunny.png" alt="sunny">
-                    <span class="degrees">90 °F</span>
-                </div>
-
-                <div class="forecastitem">
-                    <span class="day">Wednesday</span>
-                    <img src="images/cloudy.png" alt="cloudy">
-                    <span class="degrees">85 °F</span>
-                </div>
+                
 
             </div>
 
@@ -163,7 +141,7 @@
 
     </main>
     <footer>
-        <p>&copy; How's the Weather? | Attribution | Diosa Temblor Jamorol</p>
+        <p>&copy; How's the Weather? | <a href="https://openweathermap.org/">OpenWeatherMap</a> | Diosa Temblor Jamorol</p>
         <div><span id="currentDate"></span></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
