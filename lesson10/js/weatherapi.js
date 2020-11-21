@@ -54,8 +54,5 @@ fetch(forecastURL)
             const alttext = forecast[day].weather[0].description;
             document.getElementById(`dayIcon${day+1}`).setAttribute('src', iconsrc);
             document.getElementById(`dayIcon${day+1}`).setAttribute('alt', alttext);
-
         }
-
-
     });
