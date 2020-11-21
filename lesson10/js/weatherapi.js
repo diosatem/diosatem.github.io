@@ -3,10 +3,9 @@ const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
 
         let valNum = jsObject.main.temp;
-        document.getElementById('current-temp').textContent= valNum.toFixed(2);
+        document.getElementById('current-temp').textContent = valNum.toFixed(2);
 
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
         const desc = jsObject.weather[0].description; // note how we reference the weather array
@@ -20,7 +19,6 @@ const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&u
 fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
 
         const weatherDesc = jsObject.weather[0].main;
         document.getElementById('currentWeather').textContent = weatherDesc;
@@ -40,24 +38,23 @@ const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
 
         const forecast = jsObject.list.filter(fcast => fcast.dt_txt.includes('18:00:00'));
         console.log(forecast);
 
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-        const iconsrc = 'https://openweathermap.org/img/w/' + forecast[0].weather[0].icon + '.png'; 
-        const alttext = forecast[0].weather[0].description; 
-
         for (let day = 0; day < forecast.length; day++) {
             const d = new Date(forecast[day].dt_txt);
 
             document.getElementById(`dayId${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`dayTemp${day+1}`).textContent = forecast[day].main.temp;
+
+            const iconsrc = 'https://openweathermap.org/img/w/' + forecast[day].weather[0].icon + '.png';
+            const alttext = forecast[day].weather[0].description;
             document.getElementById(`dayIcon${day+1}`).setAttribute('src', iconsrc);
             document.getElementById(`dayIcon${day+1}`).setAttribute('alt', alttext);
-            
+
         }
 
 
