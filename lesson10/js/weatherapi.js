@@ -22,16 +22,16 @@ fetch(weatherURL)
     .then((jsObject) => {
         console.log(jsObject);
 
-        let weatherDesc = jsObject.weather[0].main;
+        const weatherDesc = jsObject.weather[0].main;
         document.getElementById('currentWeather').textContent = weatherDesc;
 
         let valNum = jsObject.main.temp_max;
         document.getElementById('high').textContent = (((valNum - 273.15) * 1.8) + 32).toFixed(2);
 
-        let humid = jsObject.main.humidity;
+        const humid = jsObject.main.humidity;
         document.getElementById('humidity').textContent = humid;
 
-        let windS = jsObject.wind.speed;
+        const windS = jsObject.wind.speed;
         document.getElementById('windSpeed').textContent = windS;
     });
 
@@ -42,28 +42,14 @@ fetch(forecastURL)
     .then((jsObject) => {
         console.log(jsObject);
 
-        for (let i = 0; i <= 5; i++) {
-            let day = jsObject.list[0].dt;
-            document.getElementById('dayId').textContent = day;
+        const forecast = jsObject.list.filter(fcast => fcast.dt_txt.includes('18:00:00'));
+        console.log(forecast);
 
-            const iconSrc = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png'; // note the concatenation
-        const desc = jsObject.list[0].weather[0].description;
-        document.getElementById('dayIcon').setAttribute('src', iconSrc);
-        document.getElementById('dayIcon').setAttribute('alt', desc);
+        const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-
+        for (let day = 0; day < forecast.length; day++) {
+            const d = new Date(forecast.dt_txt);
         }
-
-
-
-        
-
-
-
-        
-
-        let day1temp = jsObject.list[0].main.temp;
-        document.getElementById('dayOnetemp').textContent = day1temp;
 
 
     });
