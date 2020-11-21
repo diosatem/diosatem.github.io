@@ -1,12 +1,12 @@
 //api test
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=78e17b7d76d50d7fdea902505c1a1377';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
 
         let valNum = jsObject.main.temp;
-        document.getElementById('current-temp').textContent = (((valNum - 273.15) * 1.8) + 32).toFixed(2);
+        document.getElementById('current-temp').textContent= valNum.toFixed(2);
 
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
         const desc = jsObject.weather[0].description; // note how we reference the weather array
@@ -16,7 +16,7 @@ fetch(apiURL)
     });
 
 //weather summary for preston page
-const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=78e17b7d76d50d7fdea902505c1a1377';
+const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
 fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -26,7 +26,7 @@ fetch(weatherURL)
         document.getElementById('currentWeather').textContent = weatherDesc;
 
         let valNum = jsObject.main.temp_max;
-        document.getElementById('high').textContent = (((valNum - 273.15) * 1.8) + 32).toFixed(2);
+        document.getElementById('high').textContent = valNum.toFixed(2);
 
         const humid = jsObject.main.humidity;
         document.getElementById('humidity').textContent = humid;
@@ -36,7 +36,7 @@ fetch(weatherURL)
     });
 
 //5-day forecast for preston page
-const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=78e17b7d76d50d7fdea902505c1a1377';
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -47,8 +47,17 @@ fetch(forecastURL)
 
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+        const iconsrc = 'https://openweathermap.org/img/w/' + forecast[0].weather[0].icon + '.png'; 
+        const alttext = forecast[0].weather[0].description; 
+
         for (let day = 0; day < forecast.length; day++) {
-            const d = new Date(forecast.dt_txt);
+            const d = new Date(forecast[day].dt_txt);
+
+            document.getElementById(`dayId${day+1}`).textContent = weekdays[d.getDay()];
+            document.getElementById(`dayTemp${day+1}`).textContent = forecast[day].main.temp;
+            document.getElementById(`dayIcon${day+1}`).setAttribute('src', iconsrc);
+            document.getElementById(`dayIcon${day+1}`).setAttribute('alt', alttext);
+            
         }
 
 

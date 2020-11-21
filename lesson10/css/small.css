@@ -341,6 +341,10 @@ form textarea {
     min-height: 40px;
 }
 
+.icon {
+    height: 50px;
+}
+
 /*article*/
 .article {
     background-color: hsl(161, 67%, 73%, .3);
