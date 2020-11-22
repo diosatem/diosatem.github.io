@@ -426,7 +426,7 @@ form textarea {
     width: 100%;
     height: 200px;
     box-shadow: 0 0 5px black;
-    
+    border: 0;
 }
 
 .forecastitem,

@@ -51,7 +51,7 @@ fetch(forecastURL)
 
             const iconsrc = 'https://openweathermap.org/img/w/' + forecast[day].weather[0].icon + '.png';
             const alttext = forecast[day].weather[0].description;
-            document.getElementById(`dayIcon${day+1}`).setAttribute('src', iconsrc);
-            document.getElementById(`dayIcon${day+1}`).setAttribute('alt', alttext);
+            document.getElementById(`ficon${day+1}`).setAttribute('src', iconsrc);
+            document.getElementById(`ficon${day+1}`).setAttribute('alt', alttext);
         }
     });
