@@ -77,6 +77,12 @@
         font-size: 1.1rem;
     }
 
+    .article img {
+        float: left;
+        margin-right: 10px;
+        width: auto;
+    }
+
     /*contact*/
     .h3 {
         font-size: 1.2rem;

@@ -336,7 +336,8 @@ form textarea {
     color: white;
 }
 
-.forecastitem img, .degrees {
+.forecastitem img,
+.degrees {
     padding: 5px 0;
 }
 
@@ -359,8 +360,7 @@ form textarea {
 
 .article img {
     float: left;
-    padding: 10px;
-    width: max-content;
+    width: 100%;
 }
 
 .articlehead {
