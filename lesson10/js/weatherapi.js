@@ -4,8 +4,8 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
 
-        let valNum = jsObject.main.temp;
-        document.getElementById('current-temp').textContent = valNum;
+        let vNum = jsObject.main.temp;
+        document.getElementById('current-temp').textContent = vNum;
 
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
         const desc = jsObject.weather[0].description; // note how we reference the weather array
