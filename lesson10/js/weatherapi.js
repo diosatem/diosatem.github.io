@@ -5,7 +5,7 @@ fetch(apiURL)
     .then((jsObject) => {
 
         let valNum = jsObject.main.temp;
-        document.getElementById('current-temp').textContent = valNum.toFixed(2);
+        document.getElementById('current-temp').textContent = valNum;
 
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
         const desc = jsObject.weather[0].description; // note how we reference the weather array
@@ -40,7 +40,6 @@ fetch(forecastURL)
     .then((jsObject) => {
 
         const forecast = jsObject.list.filter(fcast => fcast.dt_txt.includes('18:00:00'));
-        console.log(forecast);
 
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 

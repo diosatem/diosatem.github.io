@@ -323,9 +323,11 @@ form textarea {
     background-color: hsl(37, 76%, 73%, .5);
     flex-flow: column wrap;
     margin: 0 5px;
-    min-width: 200px;
+    min-width: 150px;
     border: 1px solid #333;
     box-shadow: 0px 1px 5px black;
+    padding-bottom: 10px;
+    line-height: 3;
 }
 
 .day {
@@ -335,11 +337,6 @@ form textarea {
     color: white;
 }
 
-.forecastitem img,
-.degrees {
-    padding: 5px;
-    min-height: 40px;
-}
 
 /*article*/
 .article {
