@@ -273,7 +273,6 @@ form textarea {
 
 .divhero {
     position: relative;
-    margin-bottom: 180px;
 }
 
 .content h2 {
@@ -343,11 +342,9 @@ form textarea {
 
 /*article*/
 .article {
-    background-color: hsl(161, 67%, 73%, .2);
     padding: 10px;
     margin: 20px 0;
     height: auto;
-    box-shadow: 1px 1px 5px hsl(0, 0%, 0%, .3);
 }
 
 .article h3 {
@@ -440,7 +437,7 @@ form textarea {
 
 /*towndata*/
 .towndata section {
-    background-color: #EEC584;
+    background-color: hsl(161, 67%, 73%, .5);
     max-width: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -450,6 +447,7 @@ form textarea {
     box-shadow: 1px 1px 5px black;
     margin-bottom: 10px;
     padding: 10px;
+    box-shadow: 1px 1px 5px hsl(0, 0%, 0%, .3);
 }
 
 .towndata img {

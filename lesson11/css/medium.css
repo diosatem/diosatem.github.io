@@ -48,9 +48,6 @@
     }
 
     /*header hero*/
-    .divhero {
-        margin-bottom: 200px;
-    }
 
     /*site-wide notice*/
 
@@ -63,7 +60,6 @@
     /*article*/
     .article {
         padding: 20px;
-        border-radius: 15px 50px;
     }
 
     .articlehead h3 {
@@ -137,6 +133,7 @@
         height: max-content;
         align-items: center;
         justify-content: center;
+        border-radius: 15px 50px;
     }
 
     .towndata section h2 {

@@ -91,7 +91,7 @@ fetch(reqURL)
                 box.appendChild(rainfall);
 
                 let image = document.createElement('img');
-                image.setAttribute('src', '/lesson9/images/' + towns[i].photo);
+                image.setAttribute('src', '/lesson11/images/' + towns[i].photo);
                 image.alt = towns[i].name;
                 box.appendChild(image);
 
