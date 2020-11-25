@@ -9,9 +9,7 @@
         font-size: 1.5rem;
     }
 
-    .content h2 {
-        font-size: 1.8rem;
-    }
+
 
     .headings p {
         font-size: 1.2rem;
@@ -31,13 +29,14 @@
 
     /*header hero*/
     .tablehero {
-        width: 300px;
+        width: 250px;
         height: auto;
         position: absolute;
         top: 50px;
         left: 50px;
         box-shadow: 1px 1px 10px 2px white;
         border-radius: 10px;
+        background-color:hsl(37, 76%, 73%, .6);
     }
 
     .rightcol {
@@ -49,6 +48,9 @@
     }
 
     /*5-day forecast*/
+    .forecasth3 {
+        margin-top: 20px;
+    }
 
     /*site-wide notice*/
 
@@ -72,6 +74,10 @@
         padding: 10px;
     }
 
+    .townh2 {
+        font-size: 1.4rem;
+    }
+
     /*article*/
     .article img {
         margin-right: 20px;
@@ -79,17 +85,10 @@
 
     .article {
         padding: 30px;
-    }
-
-    .articlehead h3 {
-        font-size: 1.3rem;
+        height: 360px;
     }
 
     /*contact*/
-    .h3 {
-        font-size: 1.4rem;
-    }
-
     .socials img {
         width: 100%;
     }
@@ -118,11 +117,14 @@
     .towndata section {
         display: inline-block;
         max-width: 360px;
-        ;
         margin: 10px;
     }
 
     .towndata section img {
         padding: 20px 0;
+    }
+
+    .titleh3 {
+        font-size: 1.3rem;
     }
 }

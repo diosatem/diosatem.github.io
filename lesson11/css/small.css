@@ -146,6 +146,11 @@ figure figcaption {
     display: none;
 }
 
+.townh2 {
+    font-size: 1.2rem;
+}
+
+
 /*footer*/
 footer {
     background-color: #031926;
@@ -266,7 +271,7 @@ form textarea {
     font-size: 1rem;
 }
 
-/*header hero*/
+/*header hero/weather summary*/
 .heroimage img {
     width: 100%;
 }
@@ -275,24 +280,18 @@ form textarea {
     position: relative;
 }
 
-.content h2 {
-    margin: 10px 0;
-    font-size: 1rem;
-    text-align: center;
-}
-
 .tablehero {
     position: absolute;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: hsl(202, 85%, 8%, .8);
-    color: white;
+    background-color:#EEC584;
+    color: black;
     padding: 10px;
     margin-top: -10px;
 }
 
 #tableheader {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     padding-bottom: 5px;
 }
 
@@ -303,7 +302,7 @@ form textarea {
 
 .rightcol {
     text-align: left;
-    padding-right: 50px;
+    padding-right: 42px;
 }
 
 /*5-day forecast*/
@@ -319,18 +318,16 @@ form textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(37, 76%, 73%, .5);
+    background-color:hsl(161, 67%, 73%, .3);
     flex-flow: column wrap;
-    margin: 0 5px;
-    min-width: 150px;
-    border: 1px solid #333;
-    box-shadow: 0px 1px 5px black;
+    min-width: 100px;
     padding-bottom: 10px;
+    border: 1px solid hsl(202, 85%, 8%, .2);
 }
 
 .day {
     padding: 10px 0;
-    background-color: black;
+    background-color: #031926;
     width: 100%;
     color: white;
 }
@@ -340,6 +337,10 @@ form textarea {
     padding: 5px 0;
 }
 
+.forecasth3 {
+    margin-top: 180px;
+} 
+
 /*article*/
 .article {
     padding: 10px;
@@ -347,18 +348,15 @@ form textarea {
     height: auto;
 }
 
-.article h3 {
-    font-size: .9rem;
-}
-
 .article p {
     text-align: left;
-    margin: 20px 0;
+    margin-top: 10px;
 }
 
 .article img {
     float: left;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .articlehead {
@@ -369,11 +367,10 @@ form textarea {
 /*contact*/
 .contact {
     background-color: hsl(187, 32%, 41%, .3);
-    margin-top: 20px;
     padding: 10px 0;
 }
 
-.h3 {
+.contacth3 {
     text-align: center;
     margin: 0 0 10px 0;
     font-size: 1rem;
@@ -435,16 +432,19 @@ form textarea {
     font-size: .9rem;
 }
 
+.titleh3 {
+    font-size: 1rem;
+}
+
 /*towndata*/
 .towndata section {
-    background-color: hsl(161, 67%, 73%, .5);
+    background-color: hsl(37, 76%, 73%, .9);
     max-width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: 1px 1px 5px black;
     margin-bottom: 10px;
     padding: 10px;
     box-shadow: 1px 1px 5px hsl(0, 0%, 0%, .3);
@@ -456,17 +456,17 @@ form textarea {
 }
 
 .towndata h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .towndata h3 {
-    font-size: .9rem;
+    font-size: .8rem;
     font-style: italic;
     margin: -2px 0 10px 0;
 }
 
 .towndata p {
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 

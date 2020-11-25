@@ -15,10 +15,6 @@
         margin: 0;
     }
 
-    .content h2 {
-        font-size: 1.7rem;
-    }
-
     .headings p {
         font-size: .9rem;
         margin-top: 10px;
@@ -49,6 +45,17 @@
 
     /*header hero*/
 
+    /*5-day forecast*/
+    .forecasth3 {
+        margin-top: 200px;
+    }
+
+    .forecastitem {
+        margin: 0 5px;
+        min-width: 132px;
+        border-radius: 10px;
+    }
+
     /*site-wide notice*/
 
     /*content*/
@@ -57,21 +64,17 @@
         gap: 10px;
     }
 
+    .townh2 {
+        font-size: 1.3rem;
+    }
+
     /*article*/
     .article {
         padding: 20px;
     }
 
-    .articlehead h3 {
-        font-size: 1rem;
-    }
-
     .articlehead {
         line-height: 1.3em;
-    }
-
-    .article h3 {
-        font-size: 1.1rem;
     }
 
     .article img {
@@ -81,10 +84,6 @@
     }
 
     /*contact*/
-    .h3 {
-        font-size: 1.2rem;
-    }
-
     .contactitems {
         flex-direction: row;
         align-items: flex-end;
@@ -134,16 +133,23 @@
         align-items: center;
         justify-content: center;
         border-radius: 15px 50px;
+        padding: 15px;
     }
 
     .towndata section h2 {
         grid-column: 1;
         grid-row: 1;
+        font-size: 1.2rem;
     }
 
     .towndata section h3 {
         grid-column: 1;
         grid-row: 2;
+        font-size: .9rem;
+    }
+
+    .towndata p {
+        font-size: .9rem;
     }
 
     .towndata section p:nth-child(1) {
@@ -176,11 +182,8 @@
         grid-column: 2;
     }
 
-
-
-
-
-
-
+    .titleh3 {
+        font-size: 1.1rem;
+    }
 
 }
