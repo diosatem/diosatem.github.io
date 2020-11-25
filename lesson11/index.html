@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home | How's the Weather?</title>
+    <meta name="description" content="Stay informed and stay safe with the latest weather information.">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="How's the Weather? logo">
+        <section class="headings">
+            <h1>How's the Weather?</h1>
+            <p>Stay informed. Stay safe. </p>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <div id="notice">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+
+
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li onclick="toggleMenu()"><a href="#">X</a></li>
+            <li><a href="#" class="navbold">Home</a></li>
+            <li><a href="https://diosatem.github.io/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://diosatem.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://diosatem.github.io/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section class="content">
+            <div class="divhero">
+                <picture class="heroimage">
+                    <source media="(max-width: 600px)" srcset="images/hero-small.jpg">
+                    <source media="(max-width: 960px)" srcset="images/hero-medium.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/hero-large.jpg">
+                    <img src="images/hero.jpg" alt="Preston Town hero image">
+                </picture>
+            </div>
+
+            <div class="towndata"></div>
+
+            <div class="article">
+                <div class="articlehead">
+                    <h3>Free Online Sign Language Classes in Idaho</h3>
+                    <span>by Diosa Temblor</span>
+                </div>
+                <p><img src="images/deaf.jpg" alt="Deaf">
+                    Good news! Online sign language classes are now available for free! Thanks to the Idaho Foundation
+                    for the Deaf, everyone has a chance to learn American Sign Language (ASL) without a cost for 3
+                    months. This is offered with a fee by certain public and private organizations in Idaho and the said
+                    foundation took the initiative to give more people access to learning the language for free for a
+                    limited time.</p>
+                <p>This initiative is expected to result in more people getting interested in learning
+                    the American Sign Language or ASL, thus, helping our deaf and hard of hearing community in more ways
+                    than ever. <a href="#">Learn more.</a></p>
+            </div>
+
+            <div class="contact">
+                <h3 class="h3">Contact Information</h3>
+                <div class="contactitems">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2466461700074!2d-111.86879658501078!3d42.102188159340685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e508b3087f%3A0x7791eafad84ab17a!2s5487%20E%20Hwy%2036%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1605237895500!5m2!1sen!2sph"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    <div class="divicons">
+                        <div class="icons">
+                            <img src="images/pin.png" alt="address">
+                            <span> 5487 E Hwy 36<br>
+                                Preston, ID 83263<br>
+                                USA</span>
+                        </div>
+                        <div class="icons">
+                            <img src="images/mail.png" alt="email">
+                            <span>inquiry@howstheweather.com</span>
+                        </div>
+                        <div class="icons">
+                            <img src="images/phone.png" alt="phone">
+                            <span>208-123-4567</span>
+                        </div>
+                        <div class="socials">
+                            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                                    alt="facebook"></a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"
+                                    alt="instagram"></a>
+                            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
+                                    alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; How's the Weather? | Diosa Temblor J.</p>
+        <div><span id="currentDate"></span></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+
+</html>

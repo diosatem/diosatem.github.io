@@ -1,0 +1,189 @@
+@media only screen and (min-width: 37.5em) {
+
+    /*header*/
+    header img {
+        width: 80px;
+    }
+
+    .headings {
+        top: 53px;
+        left: 115px;
+    }
+
+    .headings h1 {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .content h2 {
+        font-size: 1.7rem;
+    }
+
+    .headings p {
+        font-size: .9rem;
+        margin-top: 10px;
+    }
+
+    /*header nav*/
+    nav ul {
+        flex-flow: row;
+    }
+
+    button {
+        display: none;
+        float: none;
+        margin: 0;
+    }
+
+    nav li {
+        flex: 1 1 100%;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    /*header hero*/
+    .divhero {
+        margin-bottom: 200px;
+    }
+
+    /*site-wide notice*/
+
+    /*content*/
+    .figurediv {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    /*article*/
+    .article {
+        padding: 20px;
+        border-radius: 15px 50px;
+    }
+
+    .articlehead h3 {
+        font-size: 1rem;
+    }
+
+    .articlehead {
+        line-height: 1.3em;
+    }
+
+    .article h3 {
+        font-size: 1.1rem;
+    }
+
+    .article img {
+        float: left;
+        margin-right: 10px;
+        width: auto;
+    }
+
+    /*contact*/
+    .h3 {
+        font-size: 1.2rem;
+    }
+
+    .contactitems {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .contactitems iframe {
+        display: inline-block;
+        margin: 0;
+        max-width: 500px;
+        height: 300px;
+        margin-right: 30px;
+    }
+
+    .contact {
+        padding: 20px 0;
+    }
+
+    .divicons {
+        margin-left: 15px;
+        padding-left: 0;
+    }
+
+    .socials {
+        margin-top: 20px;
+    }
+
+    .forecastitem,
+    .tablehero,
+    .article p,
+    .articlehead span,
+    .icons {
+        font-size: 1rem;
+    }
+
+    /*footer*/
+    footer {
+        font-size: .9rem;
+    }
+
+    /*form*/
+
+    /*towndata*/
+    .towndata section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: max-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .towndata section h2 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .towndata section h3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .towndata section p:nth-child(1) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .towndata section p:nth-child(2) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    div.towndata section:nth-of-type(odd) img {
+        grid-column: 2;
+        grid-row: 1 / 7;
+        margin: 0;
+    }
+
+    div.towndata section:nth-of-type(even) img {
+        grid-column: 1;
+        grid-row: 1 / 7;
+        margin: 0;
+    }
+
+    div.towndata section:nth-of-type(even) h2 {
+        grid-column: 2;
+    }
+
+    div.towndata section:nth-of-type(even) h3 {
+        grid-column: 2;
+    }
+
+
+
+
+
+
+
+
+}

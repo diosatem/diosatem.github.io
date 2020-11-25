@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Preston Town | How's the Weather?</title>
+    <meta name="description" content="Weather information for Preston Town community.">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="How's the Weather? logo">
+        <section class="headings">
+            <h1>How's the Weather?</h1>
+            <p>Stay informed. Stay safe. </p>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <div id="notice">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+
+
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li onclick="toggleMenu()"><a href="#">X</a></li>
+            <li><a href="https://diosatem.github.io/lesson9/index.html">Home</a></li>
+            <li><a href="#" class="navbold">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://diosatem.github.io/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://diosatem.github.io/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content">
+            <h2>Preston Town</h2>
+            <div class="divhero">
+                <picture class="heroimage">
+                    <source media="(max-width: 600px)" srcset="images/preston-600.jpg">
+                    <source media="(max-width: 960px)" srcset="images/preston-960.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/preston-1140.jpg">
+                    <img src="images/preston-1140.jpg" alt="Preston Town hero image">
+                </picture>
+
+                <table class="tablehero">
+                    <tr>
+                        <th colspan="2" id="tableheader">Weather Summary</th>
+                    </tr>
+                    <tr>
+                        <td class="leftcol">Currently:</td>
+                        <td class="rightcol"><span id="currentWeather"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="leftcol">High:</td>
+                        <td class="rightcol"><span id="high"></span> °F</td>
+                    </tr>
+                    <tr>
+                        <td class="leftcol">Wind Chill:</td>
+                        <td class="rightcol chillF"><span id="chill"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="leftcol">Humidity:</td>
+                        <td class="rightcol"><span id="humidity"></span>%</td>
+                    </tr>
+                    <tr>
+                        <td class="leftcol">Wind Speed:</td>
+                        <td class="rightcol"><span id="windSpeed"></span> mph</td>
+                    </tr>
+                </table>
+            </div>
+            <h3 class="h3">5-day Forecast</h3>
+            <div class="forecast">
+                <div class="forecastitem">
+                    <span class="day" id="dayId1"></span>
+                    <img src="#" alt="unknown" id="ficon1">
+                    <p class="degrees"><span id="dayTemp1"></span>&deg; F</p>
+                </div>
+
+                <div class="forecastitem">
+                    <span class="day" id="dayId2"></span>
+                    <img src="#" alt="unknown" id="ficon2">
+                    <p class="degrees"><span id="dayTemp2"></span>&deg; F</p>
+                </div>
+
+                <div class="forecastitem">
+                    <span class="day" id="dayId3"></span>
+                    <img src="#" alt="unknown" id="ficon3">
+                    <p class="degrees"><span id="dayTemp3"></span>&deg; F</p>
+                </div>
+
+                <div class="forecastitem">
+                    <span class="day" id="dayId4"></span>
+                    <img src="#" alt="unknown" id="ficon4">
+                    <p class="degrees"><span id="dayTemp4"></span>&deg; F</p>
+                </div>
+
+                <div class="forecastitem">
+                    <span class="day" id="dayId5"></span>
+                    <img src="#" alt="unknown" id="ficon5">
+                    <p class="degrees"><span id="dayTemp5"></span>&deg; F</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="articlehead">
+                    <h3>Festival of Lights</h3>
+                    <span>by Joy T.</span>
+                </div>
+                <p> <img src="images/festival-of-lights.jpg" alt="Festival of Lights">
+                    Thanksgiving is near but, who is excited for the annual "Idaho Festival of Lights" which happens
+                    right after Thanksgiving? I'm sure everybody is! Who wouldn't want a lighted parade, fireworks, and
+                    festive displays in the city park? If you want to feel the spirit of Christmas already, come to
+                    Preston where the main street is full of Christmas lights during the festival.
+                    <p>This year, although there are some adjustment of the way the festival is usually handled due to
+                        the Covid-19 pandemic, the organizers are assuring the public that they will feel the same
+                        festive spirit. They will still see a parade and Christmas display on houses and buildings all
+                        over the city. <a href="#">Learn more.</a></p>
+            </div>
+
+            <div class="contact">
+                <h3 class="h3">Contact Information</h3>
+                <div class="contactitems">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2466461700074!2d-111.86879658501078!3d42.102188159340685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e508b3087f%3A0x7791eafad84ab17a!2s5487%20E%20Hwy%2036%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1605237895500!5m2!1sen!2sph"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    <div class="divicons">
+                        <div class="icons">
+                            <img src="images/pin.png" alt="address">
+                            <span> 5487 E Hwy 36<br>
+                                Preston, ID 83263<br>
+                                USA</span>
+                        </div>
+                        <div class="icons">
+                            <img src="images/mail.png" alt="email">
+                            <span>diosatemblor@gmail.com</span>
+                        </div>
+                        <div class="icons">
+                            <img src="images/phone.png" alt="phone">
+                            <span>208-123-4567</span>
+                        </div>
+                        <div class="socials">
+                            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                                    alt="Facebook"></a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"
+                                    alt="Instagram"></a>
+                            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
+                                    alt="Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; How's the Weather? | <a href="https://openweathermap.org/">OpenWeatherMap</a> | Diosa Temblor J.
+        </p>
+        <div><span id="currentDate"></span></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/weatherapi.js"></script>
+</body>
+
+</html>

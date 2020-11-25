@@ -1,0 +1,136 @@
+@media only screen and (min-width: 60em) {
+
+    /*header*/
+    header img {
+        width: 90px;
+    }
+
+    .headings h1 {
+        font-size: 1.5rem;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .headings p {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+
+    header {
+        line-height: .8;
+    }
+
+    .headings {
+        top: 55px;
+        left: 130px;
+    }
+
+    /*header nav*/
+
+    /*header hero*/
+    .tablehero {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        box-shadow: 1px 1px 10px 2px white;
+        border-radius: 10px;
+    }
+
+    .rightcol {
+        padding-right: 5px;
+    }
+
+    .divhero {
+        margin-bottom: 0;
+    }
+
+    /*5-day forecast*/
+
+    /*site-wide notice*/
+
+    /*content*/
+    .figurediv {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    figure figcaption {
+        display: block;
+        margin-top: -10px;
+    }
+
+    figure:hover {
+        box-shadow: 0 0 10px 2px #333;
+    }
+
+    figure {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    /*article*/
+    .article img {
+        margin-right: 20px;
+    }
+
+    .article {
+        padding: 30px;
+    }
+
+    .articlehead h3 {
+        font-size: 1.3rem;
+    }
+
+    /*contact*/
+    .h3 {
+        font-size: 1.4rem;
+    }
+
+    .socials img {
+        width: 100%;
+    }
+
+    .divicons {
+        flex-direction: column;
+    }
+
+    .contactitems iframe {
+        display: inline-block;
+    }
+
+    .forecastitem,
+    .tablehero,
+    .article p,
+    .articlehead span,
+    .icons {
+        font-size: 1rem;
+    }
+
+    /*footer*/
+
+    /*form*/
+    form label.sbs {
+        padding: .2rem 0;
+    }
+
+    form label.top,
+    form div {
+        font-size: .9rem;
+    }
+
+    /*towndata*/
+    .towndata section {
+        display: inline-block;
+        max-width: 360px;
+        ;
+        margin: 10px;
+    }
+
+    .towndata section img {
+        padding: 20px 0;
+    }
+}
