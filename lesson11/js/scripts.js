@@ -84,9 +84,3 @@ if ('IntersectionObserver' in window) {
         loadImages(img);
     });
 }
-
-
-
-
-
-    

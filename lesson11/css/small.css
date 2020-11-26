@@ -284,7 +284,7 @@ form textarea {
     position: absolute;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color:#EEC584;
+    background-color: #EEC584;
     color: black;
     padding: 10px;
     margin-top: -10px;
@@ -318,7 +318,7 @@ form textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:hsl(161, 67%, 73%, .3);
+    background-color: hsl(161, 67%, 73%, .3);
     flex-flow: column wrap;
     min-width: 100px;
     padding-bottom: 10px;
@@ -339,7 +339,7 @@ form textarea {
 
 .forecasth3 {
     margin-top: 180px;
-} 
+}
 
 /*article*/
 .article {

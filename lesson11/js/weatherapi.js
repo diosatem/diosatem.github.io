@@ -56,7 +56,7 @@ fetch(forecastURL)
         }
     });
 
-    //town data for index.html
+//town data for index.html
 const reqURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(reqURL)
