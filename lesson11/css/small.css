@@ -128,24 +128,6 @@ nav ul.hide {
     text-align: center;
 }
 
-.figurediv {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-}
-
-figure img {
-    width: 100%;
-    filter: blur(0em);
-    transition: filter 0.5s;
-    margin: 5px 0;
-}
-
-figure figcaption {
-    display: none;
-}
-
 .townh2 {
     font-size: 1.2rem;
 }
@@ -177,7 +159,29 @@ footer a:hover {
 
 /*lazy loading*/
 img[data-src] {
-    filter: blur(0.2em);
+    filter: blur(0.1em);
+}
+
+.figurediv {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+figure img {
+    width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 5px 0;
+}
+
+figure figcaption {
+    display: none;
+}
+
+figure {
+    height: 300px;
 }
 
 /*form*/
