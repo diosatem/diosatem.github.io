@@ -1,19 +1,3 @@
-//api test
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
-fetch(apiURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-
-        let vNum = jsObject.main.temp;
-        document.getElementById('current-temp').textContent = vNum;
-
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
-        const desc = jsObject.weather[0].description; // note how we reference the weather array
-        document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
-        document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-        document.getElementById('icon').setAttribute('alt', desc);
-    });
-
 //weather summary for preston page
 const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
 fetch(weatherURL)
@@ -61,7 +45,7 @@ const sodaURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&unit
 fetch(sodaURL)
     .then((response) => response.json())
     .then((jsObject) => {
-console.log(sodaURL);
+
         const sodaDesc = jsObject.weather[0].main;
         document.getElementById('sodaCurrentWeather').textContent = sodaDesc;
 
@@ -80,7 +64,7 @@ const sodaForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=560
 fetch(sodaForecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-console.log(sodaForecastURL);
+
         const sodaForecast = jsObject.list.filter(sodafcast => sodafcast.dt_txt.includes('18:00:00'));
 
         const sodaWeekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -103,7 +87,7 @@ const fishURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&unit
 fetch(fishURL)
     .then((response) => response.json())
     .then((jsObject) => {
-console.log(fishURL);
+
         const fishDesc = jsObject.weather[0].main;
         document.getElementById('fishCurrentWeather').textContent = fishDesc;
 
@@ -122,7 +106,7 @@ const fishForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=558
 fetch(fishForecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-console.log(fishForecastURL);
+
         const fishForecast = jsObject.list.filter(fishfcast => fishfcast.dt_txt.includes('18:00:00'));
 
         const fishWeekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
