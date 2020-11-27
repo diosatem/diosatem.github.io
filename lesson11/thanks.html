@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Thank you! | How's the Weather?</title>
+    <meta name="description" content="Report a storm for Preston, Fish Haven, and Soda Spring, Idaho, USA.">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="How's the Weather? logo">
+        <section class="headings">
+            <h1>How's the Weather?</h1>
+            <p>Stay informed. Stay safe. </p>
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <div id="notice">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li onclick="toggleMenu()"><a href="#">X</a></li>
+            <li><a href="../lesson11/index.html">Home</a></li>
+            <li><a href="../lesson11/preston.html">Preston</a></li>
+            <li><a href="../lesson11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="../lesson11/fish-haven.html">Fish Haven</a></li>
+            <li><a href="#" class="navbold">Storm Center</a></li>
+            <li><a href="../lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="thanksdiv">
+            <h2>Thank you!</h2>
+            <p>We've received your message and we'll get back to you within 1 hour. Stay safe!</p>.
+            <p><a href="../lesson11/stormcenter.html">Report a storm again.</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; How's the Weather? | Diosa Temblor J.</p>
+        <div><span id="currentDate"></span></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

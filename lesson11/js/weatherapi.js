@@ -81,7 +81,7 @@ fetch(sodaForecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
 console.log(sodaForecastURL);
-        const sodaForecast = jsObject.list.filter(fcast => fcast.dt_txt.includes('18:00:00'));
+        const sodaForecast = jsObject.list.filter(sodafcast => sodafcast.dt_txt.includes('18:00:00'));
 
         const sodaWeekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -91,10 +91,52 @@ console.log(sodaForecastURL);
             document.getElementById(`dayId${day+1}`).textContent = sodaWeekdays[sodaD.getDay()];
             document.getElementById(`dayTemp${day+1}`).textContent = sodaForecast[day].main.temp;
 
-            const iconsrc = 'https://openweathermap.org/img/w/' + sodaForecast[day].weather[0].icon + '.png';
-            const alttext = sodaForecast[day].weather[0].description;
-            document.getElementById(`ficon${day+1}`).setAttribute('src', iconsrc);
-            document.getElementById(`ficon${day+1}`).setAttribute('alt', alttext);
+            const sodaIconsrc = 'https://openweathermap.org/img/w/' + sodaForecast[day].weather[0].icon + '.png';
+            const sodaAlttext = sodaForecast[day].weather[0].description;
+            document.getElementById(`ficon${day+1}`).setAttribute('src', sodaIconsrc);
+            document.getElementById(`ficon${day+1}`).setAttribute('alt', sodaAlttext);
+        }
+    });
+
+    //weather summary for fish haven page
+const fishURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
+fetch(fishURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+console.log(fishURL);
+        const fishDesc = jsObject.weather[0].main;
+        document.getElementById('fishCurrentWeather').textContent = fishDesc;
+
+        let valNum = jsObject.main.temp_max;
+        document.getElementById('fishHigh').textContent = valNum.toFixed(2);
+
+        const fishHumid = jsObject.main.humidity;
+        document.getElementById('fishHumidity').textContent = fishHumid;
+
+        const fishWind = jsObject.wind.speed;
+        document.getElementById('fishWindSpeed').textContent = fishWind;
+    });
+
+//5-day forecast for fish haven page
+const fishForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
+fetch(fishForecastURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+console.log(fishForecastURL);
+        const fishForecast = jsObject.list.filter(fishfcast => fishfcast.dt_txt.includes('18:00:00'));
+
+        const fishWeekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        for (let day = 0; day < fishForecast.length; day++) {
+            const fishD = new Date(fishForecast[day].dt_txt);
+
+            document.getElementById(`dayId${day+1}`).textContent = fishWeekdays[fishD.getDay()];
+            document.getElementById(`dayTemp${day+1}`).textContent = fishForecast[day].main.temp;
+
+            const fishIconsrc = 'https://openweathermap.org/img/w/' + fishForecast[day].weather[0].icon + '.png';
+            const fishAlttext = fishForecast[day].weather[0].description;
+            document.getElementById(`ficon${day+1}`).setAttribute('src', fishIconsrc);
+            document.getElementById(`ficon${day+1}`).setAttribute('alt', fishAlttext);
         }
     });
 
