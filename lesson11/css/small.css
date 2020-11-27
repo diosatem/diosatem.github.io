@@ -367,12 +367,11 @@ form textarea {
 /*contact*/
 .contact {
     background-color: hsl(187, 32%, 41%, .3);
-    padding: 10px 0;
+    padding: 30px 0;
 }
 
 .contacth3 {
     text-align: center;
-    margin: 0 0 10px 0;
     font-size: 1rem;
 }
 
@@ -424,6 +423,7 @@ form textarea {
     border: 0;
 }
 
+/*general*/
 .forecastitem,
 .tablehero,
 .article p,
@@ -434,6 +434,10 @@ form textarea {
 
 .titleh3 {
     font-size: 1rem;
+}
+
+.titleh3, .townh2 {
+    margin-bottom: 5px;
 }
 
 /*towndata*/
