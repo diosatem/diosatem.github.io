@@ -15,6 +15,20 @@ fetch(weatherURL)
 
         const windS = jsObject.wind.speed;
         document.getElementById('windSpeed').textContent = windS;
+
+        //windchill for preston
+        let chillResult = windChill(valNum, windS);
+
+        function windChill(tempF, speedF) {
+            let factor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speedF, 0.16) + 0.4275 * tempF * Math.pow(speedF, 0.16);
+            return factor;
+        }
+
+        if (valNum <= 50 & windS > 3) {
+            document.getElementById("chill").textContent = chillResult.toFixed(2) + " °F";
+        } else {
+            document.getElementById("chill").textContent = "N/A";
+        }
     });
 
 //5-day forecast for preston page
@@ -49,14 +63,28 @@ fetch(sodaURL)
         const sodaDesc = jsObject.weather[0].main;
         document.getElementById('sodaCurrentWeather').textContent = sodaDesc;
 
-        let valNum = jsObject.main.temp_max;
-        document.getElementById('sodaHigh').textContent = valNum.toFixed(2);
+        let sodaValNum = jsObject.main.temp_max;
+        document.getElementById('sodaHigh').textContent = sodaValNum.toFixed(2);
 
         const sodaHumid = jsObject.main.humidity;
         document.getElementById('sodaHumidity').textContent = sodaHumid;
 
         const sodaWind = jsObject.wind.speed;
         document.getElementById('sodaWindSpeed').textContent = sodaWind;
+
+        //windchill for soda springs
+        let sodaChillResult = sodaWindChill(sodaValNum, sodaWind);
+
+        function sodaWindChill(tempF, speedF) {
+            let factor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speedF, 0.16) + 0.4275 * tempF * Math.pow(speedF, 0.16);
+            return factor;
+        }
+
+        if (sodaValNum <= 50 & sodaWind > 3) {
+            document.getElementById("sodaChill").textContent = sodaChillResult.toFixed(2) + " °F";
+        } else {
+            document.getElementById("sodaChill").textContent = "N/A";
+        }
     });
 
 //5-day forecast for soda springs page
@@ -82,7 +110,7 @@ fetch(sodaForecastURL)
         }
     });
 
-    //weather summary for fish haven page
+//weather summary for fish haven page
 const fishURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
 fetch(fishURL)
     .then((response) => response.json())
