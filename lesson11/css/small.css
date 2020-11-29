@@ -487,6 +487,11 @@ form textarea {
     font-size: .8rem;
 }
 
+/*events*/
+.prestonEvents {
+    background-color: #EEC584;
+    height: 30px;
+}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/

@@ -63,7 +63,7 @@ fetch(sodaURL)
         const sodaDesc = jsObject.weather[0].main;
         document.getElementById('sodaCurrentWeather').textContent = sodaDesc;
 
-        let sodaValNum = jsObject.main.temp_max;
+        const sodaValNum = jsObject.main.temp_max;
         document.getElementById('sodaHigh').textContent = sodaValNum.toFixed(2);
 
         const sodaHumid = jsObject.main.humidity;
@@ -73,7 +73,7 @@ fetch(sodaURL)
         document.getElementById('sodaWindSpeed').textContent = sodaWind;
 
         //windchill for soda springs
-        let sodaChillResult = sodaWindChill(sodaValNum, sodaWind);
+        const sodaChillResult = sodaWindChill(sodaValNum, sodaWind);
 
         function sodaWindChill(tempF, speedF) {
             let factor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speedF, 0.16) + 0.4275 * tempF * Math.pow(speedF, 0.16);
@@ -111,7 +111,7 @@ fetch(sodaForecastURL)
     });
 
 //weather summary for fish haven page
-const fishURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
+const fishURL = 'https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon=-111.4048681&units=imperial&appid=78e17b7d76d50d7fdea902505c1a1377';
 fetch(fishURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -119,14 +119,28 @@ fetch(fishURL)
         const fishDesc = jsObject.weather[0].main;
         document.getElementById('fishCurrentWeather').textContent = fishDesc;
 
-        let valNum = jsObject.main.temp_max;
-        document.getElementById('fishHigh').textContent = valNum.toFixed(2);
+        const fishValNum = jsObject.main.temp_max;
+        document.getElementById('fishHigh').textContent = fishValNum.toFixed(2);
 
         const fishHumid = jsObject.main.humidity;
         document.getElementById('fishHumidity').textContent = fishHumid;
 
         const fishWind = jsObject.wind.speed;
         document.getElementById('fishWindSpeed').textContent = fishWind;
+
+        //windchill for fish haven
+        const sodaChillResult = fishWindChill(fishValNum, fishWind);
+
+        function fishWindChill(tempF, speedF) {
+            let factor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speedF, 0.16) + 0.4275 * tempF * Math.pow(speedF, 0.16);
+            return factor;
+        }
+
+        if (fishValNum <= 50 & fishWind > 3) {
+            document.getElementById("fishChill").textContent = sodaChillResult.toFixed(2) + " °F";
+        } else {
+            document.getElementById("fishChill").textContent = "N/A";
+        }
     });
 
 //5-day forecast for fish haven page
