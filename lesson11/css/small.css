@@ -61,6 +61,7 @@ nav li {
     list-style-type: none;
     width: 100%;
     flex: 1;
+    line-height: 1.2rem;
 }
 
 nav li:first-child {
@@ -89,7 +90,7 @@ button {
 
 nav ul li a {
     display: block;
-    padding: .5em;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -364,13 +365,16 @@ form textarea {
 
 .article img {
     float: left;
-    width: 100%;
-    margin-bottom: 10px;
+    height: 100%;
+    margin: 0 5px 10px 0;
 }
 
 .articlehead {
     text-align: left;
-    line-height: 1rem;
+}
+
+.articleh3 {
+    line-height: 1.2rem;
 }
 
 /*contact*/

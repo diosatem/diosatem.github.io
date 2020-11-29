@@ -182,4 +182,7 @@
         font-size: 1.1rem;
     }
 
+    .towndata section img {
+        padding: 0 20px;
+    }
 }
