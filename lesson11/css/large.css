@@ -73,7 +73,7 @@
     }
 
     .townh2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     /*article*/
@@ -83,7 +83,7 @@
 
     .article {
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .articleSoda {
@@ -130,7 +130,11 @@
         padding: 10px 0;
     }
 
-    .titleh3 {
+    .articleh3, .titleh3 {
         font-size: 1.3rem;
+    }
+
+    .towndata section h2 {
+        font-size: 1.5rem;
     }
 }
