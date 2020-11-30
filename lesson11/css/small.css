@@ -188,7 +188,6 @@ figure {
 /*form*/
 form fieldset {
     margin: 2rem 0;
-    border: 1.5px solid #031926;
     border-radius: 10px;
     padding: 2rem 2%;
     text-align: left;
@@ -328,16 +327,15 @@ form textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(161, 67%, 73%, .3);
+    background-color:hsl(202, 85%, 8%);
     flex-flow: column wrap;
     min-width: 100px;
     padding-bottom: 10px;
-    border: 1px solid hsl(202, 85%, 8%, .2);
+    color: white;
 }
 
 .day {
     padding: 10px 0;
-    background-color: #031926;
     width: 100%;
     color: white;
 }
@@ -353,8 +351,8 @@ form textarea {
 
 /*article*/
 .article {
-    padding: 10px;
-    margin: 20px 0;
+    padding: 0 10px;
+    margin-bottom: 20px;
     height: auto;
 }
 
@@ -366,14 +364,11 @@ form textarea {
 .article img {
     float: left;
     height: 100%;
-    margin: 0 5px 10px 0;
+    margin: 0 10px 10px 0;
 }
 
 .articlehead {
     text-align: left;
-}
-
-.articleh3 {
     line-height: 1.2rem;
 }
 
@@ -441,17 +436,17 @@ form textarea {
 .tablehero,
 .article p,
 .articlehead span,
-.icons {
+.icons, .events p {
     font-size: .9rem;
 }
 
-.titleh3 {
+.titleh3, .articleh3 {
     font-size: 1rem;
 }
 
 .titleh3,
 .townh2 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /*towndata*/
@@ -488,11 +483,13 @@ form textarea {
 }
 
 /*events*/
-.prestonEvents {
-    background-color: #EEC584;
-    height: 30px;
+.events {
+    background-color: #8BE8CB;
+    padding: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 50px 10px;
 }
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

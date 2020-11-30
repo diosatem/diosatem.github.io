@@ -81,8 +81,17 @@
         margin-right: 20px;
     }
 
-    .article360 {
-        height: 360px;
+    .article {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .articleSoda {
+        margin-bottom: 60px;
+    }
+
+    .articlePreston {
+        margin-bottom: 100px;
     }
 
     /*contact*/

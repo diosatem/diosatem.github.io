@@ -69,10 +69,6 @@
     }
 
     /*article*/
-    .article {
-        padding: 20px;
-    }
-
     .articlehead {
         line-height: 1.3em;
     }
@@ -110,7 +106,7 @@
     .tablehero,
     .article p,
     .articlehead span,
-    .icons {
+    .icons, .events p {
         font-size: 1rem;
     }
 
