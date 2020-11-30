@@ -74,6 +74,5 @@ fetch(fishForecastURL)
                     document.querySelector('div.events').appendChild(paragraph);
                 });
         }
-
         events('Fish Haven');
     });

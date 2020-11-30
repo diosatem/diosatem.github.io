@@ -74,6 +74,5 @@ fetch(sodaForecastURL)
                     document.querySelector('div.events').appendChild(paragraph);
                 });
         }
-
         events('Soda Springs');
     });

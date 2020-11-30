@@ -75,5 +75,4 @@ function events(city) {
             document.querySelector('div.events').appendChild(paragraph);
         });
 }
-
 events('Preston');
