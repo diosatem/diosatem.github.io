@@ -3,7 +3,7 @@ const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&u
 fetch(weatherURL)
     .then((response) => response.json())
     .then((jsObject) => {
-console.log(weatherURL);
+
         const weatherDesc = jsObject.weather[0].main;
         document.getElementById('currentWeather').textContent = weatherDesc;
 
