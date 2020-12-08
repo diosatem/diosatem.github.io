@@ -1,0 +1,2 @@
+hero: Photo by Ajay Donga from Pexels
+small image: 640 by 320 pixels
