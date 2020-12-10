@@ -17,24 +17,47 @@
 
 <body>
     <header>
-        <img src="images/logo-small.png" alt="How's the Weather? logo">
-        <p>The ride of your life.</p>
-        <button onclick="toggleMenu()">&#9776;</button>
-    </header>
-    <header class="header2">
-        <div class="header-mainnav">
-            <button onclick="toggleMenu()">&#9776;</button>
-            <nav class="clearfix">
+        <header class="header1">
+            <div class="header-logo">
+                <img src="images/logo-small.png" alt="Scoots logo">
+                <p>The ride of your life.</p>
+            </div>
 
-        <ul id="primaryNav" class="hide">
-            <li onclick="toggleMenu()"><a href="#">X</a></li>
-            <li><a href="#" class="navbold">Home</a></li>
-            <li><a href="../lesson11/preston.html">Rentals</a></li>
-            <li><a href="../lesson11/soda-springs.html">Reservations</a></li>
-            <li><a href="../lesson11/fish-haven.html">Tours</a></li>
-            <li><a href="../lesson11/stormcenter.html">Contact</a></li>
-        </ul>
-    </nav>
+        </header>
+        <header class="header2">
+            <div class="header-socials">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank">
+                                <img src="images/facebook.png" alt="Facebook icon" /></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank">
+                                <img src="images/instagram.png" alt="Instagram icon" /></a>
+                        </li>
+                        <li><a href="https://www.twitter.com/" target="_blank">
+                                <img src="images/twitter.png" alt="Twitter icon" /></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class="header3">
+            <div class="header-mainnav">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <nav class="clearfix">
+                    <ul id="primaryNav" class="hide">
+                        <li onclick="toggleMenu()"><a href="#">X</a></li>
+                        <li><a href="#" class="navbold">Home</a></li>
+                        <li><a href="../scoots/rentals.html">Rentals</a></li>
+                        <li><a href="../scoots/reservations.html">Reservations</a></li>
+                        <li><a href="../scoots/tours.html">Tours</a></li>
+                        <li><a href="../scoots/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </header>
+
     <main>
         <section class="content">
             <div class="divhero">
@@ -43,17 +66,20 @@
                     <source media="(max-width: 960px)" srcset="images/hero-medium.jpg">
                     <img src="images/hero.jpg" alt="Woman and man riding a motorcycle.">
                 </picture>
-                <button onclick="location.href='reservations.html'">Choose your scooter.</button>
+                <button onclick="location.href='reservations.html'">CHOOSE YOUR RIDE.</button>
             </div>
 
             <div class="divweather">
                 <div class="weather">
                     <div class="current">
-                        <img src="#" alt="unknown" id="icon">
-                        <p><span id="temperature"></span>&deg; F</p>
-                        <p><span id="description"></span></p>
-                        <p><span id="humidity"></span>&deg; F</p>
+                        <h3>Current Weather</h3>
+                        <h5>San Miguel de Cozumel, MX</h5>
+                        <p>Today, <span id="currentDate"></span></p>
+                        <p class="temp"><span id="temperature"></span>&deg; F <img src="#" alt="unknown" id="icon"></p>
+                        <p>Description: <span id="description"></span> | Humidity: <span id="humidity"></span>&deg; F
+                        </p>
                     </div>
+
                     <div class="forecast">
                         <div class="forecastitem">
                             <span class="day" id="dayId1"></span>
@@ -74,58 +100,86 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="alerts">
                     <button type="button" class="collapsible">Click to see available Government Weather Alerts</button>
-                    <div class="content">
-                        <p id="alertevent"></p>
+                    <div class="alertcontent">
+                        <p id="alertevent">There are no current alerts at the moment. Please try again soon.</p>
                         <p id="alertdesc"></p>
                     </div>
                 </div>
+
             </div>
 
             <div class="summary">
-                
+                <h2>The ride of your life...</h2>
+                <div class="scooter">
+                    <h3>Scooter</h3>
+                    <img src="images/scooter.png" alt="Scooter icon">
+                    <p>
+                        <li>Honda Metro Scooter</li>
+                        <li>Honda Dio Scooter</li>
+                        <li>Honda PCX150 Scooter</li>
+                    </p>
+                    <p><a href="reservations.html">Learn more</a>.</p>
+                </div>
+
+                <div class="atv">
+                    <h3>ATV</h3>
+                    <img src="images/atv.png" alt="ATV icon">
+                    <p>
+                        <li>Honda Pioneer ATV</li>
+                    </p>
+                    <p><a href="reservations.html">Learn more</a>.</p>
+                </div>
+
+                <div class="jeep">
+                    <h3>Jeep</h3>
+                    <img src="images/jeep.png" alt="Jeep icon">
+                    <p>
+                        <li>Jeep Wrangler - 4 door with a/c</li>
+                        <li>Jeep Wrangler - 2 door</li>
+                    </p>
+                    <p><a href="reservations.html">Learn more</a>.</p>
+                </div>
+
             </div>
 
             <div class="contact">
-                <h3 class="contacth3 titleh3">Contact Information</h3>
-                <div class="contactitems">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2466461700074!2d-111.86879658501078!3d42.102188159340685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e508b3087f%3A0x7791eafad84ab17a!2s5487%20E%20Hwy%2036%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sph!4v1605237895500!5m2!1sen!2sph"
-                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-                    <div class="divicons">
-                        <div class="icons">
-                            <img src="images/pin.png" alt="address">
-                            <span> 5487 E Hwy 36<br>
-                                Preston, ID 83263<br>
-                                USA</span>
-                        </div>
-                        <div class="icons">
-                            <img src="images/mail.png" alt="email">
-                            <span>inquiry@howstheweather.com</span>
-                        </div>
-                        <div class="icons">
-                            <img src="images/phone.png" alt="phone">
-                            <span>208-123-4567</span>
-                        </div>
-                        <div class="socials">
-                            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
-                                    alt="Facebook"></a>
-                            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"
-                                    alt="Instagram"></a>
-                            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
-                                    alt="Twitter"></a>
-                        </div>
+                <div class="address">
+                    <h3>Contact Us</h3>
+                    <div class="icons">
+                        <img src="images/pin.png" alt="address">
+                        <span>Av. Rafael E. Melgar, Centro<br>
+                            San Miguel de Cozumel, Q. R., Mexico</span>
                     </div>
+
+                    <div class="icons">
+                        <img src="images/mail.png" alt="email">
+                        <span>inquiry@scootsrental.com</span>
+                    </div>
+
+                    <div class="icons">
+                        <img src="images/phone.png" alt="phone">
+                        <span>(+52) 123-456-789</span>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                            alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"
+                            alt="Instagram icon"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
+                            alt="Twitter icon"></a>
                 </div>
             </div>
         </section>
-
     </main>
+
     <footer>
-        <p>&copy; How's the Weather? | <a href="../lesson11/terms.html">Terms of Use</a> | Diosa Temblor J.</p>
-        <div><span id="currentDate"></span></div>
+        <p>&copy; Scoots Rental Cozumel | <a href="#">Terms of Use</a> | Diosa Temblor J.</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>

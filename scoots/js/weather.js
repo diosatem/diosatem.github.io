@@ -28,12 +28,12 @@ fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(forecastURL);
-        const forecast = jsObject.daily.filter(fcast => fcast.temp.day);
+        const forecast = jsObject.daily.filter(fcast => fcast.temp.includes('day:'));
         console.log(forecast);
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
         for (let day = 0; day < forecast.length; day++) {
-            const d = new Date(forecast[day].temp.day);
+            const d = new Date(forecast[day].temp);
             console.log(d);
             document.getElementById(`dayId${day+1}`).textContent = weekdays[d.getDay()];
             document.getElementById(`dayTemp${day+1}`).textContent = forecast[day].temp.day;
@@ -51,4 +51,22 @@ fetch(forecastURL)
         const alertText = jsObject.alert.description;
         document.getElementById('alertdesc').textContent = alertText;
         console.log(alertText);
+            
     });
+
+
+//collapsible alerts
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}

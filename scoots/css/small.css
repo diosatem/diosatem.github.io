@@ -13,7 +13,7 @@ body {
 
 /*content*/
 .content {
-    max-width: 1600;
+    max-width: 1600px;
 }
 
 h1,
@@ -22,7 +22,257 @@ h3 {
     font-family: 'Syne', sans-serif;
 }
 
+/*header*/
+.header1 {
+    margin: 10px;
+}
+
+.header2 {
+    margin: -70px 0 10px 0;
+}
+
+/*header1-logo*/
+.header-logo img {
+    max-width: 100px;
+}
+
+.header-logo p {
+    margin-top: -10px;
+}
+
+/*header3-nav*/
+
+
+.header-mainnav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.header-mainnav nav {
+    font-size: 1rem;
+    background-color: #EF7215;
+    text-align: center;
+}
+
+.header-mainnav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-mainnav nav li {
+    flex: 1;
+    line-height: .5rem;
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+.header-mainnav nav li:first-child {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1em;
+}
+
+.header-mainnav nav ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.header-mainnav nav a:hover {
+    background-color: hsl(242, 72%, 14%, .8);
+    color: white;
+}
+
+.header-mainnav nav a:link,
+.header-mainnav nav a:visited {
+    text-decoration: none;
+}
+
+#primaryNav a:active,
+.header-mainnav a:active,
+.header-mainnav .navbold {
+    background-color: hsl(242, 72%, 14%);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.header-mainnav nav ul.hide {
+    display: none;
+}
+
+/*header2-socials*/
+.header-socials {
+    grid-column: 2;
+}
+
+.header-socials img {
+    max-width: 40px;
+}
+
+.header-socials nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+/*divhero*/
+.divhero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.divhero img {
+    width: 100%;
+}
+
+.divhero button {
+    background-color: #0C0A3E;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+
+/*current weather*/
+.divweather {
+    margin: 10px 0;
+}
+
+.current {
+    background-color: hsl(54, 88%, 67%, .5);
+    padding: 10px;
+}
+
+.current .temp {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/*forecast*/
+.forecast {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+    gap: 10px;
+}
+
+.forecastitem {
+    background-color: #0C0A3E;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
 /*alerts*/
+.alerts {
+    margin: 10px 0;
+}
+
+.collapsible {
+    background-color: #7B1E88;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: hsl(293, 64%, 33%, .5);
+    color: black;
+}
+
+.alertcontent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+/*summary*/
+.summary {
+    text-align: center;
+}
+
+.summary li {
+    list-style-type: none;
+}
+
+.summary img {
+    width: 100px;
+}
+
+.summary div {
+    margin: 50px;
+}
+
+/*contact*/
+.contact {
+    background-color: #EF7215;
+}
+
+.icons img {
+    width: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: flex-end;
+    width: max-content;
+    text-align: left;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.address {
+    padding: 20px 0 20px 20px;
+}
+
+.socials {
+    padding: 0 20px 20px 20px;
+}
+
+/*footer*/
+footer {
+    background-color: #0C0A3E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*general*/
+p,
+li,
+span {
+    font-size: .8rem;
+}
 
 
 

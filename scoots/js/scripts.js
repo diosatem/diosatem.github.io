@@ -16,24 +16,13 @@ function toggleMenu() {
         .getElementById("primaryNav").classList.toggle("hide");
 }
 
-//site-wide notice
-var daydate = new Date();
-var x = daydate.getDay();
-
-if (x == 5) {
-    document.getElementById("notice").style.display = "block";
-    document.getElementsByTagName("header")[0].style.marginTop = "35px";
-
-} else {
-    document.getElementById("notice").style.display = "none";
-    document.getElementsByTagName("header")[0].style.marginTop = "0";
-}
-
 //web font loader
 WebFont.load({
     google: {
-        families: ['Poppins']
+        families: ['Syne']
     }
 });
+
+
 
 

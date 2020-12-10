@@ -1,3 +1,30 @@
 @media only screen and (min-width: 37.5em) {
+  /*header2-nav*/
+  .header-mainnav nav {
+      background-color: transparent;
+  }  
+  .header-mainnav nav ul {
+        flex-flow: row;
+    }
+    
+    .header-mainnav button {
+        display: none;
+        float: none;
+        margin: 0;
+    }    
+
+    .header-mainnav nav ul.hide {
+        display: flex;
+    }
+
+    .header-mainnav nav li:first-child {
+        display: none;
+    }
+
+   
+
+   
+
+
 
 }

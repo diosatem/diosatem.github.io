@@ -36,7 +36,7 @@ const fishForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=558
 fetch(fishForecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-
+console.log(fishForecastURL);
         const fishForecast = jsObject.list.filter(fishfcast => fishfcast.dt_txt.includes('18:00:00'));
 
         const fishWeekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
