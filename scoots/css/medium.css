@@ -1,30 +1,143 @@
 @media only screen and (min-width: 37.5em) {
-  /*header2-nav*/
-  .header-mainnav nav {
-      background-color: transparent;
-  }  
-  .header-mainnav nav ul {
+
+    /*header*/
+    .header-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    /*header1-logo*/
+    .header1 {
+        grid-column: 1;
+        margin-left: 20px;
+    }
+
+    /*header2-socials*/
+    .header2 {
+        grid-column: -1;
+        margin: 0 20px 0 0;
+    }
+
+    /*header3-nav*/
+    .header3 {
+        grid-column: 2/-1;
+        margin-top: -50px;
+        justify-self: end;
+    }
+
+    .header-nav nav {
+        background-color: transparent;
+    }
+
+    .header-nav nav ul {
         flex-flow: row;
     }
-    
-    .header-mainnav button {
+
+    .header-nav button {
         display: none;
         float: none;
         margin: 0;
-    }    
+    }
 
-    .header-mainnav nav ul.hide {
+    .header-nav nav ul.hide {
         display: flex;
     }
 
-    .header-mainnav nav li:first-child {
+    .header-nav nav li:first-child {
         display: none;
     }
 
-   
+    #primaryNav a:active,
+    .header-nav a:active,
+    .header-nav .navbold {
+        background-color: #EF7215;
+        color: black;
+    }
 
-   
+    .header-nav nav a:hover {
+        background-color: hsl(26, 87%, 51%, .5);
+        color: black;
+    }
+
+    /*divhero*/
+    .divhero {
+        position: relative;
+    }
+
+    .divhero button {
+        position: absolute;
+        bottom: 20px;
+        width: 30%;
+        border-radius: 50px;
+        padding: 15px;
+    }
+
+    /*weather*/
+    .weather {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*current weather*/
+   .current {
+       margin: 0;
+   }
+
+    /*forecast*/
+    
+
+    /*alerts*/
+    /*summary*/
+    .summary {
+        position: relative;
+    }
+
+    .summary div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    .summary div img {
+        grid-column: 1;
+        grid-row: 1 / span 6;
+        place-self: center;
+    }
+
+    .summary div h3,
+    p li {
+        grid-column: 2;
+        grid-row: 1;
+        place-self: center;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .vl {
+        border-left: 6px solid #0C0A3E;
+        height: 400px;
+        position: absolute;
+        left: 42%;
+    }
 
 
 
+
+
+    /*contact*/
+    /*footer*/
+    /*general*/
+    p,
+    li,
+    span {
+        font-size: .9rem;
+    }
 }
