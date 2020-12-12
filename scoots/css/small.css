@@ -144,6 +144,7 @@ body {
 /*current weather*/
 .divweather {
     margin: 10px 0;
+    max-width: 960px;
 }
 
 .current {
@@ -162,7 +163,7 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    flex: 1 1 100%;
+    
     gap: 10px;
 }
 
@@ -176,23 +177,24 @@ body {
 /*alerts*/
 .alerts {
     margin: 10px 0;
+    text-align: center;
 }
 
 .collapsible {
-    background-color: #7B1E88;
+    background-color: #0C0A3E;
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
+    width: 100%;
 }
 
 .active,
 .collapsible:hover {
-    background-color: hsl(293, 64%, 33%, .5);
+    background-color: hsl(242, 72%, 14%, .5);
     color: black;
 }
 
@@ -236,6 +238,7 @@ hr {
 /*contact*/
 .contact {
     background-color: hsl(242, 72%, 14%, .1);
+    padding: 20px;
 }
 
 .icons img {
@@ -252,11 +255,22 @@ hr {
 }
 
 .address {
-    padding: 20px 0 20px 20px;
+    padding-bottom: 20px;
 }
 
 .socials {
-    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-flow: column;
+    align-content: flex-end;
+}
+
+.socials .icons img {
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
+
+.socials .icons a {
+    text-decoration: none;
 }
 
 /*footer*/

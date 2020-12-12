@@ -75,22 +75,37 @@
     }
 
     /*weather*/
+    .divweather {
+        margin: 20px;
+    }
+
     .weather {
-        display: flex;
-        flex-flow: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
-        justify-content: center;
+        justify-items: center;
+        column-gap: 20px;
     }
 
     /*current weather*/
-   .current {
-       margin: 0;
-   }
+    .current {
+        grid-column: 1;        
+        padding: 20px 0;
+        text-align: center;
+    }
 
     /*forecast*/
-    
+    .forecast {
+        grid-column: 2;
+        align-self: start;
+        padding: 20px 0;
+    }
 
     /*alerts*/
+    .divweather {
+        margin: 0 auto;
+    }
+
     /*summary*/
     .summary {
         position: relative;
@@ -106,7 +121,7 @@
 
     .summary div img {
         grid-column: 1;
-        grid-row: 1 / span 6;
+        grid-row: 1 / span 7;
         place-self: center;
     }
 
@@ -128,11 +143,9 @@
         left: 42%;
     }
 
-
-
-
-
     /*contact*/
+    
+
     /*footer*/
     /*general*/
     p,
