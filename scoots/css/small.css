@@ -14,6 +14,7 @@ body {
 /*content*/
 .content {
     max-width: 1600px;
+    margin: 0 auto;
 }
 
 /*header*/
@@ -96,7 +97,7 @@ body {
 }
 
 .header-nav nav a:hover {
-    background-color:hsl(293, 64%, 33%, .5);
+    background-color: hsl(293, 64%, 33%, .5);
     color: black;
 }
 
@@ -143,18 +144,19 @@ body {
 
 /*current weather*/
 .divweather {
-    margin: 10px 0;
+    margin: 10px;
     max-width: 960px;
 }
 
 .current {
-    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.current .temp {
+.current .temp,
+.current #temperature {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /*forecast*/
@@ -162,16 +164,20 @@ body {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
-    
-    gap: 10px;
+    justify-content: flex-start;
 }
 
 .forecastitem {
-    border-style: outset;
-    border-radius: 10px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: #EF7215;
+    border-left-color: transparent;
+    border-right-style: dotted;
     padding: 5px;
     text-align: center;
+    display: flex;
+    flex-flow: column;
 }
 
 /*alerts*/
@@ -181,36 +187,42 @@ body {
 }
 
 .collapsible {
-    background-color: #0C0A3E;
+    background-color: hsl(242, 72%, 14%);
     color: white;
     cursor: pointer;
     padding: 18px;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: .8rem;
     width: 100%;
 }
 
 .active,
 .collapsible:hover {
-    background-color: hsl(242, 72%, 14%, .5);
-    color: black;
+    background-color: hsl(242, 72%, 14%, .8);
+    color: white;
 }
 
 .alertcontent {
-    padding: 0 18px;
+    padding: 20px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    text-align: left;
 }
 
 /*summary*/
 .summary {
     text-align: center;
-    background-color: hsl(54, 88%, 67%, .8);
-    padding: 20px;
+    background-color: hsl(26, 87%, 51%, .1);
+    padding-bottom: 20px;
     margin-bottom: 10px;
+}
+
+.summary h2 {
+    background-color: hsl(26, 87%, 51%);
+    padding: 20px;
 }
 
 .summary li {
@@ -230,9 +242,10 @@ body {
 }
 
 hr {
-    width: 20%;
-    background-color: #0C0A3E;
+    width: 10%;
     margin: 0 auto;
+    border: 5px solid #0C0A3E;
+    border-radius: 5px;
 }
 
 /*contact*/
@@ -289,8 +302,14 @@ span {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: 'Syne', sans-serif;
+}
+
+h2 {
+    font-size: 1.3rem;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

@@ -1,14 +1,77 @@
 @media only screen and (min-width: 60em) {
-    /*contact*/
-    .contact {
+
+    /*content*/
+    /*header*/
+    /*header1-logo*/
+    /*header2-socials*/
+    /*header3-nav*/
+    /*divhero*/
+    /*current weather*/
+    .divweather .alerts button {
+        border-radius: 50px;
+    }
+
+    .divweather {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /*forecast*/
+    /*alerts*/
+    /*summary*/
+    .summary .vl {
+        display: none;
+    }
+
+    .summarydiv {
         display: flex;
         flex-flow: row wrap;
         align-items: flex-start;
-        justify-items: start;
-        gap: 20px;
+        align-content: center;
+        justify-content: center;
     }
 
-    .socials {
-        padding-top: 20px; 
+    .summary div {
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .summary li {
+        text-align: left;
+        line-height: .8rem;
+    }
+
+    .summary {
+        margin-bottom: 20px;
+    }
+
+    /*contact*/
+    .contact {
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    /*footer*/
+    /*general*/
+    p,
+    li,
+    span {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
     }
 }

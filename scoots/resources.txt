@@ -1,6 +1,26 @@
 hero: Photo by Ajay Donga from Pexels
 hero default 1600px
 small image: 640 by 320 pixels
+small: 
+-h1 1.4rem
+-h2 1.3rem
+-h3 1.2rem
+-h4 1.1rem
+-h5 1rem
+
+medium: 684px view or 2.80em
+-h1 1.5rem
+-h2 1.4rem
+-h3 1.3rem
+-h4 1.2rem
+-h5 1.1rem
+
+large:
+-h1 1.6rem
+-h2 1.5rem
+-h3 1.4rem
+-h4 1.3rem
+-h5 1.2rem
 
 for nav small view
 nav li {
