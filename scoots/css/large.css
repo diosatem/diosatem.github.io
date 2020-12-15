@@ -21,6 +21,10 @@
         margin-bottom: 20px;
     }
 
+    .divweather h3 {
+        font-size: 1.2rem;
+    }
+
     /*forecast*/
     /*alerts*/
     .collapsible {
@@ -67,19 +71,5 @@
         font-size: 1rem;
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    h4 {
-        font-size: 1.3rem;
-    }
-
-    h4 {
-        font-size: 1.2rem;
-    }
+    
 }

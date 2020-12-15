@@ -148,6 +148,10 @@ body {
     max-width: 960px;
 }
 
+.divweather h3 {
+    font-size: 1rem;
+}
+
 .current {
     margin-bottom: 20px;
 }
@@ -221,7 +225,7 @@ body {
     margin-bottom: 10px;
 }
 
-.summary h2 {
+.summary h1 {
     background-color: hsl(26, 87%, 51%);
     padding: 20px;
 }
@@ -238,7 +242,7 @@ body {
     margin: 50px;
 }
 
-.summary div h3 {
+.summary div h2 {
     margin-bottom: 10px;
 }
 
@@ -287,7 +291,7 @@ hr {
     text-decoration: none;
 }
 
-.contact h3 {
+.contact h2 {
     margin-bottom: 10px;
 }
 
@@ -313,9 +317,18 @@ h5 {
     font-family: 'Syne', sans-serif;
 }
 
+h1 {
+    font-size: 1.4rem;
+}
+
 h2 {
     font-size: 1.3rem;
 }
+
+h3 {
+    font-size: 1.2rem;
+}
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
