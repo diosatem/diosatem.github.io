@@ -1,16 +1,21 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 68.75em) {
 
     /*content*/
     /*header*/
     /*header1-logo*/
-    /*header2-socials*/
-    /*header3-nav*/
-    /*divhero*/
-    /*current weather*/
-    .divweather .alerts button {
-        border-radius: 50px;
+    .header1 {
+        margin-left: 20px;
     }
 
+    /*header2-socials*/
+    /*header3-nav*/
+    .header3 {
+        margin-top: -70px;
+        background-color: bedbed;
+    }
+
+    /*divhero*/
+    /*current weather*/
     .divweather {
         margin-top: 10px;
         margin-bottom: 20px;
@@ -18,6 +23,10 @@
 
     /*forecast*/
     /*alerts*/
+    .collapsible {
+        font-size: 1rem;
+    }
+
     /*summary*/
     .summary .vl {
         display: none;
@@ -25,20 +34,15 @@
 
     .summarydiv {
         display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
+        flex-flow: row nowrap;
         align-content: center;
         justify-content: center;
     }
 
-    .summary div {
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    .summary li {
-        text-align: left;
-        line-height: .8rem;
+    .summarydiv div h3,
+    .summarydiv div p,
+    .summarydiv div li {
+        line-height: 1.3rem;
     }
 
     .summary {
@@ -52,6 +56,10 @@
     }
 
     /*footer*/
+    footer {
+        margin: 0 auto;
+    }
+
     /*general*/
     p,
     li,

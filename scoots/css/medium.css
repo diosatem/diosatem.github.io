@@ -23,7 +23,7 @@
     /*header3-nav*/
     .header3 {
         grid-column: 2/-1;
-        margin-top: -50px;
+        margin-top: -65px;
         justify-self: end;
     }
 
@@ -127,27 +127,26 @@
     /*summary*/
     .summary {
         position: relative;
-    }    
+    }
 
-    .summary div {
+    .summarydiv div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-content: center;
-        grid-gap: 10px;
+        grid-template-rows: auto;
+        place-items: center;
     }
 
-    .summary div img {
-        grid-column: 1;
-        grid-row: 1 / span 7;
-        place-self: center;
+    .summarydiv div img {
+        grid-column: 1/2;
+        grid-row: 1 / span 4;
+        align-self: end;
     }
 
-    .summary div h3,
-    p li {
-        grid-column: 2;
-        grid-row: 1;
-        place-self: center;
+    .summarydiv div h3,
+    .summarydiv div p,
+    .summarydiv div li {
+        grid-column: 2/3;
+        align-self: start;
     }
 
     hr {
@@ -156,7 +155,7 @@
 
     .vl {
         border-left: 10px solid #0C0A3E;
-        height: 550px;
+        height: 400px;
         position: absolute;
         left: 42%;
     }
@@ -171,4 +170,5 @@
     }
 
     /*footer*/
+
     /*general*/

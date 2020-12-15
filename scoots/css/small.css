@@ -208,8 +208,9 @@ body {
     padding: 20px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
     text-align: left;
+    border-left: 6px solid red;
+    background-color: hsl(242, 72%, 14%, .1);
 }
 
 /*summary*/
@@ -284,6 +285,10 @@ hr {
 
 .socials .icons a {
     text-decoration: none;
+}
+
+.contact h3 {
+    margin-bottom: 10px;
 }
 
 /*footer*/

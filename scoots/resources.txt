@@ -15,7 +15,7 @@ medium: 684px view or 2.80em
 -h4 1.2rem
 -h5 1.1rem
 
-large:
+large: 68.75em or 1100px
 -h1 1.6rem
 -h2 1.5rem
 -h3 1.4rem
@@ -509,3 +509,43 @@ span {
     display: table;
     clear: both;
 }
+
+ .summary div:nth-of-type(3) a img {
+        margin-right: -70px;
+        margin-top: -18px;
+    }
+
+    .summary div:nth-of-type(1) a img {
+        margin-right: -30px;
+        margin-top: -38px;
+    }
+
+    .summary div:nth-of-type(2) {
+        margin-right: -50px;
+    }
+
+    .summary div:nth-of-type(2) {
+        margin-top: 55px;
+    }
+
+.summary .summarydiv div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        grid-gap: 10px;
+        column-gap: ;
+    }
+
+    .summarydiv a img {
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+
+    .summarydiv h3, .summarydiv p li {
+        grid-column: 2;
+        grid-row: 1;
+        
+    }
