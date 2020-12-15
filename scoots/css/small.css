@@ -297,9 +297,10 @@ hr {
 
 /*footer*/
 footer {
-    background-color: #EF7215;
+    background-color: #0C0A3E;
     padding: 20px;
     text-align: center;
+    color: white;
 }
 
 /*general*/

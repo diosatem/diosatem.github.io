@@ -43,6 +43,10 @@
         justify-content: center;
     }
 
+    .jeep img {
+        margin-left: 80px;
+    }
+
     .summarydiv div h3,
     .summarydiv div p,
     .summarydiv div li {
@@ -71,5 +75,15 @@
         font-size: 1rem;
     }
 
-    
+    .summary h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
 }
