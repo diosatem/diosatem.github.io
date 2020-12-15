@@ -8,9 +8,12 @@
     }
 
     /*header2-socials*/
+    .header2 {
+        margin-top: 3px;
+    }
     /*header3-nav*/
     .header3 {
-        margin-top: -70px;
+        margin-top: -65px;
     }
 
     /*divhero*/
@@ -57,10 +60,7 @@
     }
 
     /*contact*/
-    .contact {
-        justify-content: space-evenly;
-        gap: 100px;
-    }
+    
 
     /*footer*/
     footer {
@@ -75,14 +75,14 @@
     }
 
     .summary h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
         font-size: 1.8rem;
     }
 
-    h3 {
+    h2 {
         font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
     }
 }

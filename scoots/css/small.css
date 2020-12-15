@@ -23,7 +23,7 @@ body {
 }
 
 .header2 {
-    margin: -70px 10px 10px 0;
+    margin: -65px 10px 0 0;
 }
 
 /*header1-logo*/
@@ -247,7 +247,7 @@ body {
 }
 
 hr {
-    width: 10%;
+    width: 25%;
     margin: 0 auto;
     border: 5px solid #0C0A3E;
     border-radius: 5px;

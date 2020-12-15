@@ -17,13 +17,13 @@
     /*header2-socials*/
     .header2 {
         grid-column: -1;
-        margin: 0 20px 0 0;
+        margin: -5px 20px 0 0;
     }
 
     /*header3-nav*/
     .header3 {
         grid-column: 2/-1;
-        margin-top: -65px;
+        margin-top: -60px;
         justify-self: end;
     }
 
@@ -162,9 +162,9 @@
 
     /*contact*/
     .contact {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 20px;
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+
     }
 
     /*footer*/
