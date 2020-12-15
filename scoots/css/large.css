@@ -11,6 +11,7 @@
     .header2 {
         margin-top: 3px;
     }
+
     /*header3-nav*/
     .header3 {
         margin-top: -65px;
@@ -60,7 +61,7 @@
     }
 
     /*contact*/
-    
+
 
     /*footer*/
     footer {
@@ -70,7 +71,9 @@
     /*general*/
     p,
     li,
-    span {
+    span,
+    td,
+    footer div {
         font-size: 1rem;
     }
 
@@ -82,7 +85,36 @@
         font-size: 1.6rem;
     }
 
-    h3 {
+    h3,
+    caption {
         font-size: 1.4rem;
     }
+
+    h4,
+    th {
+        font-size: 1.2rem;
+    }
+
+    /*rentals*/
+    .figurediv {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .figurediv figure figcaption {
+        display: block;
+        margin-top: -10px;
+    }
+
+    .figurediv figure {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .pricechart, .terms {
+        width: 80%;
+        margin: 20px auto;
+    }
+
 }

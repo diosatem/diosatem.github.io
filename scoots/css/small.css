@@ -15,6 +15,7 @@ body {
 .content {
     max-width: 1600px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /*header*/
@@ -154,6 +155,7 @@ body {
 
 .current {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .current .temp,
@@ -184,6 +186,10 @@ body {
     flex-flow: column;
 }
 
+.forecastdiv {
+    text-align: left;
+}
+
 /*alerts*/
 .alerts {
     margin: 10px 0;
@@ -191,10 +197,9 @@ body {
 }
 
 .collapsible {
-    background-color: hsl(242, 72%, 14%);
-    color: white;
+    background-color: #F5E663;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px;
     border: none;
     text-align: left;
     outline: none;
@@ -226,7 +231,8 @@ body {
 }
 
 .summary h1 {
-    background-color: #ef7415;
+    background-color: #0C0A3E;
+    color: white;
     padding: 20px;
 }
 
@@ -293,14 +299,15 @@ hr {
 
 .contact h2 {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 /*footer*/
 footer {
     background-color: #0C0A3E;
     padding: 20px;
-    text-align: center;
     color: white;
+    text-align: center;
 }
 
 footer a:link,
@@ -317,7 +324,9 @@ footer a:visited {
 /*general*/
 p,
 li,
-span {
+span,
+td,
+footer div {
     font-size: .8rem;
 }
 
@@ -337,14 +346,17 @@ h2 {
     font-size: 1.3rem;
 }
 
-h3 {
+h3,
+caption {
     font-size: 1.2rem;
 }
 
-/*rentals*/
-.types {
-    text-align: center;
+h4,
+th {
+    font-size: 1rem;
 }
+
+/*rentals*/
 img[data-src] {
     filter: blur(0.2em);
 }
@@ -364,9 +376,68 @@ img[data-src] {
 }
 
 figure {
-    height: 360px;
+    height: 350px;
 }
 
+.terms {
+    text-align: left;
+    margin: 10px;
+    border: 5px solid #dddddd;
+    padding: 10px;
+}
+
+.terms ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.pricechart {
+    margin-bottom: 10px;
+}
+
+.pricechart table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    min-width: 200px;
+}
+
+.pricechart td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.pricechart tr:nth-child(even) {
+    background-color: hsl(242, 72%, 14%, .5);
+}
+
+.pricechart p {
+    color: brown;
+    text-align: left;
+}
+
+.reserve {
+    border: 1px solid #0C0A3E;
+    width: 200px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #0C0A3E;
+}
+
+.reserve a {
+    text-decoration: none;
+}
+
+.reserve a:link,
+.reserve a:visited {
+    color: white;
+}
+
+.reserve a:hover {
+    color: #EF7215;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

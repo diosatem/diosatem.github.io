@@ -16,66 +16,66 @@
             "type": "Honda Dio Scooter",
             "photo": "..images/honda-dio-scooter.jpg",
             "maxPersons": "Max. Persons: 2",
-            "reservation": [
-                "Half Day (3 hours): $30",
-                "Full Day: $40"
-            ],
-            "walkIn": [
-                "Half Day (3 hours): $35",
-                "Full Day: $45"
-            ]
+            "reservation": [{
+                "half": "Half Day (3 hours): $30",
+                "full": "Full Day: $40"
+            }],
+            "walkIn": [{
+                "half": "Half Day (3 hours): $35",
+                "full": "Full Day: $45"
+            }]
         },
         {
             "type": "Honda PCX150 Scooter",
             "photo": "..images/honda-pcx150-scooter.jpg",
             "maxPersons": "Max. Persons: 2",
-            "reservation": [
-                "Half Day (3 hours): $40",
-                "Full Day: $50"
-            ],
-            "walkIn": [
-                "Half Day (3 hours): $45",
-                "Full Day: $55"
-            ]
+            "reservation": [{
+                "half": "Half Day (3 hours): $40",
+                "full": "Full Day: $50"
+            }],
+            "walkIn": [{
+                "half": "Half Day (3 hours): $45",
+                "full": "Full Day: $55"
+            }]
         },
         {
             "type": "Honda Pioneer ATV",
             "photo": "..images/honda-pioneer-scooter.jpg",
             "maxPersons": "Max. Persons: 4",
-            "reservation": [
-                "Half Day (3 hours): $50",
-                "Full Day: $70"
-            ],
-            "walkIn": [
-                "Half Day (3 hours): $60",
-                "Full Day: $80"
-            ]
+            "reservation": [{
+                "half": "Half Day (3 hours): $50",
+                "full": "Full Day: $70"
+            }],
+            "walkIn": [{
+                "half": "Half Day (3 hours): $60",
+                "full": "Full Day: $80"
+            }]
         },
         {
             "type": "Jeep Wrangler - 4 door with a/c",
             "photo": "..images/jeep-wrangler-4-door.jpg",
             "maxPersons": "Max. Persons: 5",
-            "reservation": [
-                "Half Day (3 hours): $70",
-                "Full Day: $100"
-            ],
-            "walkIn": [
-                "Half Day (3 hours): $85",
-                "Full Day: $125"
-            ]
+            "reservation": [{
+                "half": "Half Day (3 hours): $70",
+                "full": "Full Day: $100"
+            }],
+            "walkIn": [{
+                "half": "Half Day (3 hours): $85",
+                "full": "Full Day: $125"
+            }]
         },
         {
             "type": "Jeep Wrangler - 2 door",
             "photo": "..images/jeep-wrangler-2-door.jpg",
             "maxPersons": "Max. Persons: 4",
-            "reservation": [
-                "Half Day (3 hours): $60",
-                "Full Day: $85"
-            ],
-            "walkIn": [
-                "Half Day (3 hours): $70",
-                "Full Day: $90"
-            ]
+            "reservation": [{
+                "half": "Half Day (3 hours): $60",
+                "full": "Full Day: $85"
+            }],
+            "walkIn": [{
+                "half": "Half Day (3 hours): $70",
+                "full": "Full Day: $90"
+            }]
         }
     ]
 }

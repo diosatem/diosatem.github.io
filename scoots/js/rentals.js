@@ -6,10 +6,21 @@ fetch(rentalURL)
         console.log(rentalURL);
 
         //honda metro
-        const max = jsObject.rental[0].maxPersons;
-        document.getElementById('max1').textContent = max;
-        const half = jsObject.rental[0].reservation[0];
-        document.getElementById('half1').textContent = half;
-        const full = jsObject.rental[0].reservation[1];
-        document.getElementById('full1').textContent = full;
+        // const max = jsObject.rental[0].maxPersons;
+        // document.getElementById('max1').textContent = max;
+
+        // const rhalf = jsObject.rental[0].reservation[0].half;
+        // document.getElementById('half1').textContent = rhalf;
+        // console.log(rhalf);
+
+        // const rfull = jsObject.rental[0].reservation[0].full;
+        // document.getElementById('full1').textContent = rfull;
+        // console.log(rfull);
+        const rental = jsObject.rental;
+        for (let type = 0; type < rental.length; type++) {
+            document.getElementById(`max${type+1}`).textContent = rental[type].maxPersons;
+            document.getElementById(`half${type+1}`).textContent = rental[type].reservation[0].half;
+            document.getElementById(`full${type+1}`).textContent = rental[type].reservation[0].full;
+        }
+
     });

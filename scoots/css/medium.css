@@ -77,7 +77,6 @@
     /*weather*/
     .divweather {
         margin: 20px;
-        background-color: hsl(242, 72%, 14%, .1);
     }
 
     .weather {
@@ -163,10 +162,21 @@
     /*contact*/
     .contact {
         display: grid;
-       grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
     }
 
     /*footer*/
 
-    /*general*/
+    /*rentals*/
+    .pricechart table {
+        width: 100%;
+    }
+
+    .pricechart {
+        margin: 20px;
+    }
+
+    .terms {
+        margin: 20px;
+    }
