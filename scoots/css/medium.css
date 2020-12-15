@@ -164,7 +164,7 @@
     .contact {
         display: flex;
         flex-flow: row wrap;
-        gap: 100px;
+        justify-content: space-around;
     }
 
     /*footer*/
