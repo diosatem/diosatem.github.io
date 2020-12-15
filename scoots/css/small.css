@@ -306,6 +306,7 @@ footer {
 footer a:link,
 footer a:visited {
     text-decoration: none;
+    color: white;
 }
 
 footer a:active,
@@ -338,6 +339,32 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
+}
+
+/*rentals*/
+.types {
+    text-align: center;
+}
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+.figurediv {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.figurediv img {
+    max-width: 150px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    margin: 5px 0;
+}
+
+figure {
+    height: 360px;
 }
 
 
