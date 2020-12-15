@@ -375,7 +375,7 @@ img[data-src] {
     margin: 5px 0;
 }
 
-figure {
+.figurebox {
     height: 350px;
 }
 
@@ -403,7 +403,7 @@ figure {
 
 .pricechart td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid #000000;
     text-align: left;
     padding: 8px;
 }
@@ -419,7 +419,7 @@ th {
 
 .reserve {
     border: 1px solid #0C0A3E;
-    width: 200px;
+    width: 300px;
     margin: 0 auto 20px auto;
     padding: 20px;
     border-radius: 50px;

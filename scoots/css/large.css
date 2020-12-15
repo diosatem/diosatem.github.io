@@ -44,6 +44,7 @@
         flex-flow: row nowrap;
         align-content: center;
         justify-content: center;
+        text-align: left;
     }
 
     .jeep img {
@@ -53,7 +54,12 @@
     .summarydiv div h3,
     .summarydiv div p,
     .summarydiv div li {
-        line-height: 1.3rem;
+        line-height: 1.4rem;
+    }
+
+    .summarydiv div ul li {
+        list-style-type: square;
+        list-style-position: inside;
     }
 
     .summary {
@@ -112,7 +118,8 @@
         padding: 10px;
     }
 
-    .pricechart, .terms {
+    .pricechart,
+    .terms {
         width: 80%;
         margin: 20px auto;
     }
