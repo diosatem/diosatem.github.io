@@ -2,20 +2,20 @@
     "rental": [{
             "type": "Honda Metro Scooter",
             "photo": "..images/honda-metro-scooter.jpg",
-            "maxPersons": 1,
-            "reservation": [
-                "Half Day (3 hours): $20",
-                "Full Day: $30"
-            ],
-            "walkIn": [
-                "Half Day (3 hours): $25",
-                "Full Day: $35"
-            ]
+            "maxPersons": "Max. Persons: 1",
+            "reservation": [{
+                "half": "Half Day (3 hours): $20",
+                "full": "Full Day: $30"
+            }],
+            "walkIn": [{
+                "half": "Half Day (3 hours): $25",
+                "full": "Full Day: $35"
+            }]
         },
         {
             "type": "Honda Dio Scooter",
             "photo": "..images/honda-dio-scooter.jpg",
-            "maxPersons": 2,
+            "maxPersons": "Max. Persons: 2",
             "reservation": [
                 "Half Day (3 hours): $30",
                 "Full Day: $40"
@@ -28,7 +28,7 @@
         {
             "type": "Honda PCX150 Scooter",
             "photo": "..images/honda-pcx150-scooter.jpg",
-            "maxPersons": 2,
+            "maxPersons": "Max. Persons: 2",
             "reservation": [
                 "Half Day (3 hours): $40",
                 "Full Day: $50"
@@ -41,7 +41,7 @@
         {
             "type": "Honda Pioneer ATV",
             "photo": "..images/honda-pioneer-scooter.jpg",
-            "maxPersons": 4,
+            "maxPersons": "Max. Persons: 4",
             "reservation": [
                 "Half Day (3 hours): $50",
                 "Full Day: $70"
@@ -54,7 +54,7 @@
         {
             "type": "Jeep Wrangler - 4 door with a/c",
             "photo": "..images/jeep-wrangler-4-door.jpg",
-            "maxPersons": 5,
+            "maxPersons": "Max. Persons: 5",
             "reservation": [
                 "Half Day (3 hours): $70",
                 "Full Day: $100"
@@ -67,7 +67,7 @@
         {
             "type": "Jeep Wrangler - 2 door",
             "photo": "..images/jeep-wrangler-2-door.jpg",
-            "maxPersons": 4,
+            "maxPersons": "Max. Persons: 4",
             "reservation": [
                 "Half Day (3 hours): $60",
                 "Full Day: $85"

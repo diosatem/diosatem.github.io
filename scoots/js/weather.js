@@ -3,13 +3,11 @@ const reqURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=20.5072&lon=
 fetch(reqURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(reqURL);
 
         const iconSrc = 'https://openweathermap.org/img/w/' + jsObject.current.weather[0].icon + '.png';
         const altText = jsObject.current.weather[0].description;
         document.getElementById(`icon`).setAttribute('src', iconSrc);
         document.getElementById(`icon`).setAttribute('alt', altText);
-        console.log(iconSrc);
 
         const temp = jsObject.current.temp;
         document.getElementById('temperature').textContent = temp;
@@ -30,13 +28,6 @@ fetch(forecastURL)
             daily
         } = res;
 
-        // const tempDayOne = daily[0]['temp']['day'];
-        // const tempDayTwo = daily[1]['temp']['day'];
-        // const tempDayThree = daily[2]['temp']['day'];
-        // console.log(tempDayOne)
-        // console.log(tempDayTwo)
-        // console.log(tempDayThree)
-
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         for (let day = 0; day < daily.length; day++) {
             const d = new Date(daily[day].temp.day);
@@ -52,11 +43,10 @@ fetch(forecastURL)
         //alerts
         const alertEvent = jsObject.alert.event;
         document.getElementById('alertevent').textContent = alertEvent;
-        console.log(alertEvent);
         const alertText = jsObject.alert.description;
         document.getElementById('alertdesc').textContent = alertText;
-        console.log(alertText);
     });
+
 //collapsible alerts
 var coll = document.getElementsByClassName("collapsible");
 var i;

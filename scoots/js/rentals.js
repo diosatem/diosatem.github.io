@@ -1,22 +1,15 @@
 //price chart
-const rentalURL = 'http://www.diosatem.github.io/scoots/data/rentals.json';
-fetch(reqURL)
+const rentalURL = 'https://diosatem.github.io/scoots/data/rentals.json';
+fetch(rentalURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(reqURL);
+        console.log(rentalURL);
 
-        const iconSrc = 'https://openweathermap.org/img/w/' + jsObject.current.weather[0].icon + '.png';
-        const altText = jsObject.current.weather[0].description;
-        document.getElementById(`icon`).setAttribute('src', iconSrc);
-        document.getElementById(`icon`).setAttribute('alt', altText);
-        console.log(iconSrc);
-
-        const temp = jsObject.current.temp;
-        document.getElementById('temperature').textContent = temp;
-
-        const desc = jsObject.current.weather[0].main;
-        document.getElementById('description').textContent = desc;
-
-        const humid = jsObject.current.humidity;
-        document.getElementById('humidity').textContent = humid;
+        //honda metro
+        const max = jsObject.rental[0].maxPersons;
+        document.getElementById('max1').textContent = max;
+        const half = jsObject.rental[0].reservation[0];
+        document.getElementById('half1').textContent = half;
+        const full = jsObject.rental[0].reservation[1];
+        document.getElementById('full1').textContent = full;
     });
