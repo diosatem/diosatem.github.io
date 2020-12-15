@@ -226,7 +226,7 @@ body {
 }
 
 .summary h1 {
-    background-color: hsl(26, 87%, 51%);
+    background-color: #ef7415;
     padding: 20px;
 }
 
@@ -301,6 +301,16 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+}
+
+footer a:active,
+footer a:visited {
+    color: #ef7415;
 }
 
 /*general*/
