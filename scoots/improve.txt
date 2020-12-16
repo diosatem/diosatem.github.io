@@ -1,4 +1,3 @@
 add address to contact
-improve favicon
 fix rentals copyright year
 from to dates for reservations

@@ -41,17 +41,15 @@
 
     .summarydiv {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row;
         align-content: center;
-        justify-content: center;
         text-align: left;
+        position: absolute;
+        top: 60px;
+        left: 30px;
     }
 
-    .jeep img {
-        margin-left: 80px;
-    }
-
-    .summarydiv div h3,
+    .summarydiv div h2,
     .summarydiv div p,
     .summarydiv div li {
         line-height: 1.4rem;
@@ -59,11 +57,16 @@
 
     .summarydiv div ul li {
         list-style-type: square;
-        list-style-position: inside;
     }
 
     .summary {
         margin-bottom: 20px;
+        position: relative;
+        height: 400px;
+    }
+
+    .summary div {
+        margin: 50px auto;
     }
 
     /*contact*/

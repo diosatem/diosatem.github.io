@@ -27,12 +27,12 @@ fetch(forecastURL)
         const {
             daily
         } = res;
-
-        const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+console.log(res);
+        const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         for (let day = 0; day < daily.length; day++) {
-            const d = new Date(daily[day].temp.day);
+            const d = new Date(daily[day].temp["day"]);
             console.log(d);
-            document.getElementById(`dayId${day+1}`).textContent = weekdays[d.getDay()];
+            document.getElementById(`day${day+1}`).textContent = weekday[d.getDay()];
             document.getElementById(`dayTemp${day+1}`).textContent = daily[day].temp.day;
             const imgSrc = 'https://openweathermap.org/img/w/' + daily[day].weather[0].icon + '.png';
             const altDesc = daily[day].weather[0].description;
