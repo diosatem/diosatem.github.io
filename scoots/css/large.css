@@ -87,6 +87,10 @@
         font-size: 1.8rem;
     }
 
+    h1 {
+        font-size: 1.8rem;
+    }
+
     h2 {
         font-size: 1.6rem;
     }
@@ -118,10 +122,16 @@
         padding: 10px;
     }
 
-    .pricechart,
-    .terms {
+    .pricechart {
         width: 80%;
         margin: 20px auto;
+    }
+
+    /*reservations*/
+    .divform,
+    .terms {
+        max-width: 60%;
+        margin: 0 auto;
     }
 
 }
