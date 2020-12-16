@@ -1,10 +1,27 @@
 hero-index: Photo by Ajay Donga from Pexels 1600x500
-hero-rental: Photo by Mariamichelle from Pixabay 1600x350
-PxHere - https://pxhere.com/en/photo/417858
-https://commons.wikimedia.org/wiki/File:Beach_biking_-_Kho_Khao_island,_Thaialnd_(32246746992).jpg
-hero default 1600px
-small image: 640 by 320 pixels
+hero-rental: https://pixabay.com/photos/moto-landscape-costa-beach-mexico-3875699/
+hero-reservations: https://commons.wikimedia.org/wiki/File:Beach_biking_-_Kho_Khao_island,_Thaialnd_(32246746992).jpg
+hero-tours: https://unsplash.com/photos/9xuQVW2X3Rc
 
+hero default 1600px
+hero pages: 1600x200
+small: 640x320
+
+tours:
+jeep tours: https://www.bestbuytourscozumel.com/wp-content/uploads/2019/09/privat.jpg
+boat tours: https://www.galvestoncruises.com/excursionimages/all-inclusive-isla-pasion-by-twister-cozumel-mexico-1.jpg
+
+https://www.tripadvisor.com.ph/AttractionProductReview-g150809-d11456968-Private_Jeep_Excursion_in_Cozumel_with_Lunch_and_Snorkeling-Cozumel_Yucatan_Penins.html
+
+icons tours:
+boat: https://static.thenounproject.com/png/621434-200.png
+dive: https://static.thenounproject.com/png/886250-200.png
+jeep: https://static.thenounproject.com/png/2011494-200.png
+meal: https://static.thenounproject.com/png/303335-200.png
+swim: https://static.thenounproject.com/png/1023641-200.png
+sightseeing: https://static.thenounproject.com/png/19725-200.png
+
+history: https://www.britannica.com/place/Cozumel
 scooters:
 https://pictures.topspeed.com/IMG/jpg/201207/2013-honda-metropolitan-16.jpg
 https://images.financialexpress.com/2020/05/Honda-Dio-BS6-1200.jpg?w=1200&h=921&imflag=true
@@ -237,3 +254,32 @@ grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
 
 honda metro scooter
 https://www.sportdurstpowersports.com/new-models/2020-honda-metropolitan-27845413b
+
+// const tempDayOne = daily[0]['temp']['day'];
+        // const tempDayTwo = daily[1]['temp']['day'];
+        // const tempDayThree = daily[2]['temp']['day'];
+        // console.log(tempDayOne)
+        // console.log(tempDayTwo)
+        // console.log(tempDayThree)
+
+<div class="tours-summary">
+                <div class="jeep">
+                    <a href="#jeep"><img src="images/jeep-tours.png" alt="Jeep icon.">
+                        <h2>Jeep Tours</h2>
+                    </a>
+                </div>
+                <div class="boat">
+                    <a href="#boat"><img src="images/boat-tours.png" alt="Boat icon.">
+                        <h2> Boat Tours</h2>
+                    </a>
+                </div>
+            </div>
+
+<div class="tour-highlights">
+                <ul>
+                    <li>&check; Free hotel pick up and drop-off</li>
+                    <li>&check; Exclusive private jeep tour</li>
+                    <li>&check; Friendly guides</li>
+                    <li>&check; 6 hours of non-stop fun</li>
+                </ul>
+            </div>

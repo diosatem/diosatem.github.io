@@ -79,7 +79,8 @@
     li,
     span,
     td,
-    footer div {
+    footer div,
+    dl {
         font-size: 1rem;
     }
 
@@ -128,10 +129,56 @@
     }
 
     /*reservations*/
-    .divform,
-    .terms {
-        max-width: 60%;
-        margin: 0 auto;
+    .reservediv {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: start;
     }
 
+    .terms {
+        margin-top: 30px;
+    }
+
+    .terms h2 {
+        margin-top: -5px;
+    }
+
+    form fieldset {
+        padding-right: 200px;
+    }
+
+    /* tours*/
+    .toursicons img {
+        width: 100px;
+    }
+
+    .toursicons {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .tours {
+        margin: 20px;
+    }
+
+    /*contact*/
+    .contactdiv {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .addressdiv iframe {
+        min-width: 500px;
+        min-height: 350px;
+    }
+
+    .divcontact h2 {
+        margin-top: 20px;
+    }
+
+    form label.top input, form label.top select {
+        width: 20rem;
 }

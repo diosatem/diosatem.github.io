@@ -54,10 +54,14 @@
     .header-nav .navbold {
         background-color: #EF7215;
         color: black;
+        padding: 10px;
+        border-radius: 5px;
     }
 
     .header-nav nav a:hover {
-        background-color: hsl(26, 87%, 51%, .5);
+        background-color: hsl(26, 87%, 51%, .2);
+        font-weight: bold;
+        padding: 10px;
         color: black;
     }
 
@@ -186,5 +190,11 @@
 
     form fieldset {
         border-radius: 10px;
+    }
+
+    /*contact*/
+    .addressdiv iframe {
+        min-width: 600px;
+        min-height: 400px;
     }
 }

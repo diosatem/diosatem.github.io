@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resources | Scoots Rentals Cozumel</title>
+    <meta name="description"
+        content="Resources page for Scoots Rentals Cozumel. Scoots is your friendly scooter rentals in Cozumel, Mexico.">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="header1">
+            <div class="header-logo">
+                <img src="images/logo-small.png" alt="Scoots logo">
+                <p>The ride of your life.</p>
+            </div>
+        </div>
+
+        <div class="header2">
+            <div class="header-socials">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank">
+                                <img src="images/facebook.png" alt="Facebook icon" /></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/" target="_blank">
+                                <img src="images/instagram.png" alt="Instagram icon" /></a>
+                        </li>
+                        <li><a href="https://www.twitter.com/" target="_blank">
+                                <img src="images/twitter.png" alt="Twitter icon" /></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header3">
+            <div class="header-nav">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <nav class="clearfix">
+                    <ul id="primaryNav" class="hide">
+                        <li onclick="toggleMenu()"><a href="#">X</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rentals.html">Rentals</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="divhero">
+                <picture class="heroimage">
+                    <img src="images/cozumel.jpg" alt="Boat at sea.">
+                </picture>
+            </div>
+            <h1>Contact Us</h1>
+            <div class="contactdiv">
+                <div class="divform divcontact">
+                    <h2>How May We Help You?</h2>
+                    <form method="get" action="confirmation.html">
+                        <fieldset id="fieldcontact">
+                            <label class="top">Full Name*<input type="text" name="fname"
+                                    pattern="^[a-zA-Z\s?]{5,}(?: [a-zA-Z]+){0,2}$" required></label>
+                            <label class="top">Email*<input type="email" name="email" placeholder="example@example.com"
+                                    required></label>
+                            <label class="top" id="contactmessage">Message<br>
+                                <textarea name="message" id="message" placeholder="Your message..."></textarea>
+                            </label>
+                            <div class="button"><input type="submit" value="Send my message" class="subbutton"></div>
+                    </form>
+                    </fieldset>
+                </div>
+
+                <div class="addressdiv">
+                    <h2>Our Offices</h2>
+                    <div class="address1">
+                        <h3>1. Near the Playa del Carmen-Cozumel Ferry dock</h3>
+                        <div class="icons contacticons">
+                            <img src="images/pin.png" alt="address">
+                            <span>Av. Rafael E. Melgar, Centro<br>
+                                San Miguel de Cozumel, Q. R., Mexico</span>
+                        </div>
+
+                        <div class="icons contacticons">
+                            <img src="images/mail.png" alt="email">
+                            <span>inquiry@scootsrental.com</span>
+                        </div>
+
+                        <div class="icons contacticons">
+                            <img src="images/phone.png" alt="phone">
+                            <span>(+52) 123-456-789</span>
+                        </div>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.1915427684442!2d-86.94968747529298!3d20.511345188467313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59e666710f05%3A0x1b9869e1d0ddb5dc!2sJewels%20By%20The%20Sea!5e1!3m2!1sen!2sph!4v1608154991942!5m2!1sen!2sph"
+                            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                    <div class="address2">
+                        <h3>2. Near the Terminal Puerta Maya</h3>
+                        <div class="icons contacticons">
+                            <img src="images/pin.png" alt="address">
+                            <span>Terminal Puerta Maya<br>
+                                Carretera Costera Sur, Q. R., Mexico</span>
+                        </div>
+
+                        <div class="icons contacticons">
+                            <img src="images/mail.png" alt="email">
+                            <span>inquiry@scootsrental.com</span>
+                        </div>
+
+                        <div class="icons contacticons">
+                            <img src="images/phone.png" alt="phone">
+                            <span>(+52) 123-456-789</span>
+                        </div>
+
+                        <div><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946.6029041844322!2d-86.97524094465027!3d20.475742624257435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e1!3m2!1sen!2sph!4v1608153561857!5m2!1sen!2sph"
+                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="contact">
+                <div class="address">
+                    <h2>Contact Us</h2>
+                    <div class="icons">
+                        <img src="images/pin.png" alt="address">
+                        <span>Av. Rafael E. Melgar, Centro<br>
+                            San Miguel de Cozumel, Q. R., Mexico</span>
+                    </div>
+
+                    <div class="icons">
+                        <img src="images/mail.png" alt="email">
+                        <span>inquiry@scootsrental.com</span>
+                    </div>
+
+                    <div class="icons">
+                        <img src="images/phone.png" alt="phone">
+                        <span>(+52) 123-456-789</span>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <h2>Follow Us</h2>
+                    <p class="icons"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"
+                                alt="Facebook icon">Facebook</a></p>
+                    <p class="icons"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"
+                                alt="Instagram icon">Instagram</a></p>
+                    <p class="icons"><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
+                                alt="Twitter icon">Twitter</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Scoots Rentals Cozumel | <a href="resources.html"
+                target="_blank">Resources</a> | Diosa Temblor J.</p>
+        <div>Last Updated: <span id="lastmod"></span></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/lazy-loading.js"></script>
+    <script src="js/rentals.js"></script>
+</body>
+
+</html>

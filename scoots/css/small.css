@@ -326,7 +326,8 @@ p,
 li,
 span,
 td,
-footer div {
+footer div,
+dl {
     font-size: .8rem;
 }
 
@@ -391,13 +392,13 @@ img[data-src] {
 
 .pricechart td,
 th {
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     text-align: left;
     padding: 8px;
 }
 
 .pricechart tr:nth-child(even) {
-    background-color: hsl(242, 72%, 14%, .5);
+    background-color: hsl(26, 87%, 51%, .2);
 }
 
 .pricechart p {
@@ -441,14 +442,13 @@ th {
 
 form fieldset {
     margin: 2rem 0;
-    padding: 2rem 2%;
     text-align: left;
 }
 
 form legend {
     color: #031926;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 0 10px;
 }
 
 form label.top,
@@ -475,15 +475,8 @@ form label.top select {
     padding: .75rem;
     color: #031926;
     width: 100%;
-    max-width: 25rem;
+    max-width: 20rem;
     background-color: hsl(242, 72%, 14%, .1);
-}
-
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-    color: #031926;
-    font-size: 1rem;
 }
 
 form input.subbutton {
@@ -494,7 +487,7 @@ form input.subbutton {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 25rem;
+    max-width: 20rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -513,7 +506,7 @@ form label.top input:required:valid {
 form textarea {
     padding: 10px;
     width: 100%;
-    max-width: 25rem;
+    max-width: 20rem;
     height: 150px;
     background-color: hsl(242, 72%, 14%, .1);
 }
@@ -526,6 +519,95 @@ form textarea {
 .button {
     text-align: left;
 }
+
+/* tours*/
+.toursicons img {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.toursicons {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tours-summary a {
+    text-decoration: none;
+    color: black;
+}
+
+.tours img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.tours p,
+.tours dl {
+    text-align: left;
+}
+
+.tours dl {}
+
+.tours {
+    padding: 10px;
+}
+
+.tours p {
+    margin-bottom: 10px;
+}
+
+.tours dl dd {
+    margin-left: 50px;
+}
+
+.list p:nth-of-type(1) {
+    background-color: #F5E663;
+    padding: 10px;
+}
+
+/*contact*/
+.address1 {
+    margin-bottom: 20px;
+}
+
+.addressdiv iframe {
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.addressdiv {
+    margin: 20px;
+}
+
+.addressdiv h2 {
+    margin-bottom: 20px;
+}
+
+.address1 .contacticons,
+.address2 .contacticons {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#contactmessage {
+    margin-bottom: 20px;
+}
+
+#fieldcontact {
+    padding-bottom: 0;
+}
+
+.address1,
+.address2 {
+    text-align: left;
+}
+
+
 
 
 
