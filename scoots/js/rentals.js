@@ -21,6 +21,8 @@ fetch(rentalURL)
             document.getElementById(`max${type+1}`).textContent = rental[type].maxPersons;
             document.getElementById(`half${type+1}`).textContent = rental[type].reservation[0].half;
             document.getElementById(`full${type+1}`).textContent = rental[type].reservation[0].full;
+            document.getElementById(`whalf${type+1}`).textContent = rental[type].walkIn[0].half;
+            document.getElementById(`wfull${type+1}`).textContent = rental[type].walkIn[0].full;
         }
 
     });
