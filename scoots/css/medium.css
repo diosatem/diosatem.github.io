@@ -192,7 +192,12 @@
         border-radius: 10px;
     }
 
-    /*contact*/
+    /*tours*/
+    .toursimages {
+        flex-flow: row wrap;
+    }
+
+    /*contactus*/
     .addressdiv iframe {
         min-width: 600px;
         min-height: 400px;

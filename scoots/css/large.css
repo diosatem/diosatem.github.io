@@ -131,6 +131,10 @@
         margin: 20px auto;
     }
 
+    .pricechart h3 {
+        margin-bottom: 10px;
+    }
+
     /*reservations*/
     .reservediv {
         display: inline-grid;
