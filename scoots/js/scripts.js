@@ -22,11 +22,3 @@ WebFont.load({
         families: ['Syne']
     }
 });
-
-
-
-
-
-
-
-
