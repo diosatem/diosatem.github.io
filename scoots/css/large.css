@@ -65,6 +65,11 @@
         margin: 50px auto;
     }
 
+    /*contact*/
+    .contact {
+        flex-flow: column wrap;
+    }
+
     /*footer*/
     footer {
         margin: 0 auto;

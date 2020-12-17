@@ -269,8 +269,7 @@ hr {
 }
 
 .icons {
-    display: flex;
-    
+    display: flex;    
     align-items: flex-end;
     text-align: left;
     gap: 10px;
@@ -298,6 +297,7 @@ hr {
 
 .contact h2 {
     margin-bottom: 10px;
+    margin-top: 10px;
     text-align: left;
 }
 
