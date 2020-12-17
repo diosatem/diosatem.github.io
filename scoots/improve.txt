@@ -1,3 +1,4 @@
 add address to contact
 fix rentals copyright year
 from to dates for reservations
+add json to table
