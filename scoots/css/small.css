@@ -573,6 +573,10 @@ form textarea {
     border-radius: 10px;
 }
 
+#contactbox {
+    height: fit-content;
+}
+
 /*contact*/
 .address1 {
     margin-bottom: 20px;
