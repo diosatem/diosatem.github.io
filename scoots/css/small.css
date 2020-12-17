@@ -270,8 +270,8 @@ hr {
 
 .icons {
     display: flex;
+    
     align-items: flex-end;
-    width: max-content;
     text-align: left;
     gap: 10px;
     margin-bottom: 5px;

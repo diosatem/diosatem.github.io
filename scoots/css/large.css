@@ -163,7 +163,9 @@
         margin: 20px;
     }
 
-    #contactbox figure img {}
+    #contactbox figure img {
+        max-width: 500px;
+    }
 
     /*contact us*/
     .contactdiv {
