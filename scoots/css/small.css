@@ -269,7 +269,7 @@ hr {
 }
 
 .icons {
-    display: flex;    
+    display: flex;
     align-items: flex-end;
     text-align: left;
     gap: 10px;
