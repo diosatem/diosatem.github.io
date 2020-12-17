@@ -67,7 +67,7 @@
 
     /*contact*/
     .contact {
-        flex-flow: column wrap;
+        flex-flow: row wrap;
     }
 
     /*footer*/
@@ -170,6 +170,10 @@
 
     #contactbox figure img {
         max-width: 500px;
+    }
+
+    .toursimages {
+        grid-template-columns: auto;
     }
 
     /*contact us*/
