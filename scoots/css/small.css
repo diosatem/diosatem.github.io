@@ -621,6 +621,11 @@ form textarea {
     text-align: left;
 }
 
+.divresources {
+    text-align: left;
+    margin: 20px;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
