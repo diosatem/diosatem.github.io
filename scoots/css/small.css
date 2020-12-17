@@ -327,7 +327,7 @@ span,
 td,
 footer div,
 dl,
-.contactbox figcaption {
+#contactbox figcaption {
     font-size: .8rem;
 }
 
@@ -569,8 +569,8 @@ form textarea {
     font-size: 1.5rem;
 }
 
-.toursimages img {
-    width: 300px;
+#contactbox figure img {
+    max-width: 300px;
     border-radius: 10px;
 }
 
