@@ -276,10 +276,6 @@ hr {
     margin-bottom: 5px;
 }
 
-.address {
-    padding-bottom: 20px;
-}
-
 .socials {
     display: flex;
     flex-flow: column;
@@ -625,13 +621,9 @@ form textarea {
     margin: 20px;
 }
 
-.divresources dl {
-    list-style: square inside;
+.divresources dd {
     display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

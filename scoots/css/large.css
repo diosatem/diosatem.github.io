@@ -71,6 +71,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        gap: 20px;
     }
 
     /*footer*/
@@ -176,7 +177,7 @@
     }
 
     .toursimages {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr;
     }
 
     /*contact us*/
