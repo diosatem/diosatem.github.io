@@ -193,8 +193,9 @@
     }
 
     /*tours*/
-    .toursimages {
-        flex-flow: row wrap;
+    .figurediv {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
 
     /*contactus*/

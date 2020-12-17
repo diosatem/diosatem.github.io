@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
@@ -567,16 +566,6 @@ form textarea {
 .historytitle {
     font-weight: bolder;
     font-size: 1.5rem;
-}
-
-.toursimages {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-    margin: 10px;
-    justify-content: center;
-    align-content: center;
-    flex: 1 100%;
 }
 
 .toursimages img {
