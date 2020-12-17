@@ -326,7 +326,8 @@ li,
 span,
 td,
 footer div,
-dl {
+dl,
+.contactbox figcaption {
     font-size: .8rem;
 }
 
@@ -577,7 +578,7 @@ form textarea {
     height: fit-content;
 }
 
-/*contact*/
+/*contact us*/
 .address1 {
     margin-bottom: 20px;
 }

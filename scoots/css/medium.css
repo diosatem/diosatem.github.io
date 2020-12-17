@@ -169,8 +169,6 @@
 
     }
 
-    /*footer*/
-
     /*rentals*/
     .pricechart table {
         width: 100%;
@@ -198,7 +196,7 @@
         gap: 10px;
     }
 
-    /*contactus*/
+    /*contact us*/
     .addressdiv iframe {
         min-width: 600px;
         min-height: 400px;
