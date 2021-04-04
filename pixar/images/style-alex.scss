@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Zilla+Slab:wght@600&display=swap');
+
+//fonts
+$base-font: 'Montserrat',
+sans-serif;
+$header-font: 'Zilla Slab',
+serif;
+
+//colors
+$base-color: #0D0D0D;
+$secondary-color: #FDFDFE;
+$accent1: #FEE300;
+$accent2: #DC022B;
+$accent3: #047542;
+
+//breakpoints
+$break-small: 20em;
+$break-medium: 37.5em;
+$break-large: 60em;
+
+//mixins
+@mixin center {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin small {
+    @media (max-width: #{$break-small}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: $break-medium) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header[role=banner] {
+    font-family: $header-font;
+    color: $secondary-color;
+    margin-bottom: 20em;
+}
+
+div.page-wrapper {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(9, 17, 121, 1) 20%, rgba(255, 255, 255, 1) 100%);
+    position: relative;
+}
+
+div.design-selection {
+    color: $secondary-color;
+    position: absolute;
+    top: 10em;
+
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+    }
+}
+
+.intro {
+    color: $secondary-color;
+}
+
+.preamble::before {
+    content: url('images/wall-e.png');
+}
+
+.explanation::before {
+    content: url('images/house.svg');
+}
+
+.participation::before {
+    content: url('images/airplane.png');
+}
+
+.benefits {
+    background-color: #FEE300;
+}
+
+.benefits::before {
+    content: url('images/rat.png');
+}
+
+.requirements {
+    margin-bottom: 30em;
+}
+
+
+.requirements::before {
+    content: url('images/ant.png');
+}
+
+div.zen-resources ul {
+    background-color: pink;
+    position: absolute;
+    bottom: 10em;
+    color: white;
+    width: 100%;
+
+    li {
+        padding: 2em 1em;
+        background-color: #047542;
+        border: 1px solid $base-color;
+    }
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding-bottom: 2em;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+div.design-archives nav[role=navigation] {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    li {
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .preamble {
+        width: 50%;
+        text-align: end;
+        margin-right: 10%;
+        margin-left: auto;
+        &::before {
+            content: url('images/wall-e.png');
+        }
+    }
+    
+    .explanation {
+        width: 50%;
+        margin-left: 10%;
+        &::before {
+            content: url('images/house.svg');
+            margin-left: 110%;
+        }
+    }
+    
+    .participation{
+        width: 50%;
+        text-align: end;
+        margin-right: 10%;
+        margin-left: auto;
+        &::before {
+            content: url('images/airplane.png');
+        }
+    }
+    
+    .benefits {
+        background-color: #FEE300;
+        width: 50%;
+        margin-left: 10%;
+        &::before {
+            content: url('images/rat.png');
+            margin-left: 110%;
+        }
+    }
+    
+    
+    .requirements {
+        width: 50%;
+        text-align: end;
+        margin-right: 10%;
+        margin-left: auto;
+        &::before {
+            content: url('images/ant.png');
+        }
+    }
+
+    div.zen-resources ul {
+        background-color: pink;
+        position: absolute;
+        display: flex;
+        color: white;
+        width: 100%;
+    
+        li {
+            padding: 2em 1em;
+            background-color: #047542;
+            border: 1px solid $base-color;
+            width: 100%;
+        }
+    }
+    
+}
