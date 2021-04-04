@@ -1,0 +1,1164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Zilla+Slab:wght@600&display=swap');
+//Fonts
+$base-font: 'Montserrat',
+sans-serif;
+$header-font: 'Zilla Slab',
+serif;
+
+//Colors
+$base-color: #0D0D0D;
+$secondary-color: #FDFDFE;
+$accent1: #FEE300;
+$accent2: #DC022B;
+$accent3: #047542;
+
+//Breakpoints
+$break-small: 20em; //320px
+$break-small-21: 21.188em; //339px
+$break-small-27: 27.438em; //439px /
+$break-medium: 700px; //600px /
+$break-large: 75em; //1200px
+
+//Mixins
+@mixin center {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@mixin small {
+    @media (max-width: #{$break-small}) {
+        @content;
+    }
+}
+
+@mixin small-21 {
+    @media (max-width: #{$break-small-21}) {
+        @content;
+    }
+}
+
+@mixin small-min-27 {
+    @media (min-width: #{$break-small-27}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: $break-medium) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: $break-large) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: $base-font;
+    @include center;
+    max-height: 100%;
+    margin: auto 0;
+    
+}
+
+//Background
+#css-zen-garden {
+    background-image: url("images/background/background_small.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    padding: 0;
+
+    @include medium {
+        background-image: url("images/background/background_big.png");
+    }
+
+    
+}
+
+
+//Possible animation slide for background added by Hans
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-1962px, 0, 0);
+    }
+}
+
+div.page-wrapper {
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    max-width: 90vw;
+    margin: auto;
+    
+    @include large {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .intro {
+        text-align: center;
+        position: relative;
+
+        //Header
+        header[role=banner] {
+            font-family: $header-font;
+            color: $secondary-color;
+
+            h1 {
+                background: transparent url("images/title/LampOnTitle.png") no-repeat center top;
+                background-size: contain;
+                margin-top: 1rem;
+                max-width: 500px;
+                height: 540px;
+                text-indent: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                
+
+                @include medium {
+                    max-width: 700px;
+                    height: 740px;
+                    margin: 0 auto;
+                    margin-top: 10vh;
+                }
+            }
+
+            h2 {
+                margin-top: -25rem;
+                font-size: 1.2rem;
+                opacity: .6;
+
+               // @include small-min-30 {
+               //     margin-top: -34rem;
+              //  }
+
+                //@include medium-min-40 {
+                //    margin-top: -31rem;
+               // }
+               @include small-min-27 {
+                   margin-top: -22rem;
+               }
+
+                @include medium {
+               margin-top: -25rem;
+               }
+
+                
+            }
+        }
+
+        .summary[role=article] {
+            & p:nth-of-type(1) {
+                margin: 3rem 0 35rem 0;
+                text-align: center;
+                color: $secondary-color;
+                opacity: .4;
+
+                @include small-min-27 {
+                    margin-bottom: 25rem;
+                }
+            }
+
+            & p:nth-of-type(2) {
+                text-align: center;
+                margin-bottom: 3rem;
+                @include medium {
+                    margin-top: -70vh;
+                }
+                @include large {
+                    margin-top: -40vh;
+                }
+            }
+        }
+    }
+
+    //Font sizes for each section
+    .summary,
+    .preamble,
+    .main,
+    .zen-resources,
+    .design-archives {
+        font-size: .9rem;
+
+        @include medium {
+            font-size: 1rem;
+        }
+    }
+
+    //Bottom margins for each section
+    .summary,
+    .preamble,
+    .explanation,
+    .participation,
+    .benefits,
+    .requirements {
+        margin-bottom: 2.5rem;
+    }
+
+    //Bottom margins for each p
+    p {
+        margin-bottom: .5rem;
+        
+        
+    }
+
+    //all subtitles
+    h3 {
+        font-size: 1.4rem;
+
+    }
+}
+
+//Planets
+div.design-selection {
+    color: $secondary-color;
+    position: absolute;
+    top: 22rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @include medium {
+        margin-top: 80vh;
+    }
+
+    .select {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    ul {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include medium {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: auto;
+            justify-items: center;
+            align-items: center;
+            height: 35rem;
+        }
+
+        li {
+            list-style: none;
+            width: 100px;
+            height: 130px;
+            font-size: .7rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            margin: 10px 0;
+
+            a:link,
+            a:visited {
+                text-decoration: none;
+                color: $secondary-color;
+            }
+        }
+
+        .design-name {
+            text-align: center;
+
+            @include small-21 {
+                line-height: 1.5;
+            }
+        }
+
+        //Planet svgs
+        li:nth-of-type(1)::before {
+            background-image: url('images/space icons/svg/018-mercury.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 45px;
+            display: block;
+            width: 80px;
+            height: 80px;
+            content: "";
+            transform: translatey(0px);
+            animation: float1 20s linear infinite forwards;
+    
+        }
+
+        li:nth-of-type(2)::before {
+            background-image: url('images/space icons/svg/036-venus.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 55px;
+            display: block;
+            width: 80px;
+            height: 80px;
+            content: "";
+            transform: translatey(0px);
+            animation: float2 15s linear infinite forwards;
+        
+
+
+        }
+
+        li:nth-of-type(3)::before {
+            background-image: url('images/space icons/svg/006-planet-earth.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60px;
+            display: block;
+            width: 80px;
+            height: 80px;
+            content: "";
+            transform: translatey(0px);
+            animation: float3 20s linear infinite forwards;
+       
+
+
+        }
+
+        li:nth-of-type(4)::before {
+            background-image: url('images/space icons/svg/017-mars.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50px;
+            display: block;
+            width: 80px;
+            height: 100px;
+            content: "";
+            transform: translatey(0px);
+            /*pasted by Hans*/
+            animation: float5 20s linear infinite forwards;
+            /*pasted by Hans*/
+         
+
+        }
+
+        li:nth-of-type(5)::before {
+            background-image: url('images/space icons/svg/012-jupiter.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80px;
+            display: block;
+            width: 80px;
+            height: 100px;
+            content: "";
+            transform: translatey(0px);
+            /*pasted by Hans*/
+            animation: float4 15s linear infinite forwards;
+            /*pasted by Hans*/
+           
+
+        }
+
+        li:nth-of-type(6)::before {
+            background-image: url('images/space icons/svg/028-saturn.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 75px;
+            display: block;
+            width: 80px;
+            height: 100px;
+            content: "";
+            transform: translatey(0px);
+            /*pasted by Hans*/
+            animation: float3 20s linear infinite forwards;
+            /*pasted by Hans*/
+       
+
+        }
+
+        li:nth-of-type(7)::before {
+            background-image: url('images/space icons/svg/035-uranus.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60px;
+            display: block;
+            width: 80px;
+            height: 100px;
+            content: "";
+            transform: translatey(0px);
+            /*pasted by Hans*/
+            animation: float3 20s linear infinite forwards;
+            /*pasted by Hans*/
+        
+
+        }
+
+        li:nth-of-type(8)::before {
+            background-image: url('images/space icons/svg/022-neptune.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 65px;
+            display: block;
+            width: 80px;
+            height: 100px;
+            content: "";
+            transform: translatey(0px);
+            /*pasted by Hans*/
+            animation: float4 15s linear infinite forwards;
+            /*pasted by Hans*/
+        
+        }
+
+        li:nth-of-type(1) {
+            @include medium {
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+
+        li:nth-of-type(2) {
+            @include medium {
+                grid-column: 2;
+                grid-row: 1;
+            }
+        }
+
+        li:nth-of-type(3) {
+            @include medium {
+                grid-column: 4;
+                grid-row: 1;
+            }
+        }
+
+        li:nth-of-type(4) {
+            @include medium {
+                grid-column: 6;
+                grid-row: 1;
+            }
+        }
+
+        li:nth-of-type(5) {
+            @include medium {
+                grid-column: 2;
+                grid-row: 3;
+            }
+        }
+
+        li:nth-of-type(6) {
+            @include medium {
+                grid-column: 4;
+                grid-row: 3;
+            }
+        }
+
+        li:nth-of-type(7) {
+            @include medium {
+                grid-column: 6;
+                grid-row: 3;
+            }
+        }
+
+        li:nth-of-type(8) {
+            @include medium {
+                grid-column: 7;
+                grid-row: 2;
+            }
+        }
+
+
+    }
+}
+
+//animations for hover on planets added by Hans
+div.design-selection ul li:nth-of-type(1):hover {
+    animation-play-state: paused;
+
+    @include medium {
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
+    }
+}
+
+div.design-selection ul li:nth-of-type(2):hover {
+    animation-play-state: paused;
+
+    @include medium {
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
+    }
+}
+
+div.design-selection ul li:nth-of-type(3):hover {
+    animation-play-state: paused;
+
+    @include medium {
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
+    }
+}
+
+div.design-selection ul li:nth-of-type(4):hover {
+    animation-play-state: paused;
+
+    @include medium {
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
+    }
+}
+
+div.design-selection ul li:nth-of-type(5):hover {
+    animation-play-state: paused;
+
+    @include medium {
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
+    }
+}
+
+div.design-selection ul li:nth-of-type(6):hover {
+    animation-play-state: paused;
+
+    @include medium {
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
+    }
+}
+
+div.design-selection ul li:nth-of-type(7):hover {
+    animation-play-state: paused;
+
+    @include medium {
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
+    }
+}
+
+div.design-selection ul li:nth-of-type(8):hover {
+    animation-play-state: paused;
+
+    @include medium {
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
+    }
+}
+
+//Keyframes for planets
+@keyframes float1 {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translatey(0px);
+    }
+
+    60% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float3 {
+    0% {
+        transform: translatey(0px);
+    }
+
+    40% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+//animation added by Hans
+@keyframes float4 {
+    0% {
+        transform: translatey(0px);
+    }
+
+    40% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float5 {
+    0% {
+        transform: translatey(0px);
+    }
+
+    40% {
+        transform: translatey(20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+.main {
+    position: relative;
+}
+
+.preamble[role=article] {
+    color: $base-color;
+    p {
+        @include small-min-27 {
+            text-align: center;
+        }
+        @include medium {
+            text-align: end;
+        }
+    }
+    @include small-min-27 {
+        margin-top: 10vh;
+    }
+
+    @include medium {
+        margin-left: 20rem;
+        margin-top: 220vh;
+        text-align: end;
+    }
+}
+
+//Body images
+.preamble::before {
+    background-image: url('images/wall-e.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5rem;
+    display: block;
+    width: 100%;
+    height: 100px;
+    content: "";
+    padding-bottom: 5rem;
+    transform: translatey(0px);
+    animation: wall-e 70s linear infinite forwards;
+
+    
+    @include medium {
+        position: absolute;
+        left: -10rem;
+        top: 80rem;
+        margin-top: 50vh;  
+        margin-left: -10vw;      
+    }
+
+    @include large {
+        left: -25rem;
+        top: 70rem; 
+        margin-top: 140vh;
+        margin-left: 0;
+    }
+}
+
+@keyframes wall-e {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.explanation {
+    color: $base-color;
+    @include small-min-27 {
+        margin-top: 40vh;
+    }
+    p{
+        @include small-min-27 {
+            text-align: center;
+        }
+        @include medium {
+            text-align: start;
+        }
+    }
+    @include medium {
+        margin-right: 20rem;
+        margin-top: 80vh;
+        text-align: start;
+    }
+}
+
+.explanation::before {
+    background-image: url('images/house.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    height: 250px;
+    content: "";
+    padding-bottom: 5rem;
+    transform: translatey(0px);
+    animation: house 10s ease-in-out infinite;
+
+    @include medium {
+        position: absolute;
+        right: -10rem;
+        top: 8rem;
+        margin-top: -10vh;
+        margin-right: -10vw;
+    }
+
+    @include large {
+        right: -25rem;
+        top: 0rem;
+        margin-right: 0vw;
+        
+    }
+}
+
+@keyframes house {
+    0% {
+        transform: translatey(0px);
+    }
+
+    20% {
+        transform: translatey(-5px);
+    }
+
+    40% {
+        transform: rotate(-5deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.participation {
+
+    
+    p{
+        @include medium {
+            text-align: end;
+        }
+    }
+    @include small-min-27 {
+        margin-top: 50vh;
+    }
+    @include medium {
+        margin-left: 20rem;
+        margin-top: 90vh;
+        text-align: end;
+    }
+}
+
+.participation::before {
+    background-image: url('images/airplane.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    height: 15vw;
+    content: "";
+    padding-bottom: 5rem;
+    transform: translatey(0px);
+    animation: airplane 10s ease-in-out infinite;
+
+    @include medium {
+        position: absolute;
+        left: -10rem;
+        top: 63rem;
+        margin-top: -60vh;
+        margin-left: -10vw;
+    }
+
+    
+    @include large {
+        left: -25rem;
+        top: 25rem;
+        margin-top: 30vh;
+        margin-left: 0vw;
+    }
+}
+
+@keyframes airplane {
+    0% {
+        transform: translatey(0px);
+    }
+
+    20% {
+        transform: translatey(-5px);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.benefits {
+    color: white;
+    background-image: url("images/road_sign.png");
+    background-repeat: no-repeat;
+    
+    background-size: 100%;
+    @include small-min-27{
+        margin-top: 90vh;
+        background-position: bottom;
+    }
+
+    p {
+        padding: 0 2.5rem 2rem 2.5rem;
+        @include medium {
+            font-size: .9rem;
+        }
+    }
+
+    @include medium {
+        margin-right: 20rem;
+        margin-top: 230vh;
+        padding-top: 2.5rem;
+        background-position: top;
+    }
+    @include large {
+        margin-top: 100vh;
+    }
+}
+
+.benefits::before {
+    background-image: url('images/rat.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    height: 90px;
+    content: "";
+    padding-bottom: 5rem;
+    animation: rat 15s linear infinite forwards;
+    //animation: move 8s infinite;
+    /*added by Hans*/
+
+    @include medium {
+        position: absolute;
+        right: -3rem;
+        top: 100rem;
+        margin-top: 240vh;
+    }
+
+    @include large {
+        right: -10rem;
+        top: 48rem;
+        margin-top: 200vh;
+    }
+}
+
+
+@keyframes rat {
+    0% {
+        // transform: translatey(0px) scale(1.25, 0.75);
+        transform: translatex(0);
+    }
+
+
+    50% {
+        //transform: translatey(5px) rotate(15deg);
+        transform: translatex(30%)
+    }
+    60%{
+        transform: translatex(30%) rotateY(180deg);
+
+    }
+    90%{
+        transform: translatex(0) rotateY(180deg);
+    }
+    100% {
+        //transform: translatey(0) scale(1.25, 0.75);
+        transform: translatex(0) rotateY(0deg);
+        
+        
+
+    }
+}
+
+.requirements {
+    color: $secondary-color;
+    @include small-min-27 {
+        margin-top: 90vh;
+        text-align: center;
+    }
+
+    @include medium {
+        margin-left: 20rem;
+        margin-bottom: 1rem;
+        margin-top: 150vh;
+        text-align: end;
+    }
+
+    @include large {
+        margin-top: 150vh;
+    }
+    p{
+        @include small-min-27 {
+            text-align: center;
+        }
+        @include medium {
+            text-align: end;
+        }
+    }
+    & p[role=contentinfo] {
+        display: none;
+    }
+}
+
+.requirements::before {
+    background-image: url('images/ant.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    height: 50vh;
+    content: "";
+    animation: ant 8s ease-in-out infinite;
+
+    @include medium {
+        position: absolute;
+        left: -10rem;
+        bottom: 31rem;
+        margin-left: -10vw;
+    }
+
+    @include large {
+        left: -25rem;
+        bottom: 10rem;
+        margin-left: 0vw;
+    }
+}
+
+@keyframes ant {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+//Resources
+div.zen-resources ul {
+    position: absolute;
+    bottom: 9rem;
+    color: white;
+    width: 100%;
+    height: 13rem;
+
+   // @include small-min-32 {
+   //     top: 250rem;
+   // }
+
+   @include medium {
+    display: flex;
+    height: fit-content;    
+     justify-content: center;
+
+     @include large {
+        
+            bottom: 6rem;
+        
+     }
+     
+}
+
+    li {
+        padding: 1rem;
+        width: 100%;
+        border: 1px solid $secondary-color;
+        list-style: none;
+        text-align: left;
+
+        @include medium {
+            text-align: center;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+    }
+}
+
+//Footer
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    @include medium {
+        
+        
+    }
+
+    @include large {
+        margin-top: 2rem;
+    }
+
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: $base-color;
+    }
+
+    a:nth-of-type(1)::before {
+        background-image: url('images/footer/html.ico');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        content: "";
+    }
+
+    a:nth-of-type(2)::before {
+        background-image: url('images/footer/css.ico');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        content: "";
+    }
+
+    a:nth-of-type(3)::before {
+        background-image: url('images/footer/cc.ico');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        content: "";
+    }
+
+    a:nth-of-type(4)::before {
+        background-image: url('images/footer/ally.ico');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        content: "";
+    }
+
+    a:nth-of-type(5)::before {
+        background-image: url('images/footer/gh.ico');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        content: "";
+    }
+}
+
+//Archives
+div.design-archives nav[role=navigation] {
+    padding-top: 26rem;
+    //bottom: 0;
+
+    //@include small-min-32 {
+     //   padding-top: 30rem;
+  //  }
+  @include large {
+      padding-top: 15rem;
+  }
+
+
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        li {
+            list-style: none;
+            border: 1px solid $secondary-color;
+            padding: .5rem;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+
+
+        .viewall::after {
+            content: "\203A";
+            color: $secondary-color;
+        }
+
+    }
+}
+
+
+.archives,
+.resources,
+.banner h1 {
+    display: none;
+}
+
+.archives {
+    display: none;
+}
