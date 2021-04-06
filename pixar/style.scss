@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Zilla+Slab:wght@600&display=swap');
+
 //Fonts
 $base-font: 'Montserrat',
 sans-serif;
@@ -16,7 +17,9 @@ $accent3: #047542;
 $break-small: 20em; //320px
 $break-small-21: 21.188em; //339px
 $break-small-27: 27.438em; //439px /
-$break-medium: 700px; //600px /
+$break-medium: 37.500em; //600px /
+$break-medium-45: 45.313em; // 725px
+$break-medium-54: 54.438em; //871px
 $break-large: 75em; //1200px
 
 //Mixins
@@ -24,7 +27,6 @@ $break-large: 75em; //1200px
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 @mixin small {
     @media (max-width: #{$break-small}) {
@@ -50,6 +52,18 @@ $break-large: 75em; //1200px
     }
 }
 
+@mixin medium-min-45 {
+    @media (min-width: $break-medium-45) {
+        @content;
+    }
+}
+
+@mixin medium-min-54 {
+    @media (min-width: $break-medium-54) {
+        @content;
+    }
+}
+
 @mixin large {
     @media (min-width: $break-large) {
         @content;
@@ -67,9 +81,7 @@ body {
     line-height: 1.5;
     font-family: $base-font;
     @include center;
-    max-height: 100%;
-    margin: auto 0;
-    
+    //max-height: 100%;
 }
 
 //Background
@@ -84,10 +96,7 @@ body {
     @include medium {
         background-image: url("images/background/background_big.png");
     }
-
-    
 }
-
 
 //Possible animation slide for background added by Hans
 @keyframes slide {
@@ -104,14 +113,6 @@ div.page-wrapper {
     position: relative;
     margin: 20px;
     text-align: center;
-    max-width: 90vw;
-    margin: auto;
-    
-    @include large {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 
     .intro {
         text-align: center;
@@ -131,7 +132,6 @@ div.page-wrapper {
                 text-indent: 100%;
                 white-space: nowrap;
                 overflow: hidden;
-                
 
                 @include medium {
                     max-width: 700px;
@@ -144,24 +144,11 @@ div.page-wrapper {
             h2 {
                 margin-top: -25rem;
                 font-size: 1.2rem;
-                opacity: .6;
-
-               // @include small-min-30 {
-               //     margin-top: -34rem;
-              //  }
-
-                //@include medium-min-40 {
-                //    margin-top: -31rem;
-               // }
-               @include small-min-27 {
-                   margin-top: -22rem;
-               }
+                opacity: .7;
 
                 @include medium {
-               margin-top: -25rem;
-               }
-
-                
+                    margin-top: -31rem;
+                }
             }
         }
 
@@ -170,9 +157,9 @@ div.page-wrapper {
                 margin: 3rem 0 35rem 0;
                 text-align: center;
                 color: $secondary-color;
-                opacity: .4;
+                opacity: .7;
 
-                @include small-min-27 {
+                @include medium {
                     margin-bottom: 25rem;
                 }
             }
@@ -180,11 +167,16 @@ div.page-wrapper {
             & p:nth-of-type(2) {
                 text-align: center;
                 margin-bottom: 3rem;
+                color: $base-color;
+
                 @include medium {
-                    margin-top: -70vh;
+                    margin-top: 46rem;                    
                 }
-                @include large {
-                    margin-top: -40vh;
+
+                a:link,
+                a:visited {
+                    text-decoration: none;
+                    color: $base-color;
                 }
             }
         }
@@ -196,10 +188,10 @@ div.page-wrapper {
     .main,
     .zen-resources,
     .design-archives {
-        font-size: .9rem;
+        font-size: 1rem;
 
         @include medium {
-            font-size: 1rem;
+            font-size: .9rem;
         }
     }
 
@@ -210,14 +202,13 @@ div.page-wrapper {
     .participation,
     .benefits,
     .requirements {
-        margin-bottom: 2.5rem;
+        margin-bottom: 3.5rem;
     }
 
     //Bottom margins for each p
     p {
         margin-bottom: .5rem;
-        
-        
+        text-align: left;
     }
 
     //all subtitles
@@ -237,17 +228,19 @@ div.design-selection {
     margin: auto;
 
     @include medium {
-        margin-top: 80vh;
+        margin-top: 5em;
     }
 
     .select {
         font-size: 1rem;
         text-align: center;
+        opacity: .7;
     }
 
     ul {
         position: relative;
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: center;
 
@@ -264,18 +257,19 @@ div.design-selection {
             list-style: none;
             width: 100px;
             height: 130px;
-            font-size: .7rem;
+            font-size: .7rem;            
             display: flex;
             flex-flow: column;
             align-items: center;
             justify-content: center;
             align-content: center;
-            margin: 10px 0;
+            margin: 10px 0;    
+            color: rgb(255, 255, 255, .7);        
 
             a:link,
             a:visited {
                 text-decoration: none;
-                color: $secondary-color;
+                color: rgb(255, 255, 255, .7);
             }
         }
 
@@ -298,8 +292,8 @@ div.design-selection {
             height: 80px;
             content: "";
             transform: translatey(0px);
+            -webkit-animation: float1 20s linear infinite forwards;
             animation: float1 20s linear infinite forwards;
-    
         }
 
         li:nth-of-type(2)::before {
@@ -312,8 +306,8 @@ div.design-selection {
             height: 80px;
             content: "";
             transform: translatey(0px);
+            -webkit-animation: float2 15s linear infinite forwards;
             animation: float2 15s linear infinite forwards;
-        
 
 
         }
@@ -328,8 +322,8 @@ div.design-selection {
             height: 80px;
             content: "";
             transform: translatey(0px);
+            -webkit-animation: float3 20s linear infinite forwards;
             animation: float3 20s linear infinite forwards;
-       
 
 
         }
@@ -344,11 +338,8 @@ div.design-selection {
             height: 100px;
             content: "";
             transform: translatey(0px);
-            /*pasted by Hans*/
+            -webkit-animation: float5 20s linear infinite forwards;
             animation: float5 20s linear infinite forwards;
-            /*pasted by Hans*/
-         
-
         }
 
         li:nth-of-type(5)::before {
@@ -361,11 +352,8 @@ div.design-selection {
             height: 100px;
             content: "";
             transform: translatey(0px);
-            /*pasted by Hans*/
+            -webkit-animation: float4 15s linear infinite forwards;
             animation: float4 15s linear infinite forwards;
-            /*pasted by Hans*/
-           
-
         }
 
         li:nth-of-type(6)::before {
@@ -378,28 +366,22 @@ div.design-selection {
             height: 100px;
             content: "";
             transform: translatey(0px);
-            /*pasted by Hans*/
+            -webkit-animation: float3 20s linear infinite forwards;
             animation: float3 20s linear infinite forwards;
-            /*pasted by Hans*/
-       
-
         }
 
         li:nth-of-type(7)::before {
             background-image: url('images/space icons/svg/035-uranus.svg');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 60px;
+            background-size: 70px;
             display: block;
             width: 80px;
             height: 100px;
             content: "";
             transform: translatey(0px);
-            /*pasted by Hans*/
+            -webkit-animation: float3 20s linear infinite forwards;
             animation: float3 20s linear infinite forwards;
-            /*pasted by Hans*/
-        
-
         }
 
         li:nth-of-type(8)::before {
@@ -412,10 +394,8 @@ div.design-selection {
             height: 100px;
             content: "";
             transform: translatey(0px);
-            /*pasted by Hans*/
+            -webkit-animation: float4 15s linear infinite forwards;
             animation: float4 15s linear infinite forwards;
-            /*pasted by Hans*/
-        
         }
 
         li:nth-of-type(1) {
@@ -483,6 +463,8 @@ div.design-selection ul li:nth-of-type(1):hover {
     animation-play-state: paused;
 
     @include medium {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5);
         transition: .5s ease-in-out;
     }
@@ -492,6 +474,8 @@ div.design-selection ul li:nth-of-type(2):hover {
     animation-play-state: paused;
 
     @include medium {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5);
         transition: .5s ease-in-out;
     }
@@ -501,6 +485,8 @@ div.design-selection ul li:nth-of-type(3):hover {
     animation-play-state: paused;
 
     @include medium {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5);
         transition: .5s ease-in-out;
     }
@@ -510,6 +496,8 @@ div.design-selection ul li:nth-of-type(4):hover {
     animation-play-state: paused;
 
     @include medium {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5);
         transition: .5s ease-in-out;
     }
@@ -519,6 +507,8 @@ div.design-selection ul li:nth-of-type(5):hover {
     animation-play-state: paused;
 
     @include medium {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5);
         transition: .5s ease-in-out;
     }
@@ -528,6 +518,8 @@ div.design-selection ul li:nth-of-type(6):hover {
     animation-play-state: paused;
 
     @include medium {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5);
         transition: .5s ease-in-out;
     }
@@ -537,6 +529,8 @@ div.design-selection ul li:nth-of-type(7):hover {
     animation-play-state: paused;
 
     @include medium {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5);
         transition: .5s ease-in-out;
     }
@@ -546,6 +540,8 @@ div.design-selection ul li:nth-of-type(8):hover {
     animation-play-state: paused;
 
     @include medium {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transform: scale(1.5);
         transition: .5s ease-in-out;
     }
@@ -594,7 +590,6 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 }
 
-//animation added by Hans
 @keyframes float4 {
     0% {
         transform: translatey(0px);
@@ -623,29 +618,16 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 }
 
-
 .main {
     position: relative;
 }
 
 .preamble[role=article] {
-    color: $base-color;
-    p {
-        @include small-min-27 {
-            text-align: center;
-        }
-        @include medium {
-            text-align: end;
-        }
-    }
-    @include small-min-27 {
-        margin-top: 10vh;
-    }
+    color: $base-font;
 
     @include medium {
         margin-left: 20rem;
-        margin-top: 220vh;
-        text-align: end;
+        margin-top: 30rem;
     }
 }
 
@@ -654,29 +636,25 @@ div.design-selection ul li:nth-of-type(8):hover {
     background-image: url('images/wall-e.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 5rem;
+    background-size: 8rem;
     display: block;
     width: 100%;
     height: 100px;
     content: "";
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     transform: translatey(0px);
+    -webkit-animation: wall-e 70s linear infinite forwards;
     animation: wall-e 70s linear infinite forwards;
 
-    
     @include medium {
         position: absolute;
         left: -10rem;
-        top: 80rem;
-        margin-top: 50vh;  
-        margin-left: -10vw;      
+        top: 85rem;
     }
 
     @include large {
         left: -25rem;
-        top: 70rem; 
-        margin-top: 140vh;
-        margin-left: 0;
+        top: 70rem;
     }
 }
 
@@ -691,22 +669,9 @@ div.design-selection ul li:nth-of-type(8):hover {
 }
 
 .explanation {
-    color: $base-color;
-    @include small-min-27 {
-        margin-top: 40vh;
-    }
-    p{
-        @include small-min-27 {
-            text-align: center;
-        }
-        @include medium {
-            text-align: start;
-        }
-    }
     @include medium {
         margin-right: 20rem;
-        margin-top: 80vh;
-        text-align: start;
+        margin-top: 13rem;
     }
 }
 
@@ -714,28 +679,29 @@ div.design-selection ul li:nth-of-type(8):hover {
     background-image: url('images/house.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 8rem;
     display: block;
     width: 100%;
     height: 250px;
     content: "";
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     transform: translatey(0px);
+    -webkit-animation: house 10s ease-in-out infinite;
     animation: house 10s ease-in-out infinite;
 
     @include medium {
         position: absolute;
         right: -10rem;
-        top: 8rem;
-        margin-top: -10vh;
-        margin-right: -10vw;
+        top: -15rem;
+    }
+
+    @include medium-min-54 {
+        right: -20rem;
     }
 
     @include large {
         right: -25rem;
         top: 0rem;
-        margin-right: 0vw;
-        
     }
 }
 
@@ -766,20 +732,9 @@ div.design-selection ul li:nth-of-type(8):hover {
 }
 
 .participation {
-
-    
-    p{
-        @include medium {
-            text-align: end;
-        }
-    }
-    @include small-min-27 {
-        margin-top: 50vh;
-    }
     @include medium {
         margin-left: 20rem;
-        margin-top: 90vh;
-        text-align: end;
+        margin-top: 12rem;
     }
 }
 
@@ -787,29 +742,29 @@ div.design-selection ul li:nth-of-type(8):hover {
     background-image: url('images/airplane.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 8rem;
     display: block;
     width: 100%;
-    height: 15vw;
+    height: 60px;
     content: "";
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     transform: translatey(0px);
+    -webkit-animation: airplane 10s ease-in-out infinite;
     animation: airplane 10s ease-in-out infinite;
 
     @include medium {
         position: absolute;
         left: -10rem;
-        top: 63rem;
-        margin-top: -60vh;
-        margin-left: -10vw;
+        top: 39rem;
     }
 
-    
+    @include medium-min-54 {
+        left: -20rem;
+    }
+
     @include large {
         left: -25rem;
         top: 25rem;
-        margin-top: 30vh;
-        margin-left: 0vw;
     }
 }
 
@@ -833,18 +788,25 @@ div.design-selection ul li:nth-of-type(8):hover {
 }
 
 .benefits {
-    color: white;
-    background-image: url("images/road_sign.png");
-    background-repeat: no-repeat;
-    
-    background-size: 100%;
-    @include small-min-27{
-        margin-top: 90vh;
-        background-position: bottom;
-    }
+    background: -moz-linear-gradient(left, rgba(233, 223, 196, 1) 0%, rgba(233, 223, 196, 1) 1%, rgba(237, 227, 200, 1) 2%, rgba(237, 227, 200, 1) 24%, rgba(235, 221, 195, 1) 25%, rgba(233, 223, 196, 1) 48%, rgba(235, 221, 195, 1) 49%, rgba(230, 216, 189, 1) 52%, rgba(230, 216, 189, 1) 53%, rgba(233, 219, 192, 1) 54%, rgba(230, 216, 189, 1) 55%, rgba(230, 216, 189, 1) 56%, rgba(233, 219, 192, 1) 57%, rgba(230, 216, 189, 1) 58%, rgba(230, 216, 189, 1) 73%, rgba(233, 219, 192, 1) 74%, rgba(233, 219, 192, 1) 98%, rgba(235, 221, 195, 1) 100%);
+
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(233, 223, 196, 1)), color-stop(1%, rgba(233, 223, 196, 1)), color-stop(2%, rgba(237, 227, 200, 1)), color-stop(24%, rgba(237, 227, 200, 1)), color-stop(25%, rgba(235, 221, 195, 1)), color-stop(48%, rgba(233, 223, 196, 1)), color-stop(49%, rgba(235, 221, 195, 1)), color-stop(52%, rgba(230, 216, 189, 1)), color-stop(53%, rgba(230, 216, 189, 1)), color-stop(54%, rgba(233, 219, 192, 1)), color-stop(55%, rgba(230, 216, 189, 1)), color-stop(56%, rgba(230, 216, 189, 1)), color-stop(57%, rgba(233, 219, 192, 1)), color-stop(58%, rgba(230, 216, 189, 1)), color-stop(73%, rgba(230, 216, 189, 1)), color-stop(74%, rgba(233, 219, 192, 1)), color-stop(98%, rgba(233, 219, 192, 1)), color-stop(100%, rgba(235, 221, 195, 1)));
+
+    background: -webkit-linear-gradient(left, rgba(233, 223, 196, 1) 0%, rgba(233, 223, 196, 1) 1%, rgba(237, 227, 200, 1) 2%, rgba(237, 227, 200, 1) 24%, rgba(235, 221, 195, 1) 25%, rgba(233, 223, 196, 1) 48%, rgba(235, 221, 195, 1) 49%, rgba(230, 216, 189, 1) 52%, rgba(230, 216, 189, 1) 53%, rgba(233, 219, 192, 1) 54%, rgba(230, 216, 189, 1) 55%, rgba(230, 216, 189, 1) 56%, rgba(233, 219, 192, 1) 57%, rgba(230, 216, 189, 1) 58%, rgba(230, 216, 189, 1) 73%, rgba(233, 219, 192, 1) 74%, rgba(233, 219, 192, 1) 98%, rgba(235, 221, 195, 1) 100%);
+
+    background: -o-linear-gradient(left, rgba(233, 223, 196, 1) 0%, rgba(233, 223, 196, 1) 1%, rgba(237, 227, 200, 1) 2%, rgba(237, 227, 200, 1) 24%, rgba(235, 221, 195, 1) 25%, rgba(233, 223, 196, 1) 48%, rgba(235, 221, 195, 1) 49%, rgba(230, 216, 189, 1) 52%, rgba(230, 216, 189, 1) 53%, rgba(233, 219, 192, 1) 54%, rgba(230, 216, 189, 1) 55%, rgba(230, 216, 189, 1) 56%, rgba(233, 219, 192, 1) 57%, rgba(230, 216, 189, 1) 58%, rgba(230, 216, 189, 1) 73%, rgba(233, 219, 192, 1) 74%, rgba(233, 219, 192, 1) 98%, rgba(235, 221, 195, 1) 100%);
+
+    background: -ms-linear-gradient(left, rgba(233, 223, 196, 1) 0%, rgba(233, 223, 196, 1) 1%, rgba(237, 227, 200, 1) 2%, rgba(237, 227, 200, 1) 24%, rgba(235, 221, 195, 1) 25%, rgba(233, 223, 196, 1) 48%, rgba(235, 221, 195, 1) 49%, rgba(230, 216, 189, 1) 52%, rgba(230, 216, 189, 1) 53%, rgba(233, 219, 192, 1) 54%, rgba(230, 216, 189, 1) 55%, rgba(230, 216, 189, 1) 56%, rgba(233, 219, 192, 1) 57%, rgba(230, 216, 189, 1) 58%, rgba(230, 216, 189, 1) 73%, rgba(233, 219, 192, 1) 74%, rgba(233, 219, 192, 1) 98%, rgba(235, 221, 195, 1) 100%);
+
+    background: linear-gradient(left, rgba(233, 223, 196, 1) 0%, rgba(233, 223, 196, 1) 1%, rgba(237, 227, 200, 1) 2%, rgba(237, 227, 200, 1) 24%, rgba(235, 221, 195, 1) 25%, rgba(233, 223, 196, 1) 48%, rgba(235, 221, 195, 1) 49%, rgba(230, 216, 189, 1) 52%, rgba(230, 216, 189, 1) 53%, rgba(233, 219, 192, 1) 54%, rgba(230, 216, 189, 1) 55%, rgba(230, 216, 189, 1) 56%, rgba(233, 219, 192, 1) 57%, rgba(230, 216, 189, 1) 58%, rgba(230, 216, 189, 1) 73%, rgba(233, 219, 192, 1) 74%, rgba(233, 219, 192, 1) 98%, rgba(235, 221, 195, 1) 100%);
+
+    background-size: 8rem;
+    background-repeat: repeat;
+    border: .5em solid #A37C4D;
 
     p {
         padding: 0 2.5rem 2rem 2.5rem;
+
         @include medium {
             font-size: .9rem;
         }
@@ -852,12 +814,10 @@ div.design-selection ul li:nth-of-type(8):hover {
 
     @include medium {
         margin-right: 20rem;
-        margin-top: 230vh;
+        margin-top: 10rem;
         padding-top: 2.5rem;
-        background-position: top;
-    }
-    @include large {
-        margin-top: 100vh;
+        min-width: 50%;
+
     }
 }
 
@@ -865,83 +825,57 @@ div.design-selection ul li:nth-of-type(8):hover {
     background-image: url('images/rat.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 7rem;
     display: block;
     width: 100%;
     height: 90px;
     content: "";
     padding-bottom: 5rem;
-    animation: rat 15s linear infinite forwards;
-    //animation: move 8s infinite;
-    /*added by Hans*/
+    -webkit-animation: move 8s infinite;
+    -webkit-animation: rat 10s ease-in-out infinite;
+    animation: rat 10s ease-in-out infinite;
 
     @include medium {
         position: absolute;
-        right: -3rem;
-        top: 100rem;
-        margin-top: 240vh;
+        right: -20%;
     }
 
     @include large {
-        right: -10rem;
-        top: 48rem;
-        margin-top: 200vh;
+        bottom: 32rem;
     }
 }
 
-
 @keyframes rat {
     0% {
-        // transform: translatey(0px) scale(1.25, 0.75);
         transform: translatex(0);
     }
 
-
     50% {
-        //transform: translatey(5px) rotate(15deg);
         transform: translatex(30%)
     }
-    60%{
-        transform: translatex(30%) rotateY(180deg);
 
+    60% {
+        transform: translatex(30%) rotateY(180deg);
     }
-    90%{
+
+    90% {
         transform: translatex(0) rotateY(180deg);
     }
-    100% {
-        //transform: translatey(0) scale(1.25, 0.75);
-        transform: translatex(0) rotateY(0deg);
-        
-        
 
+    100% {
+        transform: translatex(0) rotateY(0deg);
     }
 }
 
 .requirements {
     color: $secondary-color;
-    @include small-min-27 {
-        margin-top: 90vh;
-        text-align: center;
-    }
+    filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.75));
+    margin-top: 10rem;
 
     @include medium {
-        margin-left: 20rem;
-        margin-bottom: 1rem;
-        margin-top: 150vh;
-        text-align: end;
+        margin-top: 4rem;
     }
 
-    @include large {
-        margin-top: 150vh;
-    }
-    p{
-        @include small-min-27 {
-            text-align: center;
-        }
-        @include medium {
-            text-align: end;
-        }
-    }
     & p[role=contentinfo] {
         display: none;
     }
@@ -951,26 +885,25 @@ div.design-selection ul li:nth-of-type(8):hover {
     background-image: url('images/ant.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 15rem;
     display: block;
     width: 100%;
-    height: 50vh;
+    height: 250px;
     content: "";
+    -webkit-animation: ant 8s ease-in-out infinite;
     animation: ant 8s ease-in-out infinite;
+    padding-bottom: 10rem;
 
     @include medium {
-        position: absolute;
-        left: -10rem;
-        bottom: 31rem;
-        margin-left: -10vw;
+        padding: 0;
     }
 
     @include large {
         left: -25rem;
         bottom: 10rem;
-        margin-left: 0vw;
     }
 }
+
 
 @keyframes ant {
     0% {
@@ -990,36 +923,44 @@ div.design-selection ul li:nth-of-type(8):hover {
 div.zen-resources ul {
     position: absolute;
     bottom: 9rem;
-    color: white;
+    color: rgb(172, 105, 105);
     width: 100%;
     height: 13rem;
 
-   // @include small-min-32 {
-   //     top: 250rem;
-   // }
+    @include medium {
+        display: flex;
+        flex: row nowrap;
+        height: fit-content;
+        justify-content: center;
+        bottom: 5rem;
 
-   @include medium {
-    display: flex;
-    height: fit-content;    
-     justify-content: center;
+        @include large {
+            //bottom: 6rem;
 
-     @include large {
-        
-            bottom: 6rem;
-        
-     }
-     
-}
+        }
+    }
 
     li {
         padding: 1rem;
         width: 100%;
         border: 1px solid $secondary-color;
+        border-style: hidden hidden solid hidden;
         list-style: none;
         text-align: left;
 
         @include medium {
             text-align: center;
+            border-style: solid;
+            //margin: auto 0;
+            height: 7rem;
+        }
+
+        @include medium-min-45 {
+            height: 5rem;
+        }
+
+        @include large {
+            height: 3rem;
         }
 
         a:link,
@@ -1033,21 +974,22 @@ div.zen-resources ul {
 //Footer
 footer {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: .6rem;
     position: absolute;
     left: 5%;
     right: 5%;
+
     @include medium {
-        
-        
+        margin-top: 2rem;
+        gap: 1.5rem;
     }
 
     @include large {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
-
 
     a:link,
     a:visited {
@@ -1113,23 +1055,21 @@ footer {
 
 //Archives
 div.design-archives nav[role=navigation] {
-    padding-top: 26rem;
-    //bottom: 0;
+    padding-top: 25rem;
 
-    //@include small-min-32 {
-     //   padding-top: 30rem;
-  //  }
-  @include large {
-      padding-top: 15rem;
-  }
+    @include medium {
+        padding-top: 22rem;
+    }
 
-
+    @include large {
+        padding-top: 15rem;
+    }
 
     ul {
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: space-between;
-
 
         li {
             list-style: none;
@@ -1143,22 +1083,15 @@ div.design-archives nav[role=navigation] {
             color: $secondary-color;
         }
 
-
         .viewall::after {
             content: "\203A";
             color: $secondary-color;
         }
-
     }
 }
-
 
 .archives,
 .resources,
 .banner h1 {
-    display: none;
-}
-
-.archives {
     display: none;
 }
