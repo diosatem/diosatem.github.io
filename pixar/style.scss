@@ -78,10 +78,9 @@ $break-large: 75em; //1200px
 
 body {
     font-size: 1.2em;
-    line-height: 1.5;
+    line-height: 1.6;
     font-family: $base-font;
     @include center;
-    //max-height: 100%;
 }
 
 //Background
@@ -90,12 +89,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 0;
-    padding: 0;
 
     @include medium {
         background-image: url("images/background/background_big.png");
+        max-height: 800vh;
     }
+
 }
 
 //Possible animation slide for background added by Hans
@@ -170,7 +169,7 @@ div.page-wrapper {
                 color: $base-color;
 
                 @include medium {
-                    margin-top: 46rem;                    
+                    margin-top: 46rem;
                 }
 
                 a:link,
@@ -214,7 +213,7 @@ div.page-wrapper {
     //all subtitles
     h3 {
         font-size: 1.4rem;
-
+        margin-bottom: 1.2rem;
     }
 }
 
@@ -257,14 +256,14 @@ div.design-selection {
             list-style: none;
             width: 100px;
             height: 130px;
-            font-size: .7rem;            
+            font-size: .7rem;
             display: flex;
             flex-flow: column;
             align-items: center;
             justify-content: center;
             align-content: center;
-            margin: 10px 0;    
-            color: rgb(255, 255, 255, .7);        
+            margin: 10px 0;
+            color: rgb(255, 255, 255, .7);
 
             a:link,
             a:visited {
@@ -453,8 +452,6 @@ div.design-selection {
                 grid-row: 2;
             }
         }
-
-
     }
 }
 
@@ -622,7 +619,7 @@ div.design-selection ul li:nth-of-type(8):hover {
     position: relative;
 }
 
-.preamble[role=article] {
+div.preamble[role=article] {
     color: $base-font;
 
     @include medium {
@@ -632,7 +629,7 @@ div.design-selection ul li:nth-of-type(8):hover {
 }
 
 //Body images
-.preamble::before {
+div.preamble::before {
     background-image: url('images/wall-e.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -641,10 +638,11 @@ div.design-selection ul li:nth-of-type(8):hover {
     width: 100%;
     height: 100px;
     content: "";
-    padding-bottom: 8rem;
+    padding-top: 20rem;
     transform: translatey(0px);
     -webkit-animation: wall-e 70s linear infinite forwards;
     animation: wall-e 70s linear infinite forwards;
+
 
     @include medium {
         position: absolute;
@@ -652,9 +650,13 @@ div.design-selection ul li:nth-of-type(8):hover {
         top: 85rem;
     }
 
+    @include medium-min-54 {
+        left: -20rem;
+    }
+
     @include large {
-        left: -25rem;
-        top: 70rem;
+        left: -30rem;
+        top: 85rem;
     }
 }
 
@@ -668,14 +670,14 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 }
 
-.explanation {
+div.explanation {
     @include medium {
         margin-right: 20rem;
         margin-top: 13rem;
     }
 }
 
-.explanation::before {
+div.explanation::before {
     background-image: url('images/house.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -684,7 +686,7 @@ div.design-selection ul li:nth-of-type(8):hover {
     width: 100%;
     height: 250px;
     content: "";
-    padding-bottom: 10rem;
+    padding-top: 20rem;
     transform: translatey(0px);
     -webkit-animation: house 10s ease-in-out infinite;
     animation: house 10s ease-in-out infinite;
@@ -692,7 +694,7 @@ div.design-selection ul li:nth-of-type(8):hover {
     @include medium {
         position: absolute;
         right: -10rem;
-        top: -15rem;
+        top: -20rem;
     }
 
     @include medium-min-54 {
@@ -700,8 +702,8 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 
     @include large {
-        right: -25rem;
-        top: 0rem;
+        right: -30rem;
+        top: -15rem;
     }
 }
 
@@ -731,14 +733,16 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 }
 
-.participation {
+div.participation {
+    margin-bottom: 5rem !important;
+
     @include medium {
         margin-left: 20rem;
         margin-top: 12rem;
     }
 }
 
-.participation::before {
+div.participation::before {
     background-image: url('images/airplane.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -747,7 +751,7 @@ div.design-selection ul li:nth-of-type(8):hover {
     width: 100%;
     height: 60px;
     content: "";
-    padding-bottom: 10rem;
+    padding-top: 20rem;
     transform: translatey(0px);
     -webkit-animation: airplane 10s ease-in-out infinite;
     animation: airplane 10s ease-in-out infinite;
@@ -755,15 +759,15 @@ div.design-selection ul li:nth-of-type(8):hover {
     @include medium {
         position: absolute;
         left: -10rem;
-        top: 39rem;
+        top: 29rem;
     }
 
     @include medium-min-54 {
-        left: -20rem;
+        left: -25rem;
     }
 
     @include large {
-        left: -25rem;
+        left: -rem;
         top: 25rem;
     }
 }
@@ -787,7 +791,7 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 }
 
-.benefits {
+div.benefits {
     background: -moz-linear-gradient(left, rgba(233, 223, 196, 1) 0%, rgba(233, 223, 196, 1) 1%, rgba(237, 227, 200, 1) 2%, rgba(237, 227, 200, 1) 24%, rgba(235, 221, 195, 1) 25%, rgba(233, 223, 196, 1) 48%, rgba(235, 221, 195, 1) 49%, rgba(230, 216, 189, 1) 52%, rgba(230, 216, 189, 1) 53%, rgba(233, 219, 192, 1) 54%, rgba(230, 216, 189, 1) 55%, rgba(230, 216, 189, 1) 56%, rgba(233, 219, 192, 1) 57%, rgba(230, 216, 189, 1) 58%, rgba(230, 216, 189, 1) 73%, rgba(233, 219, 192, 1) 74%, rgba(233, 219, 192, 1) 98%, rgba(235, 221, 195, 1) 100%);
 
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(233, 223, 196, 1)), color-stop(1%, rgba(233, 223, 196, 1)), color-stop(2%, rgba(237, 227, 200, 1)), color-stop(24%, rgba(237, 227, 200, 1)), color-stop(25%, rgba(235, 221, 195, 1)), color-stop(48%, rgba(233, 223, 196, 1)), color-stop(49%, rgba(235, 221, 195, 1)), color-stop(52%, rgba(230, 216, 189, 1)), color-stop(53%, rgba(230, 216, 189, 1)), color-stop(54%, rgba(233, 219, 192, 1)), color-stop(55%, rgba(230, 216, 189, 1)), color-stop(56%, rgba(230, 216, 189, 1)), color-stop(57%, rgba(233, 219, 192, 1)), color-stop(58%, rgba(230, 216, 189, 1)), color-stop(73%, rgba(230, 216, 189, 1)), color-stop(74%, rgba(233, 219, 192, 1)), color-stop(98%, rgba(233, 219, 192, 1)), color-stop(100%, rgba(235, 221, 195, 1)));
@@ -817,11 +821,10 @@ div.design-selection ul li:nth-of-type(8):hover {
         margin-top: 10rem;
         padding-top: 2.5rem;
         min-width: 50%;
-
     }
 }
 
-.benefits::before {
+div.benefits::before {
     background-image: url('images/rat.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -837,11 +840,11 @@ div.design-selection ul li:nth-of-type(8):hover {
 
     @include medium {
         position: absolute;
-        right: -20%;
+        right: -10%;
     }
 
     @include large {
-        bottom: 32rem;
+        right: -20%;
     }
 }
 
@@ -867,13 +870,13 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 }
 
-.requirements {
+div.requirements {
     color: $secondary-color;
     filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.75));
-    margin-top: 10rem;
+    padding-top: 5rem;
 
     @include medium {
-        margin-top: 4rem;
+        padding-top: 20rem;
     }
 
     & p[role=contentinfo] {
@@ -881,29 +884,23 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 }
 
-.requirements::before {
+div.requirements::before {
     background-image: url('images/ant.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15rem;
     display: block;
     width: 100%;
-    height: 250px;
+    height: 200px;
     content: "";
     -webkit-animation: ant 8s ease-in-out infinite;
     animation: ant 8s ease-in-out infinite;
-    padding-bottom: 10rem;
-
-    @include medium {
-        padding: 0;
-    }
 
     @include large {
         left: -25rem;
         bottom: 10rem;
     }
 }
-
 
 @keyframes ant {
     0% {
@@ -919,10 +916,18 @@ div.design-selection ul li:nth-of-type(8):hover {
     }
 }
 
+div.requirements h3 {
+    margin-top: 10rem;
+}
+
+.sidebar[role=complementary] {
+    min-height: 35rem;
+}
+
 //Resources
 div.zen-resources ul {
     position: absolute;
-    bottom: 9rem;
+    bottom: 16rem;
     color: rgb(172, 105, 105);
     width: 100%;
     height: 13rem;
@@ -931,13 +936,9 @@ div.zen-resources ul {
         display: flex;
         flex: row nowrap;
         height: fit-content;
-        justify-content: center;
-        bottom: 5rem;
-
-        @include large {
-            //bottom: 6rem;
-
-        }
+        justify-content: flex-end;
+        align-items: center;
+        bottom: 15rem;
     }
 
     li {
@@ -947,20 +948,27 @@ div.zen-resources ul {
         border-style: hidden hidden solid hidden;
         list-style: none;
         text-align: left;
+        padding-top: 2%;
+        padding-bottom: 2%;
 
         @include medium {
             text-align: center;
             border-style: solid;
-            //margin: auto 0;
             height: 7rem;
+            padding-top: 4%;
+        padding-bottom: 4%;
         }
 
         @include medium-min-45 {
             height: 5rem;
+            padding-top: 3%;
+        padding-bottom: 3%;
         }
 
         @include large {
             height: 3rem;
+            padding-top: 1%;
+        padding-bottom: 1%;
         }
 
         a:link,
@@ -971,24 +979,41 @@ div.zen-resources ul {
     }
 }
 
+div.zen-resources::after {
+    content: "Styled by Diosa Temblor, Alex Lopez, and Hans Mardy for BYU-Idaho WDD-331. ";
+    font-size: .8rem;
+    color: $secondary-color;
+    position: absolute;
+    bottom: 1rem;
+    display: block;
+    left: 5%;
+    right: 5%;
+
+    @include medium {
+        bottom: 3rem;
+    }
+}
+
 //Footer
 footer {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    gap: .6rem;
+    gap: 1rem;
     position: absolute;
     left: 5%;
     right: 5%;
+    margin: 0;
+    bottom: -7rem;
 
     @include medium {
-        margin-top: 2rem;
+        bottom: -10rem;
         gap: 1.5rem;
     }
 
     @include large {
-        margin-top: 1rem;
+        bottom: -8rem;
     }
 
     a:link,
@@ -1001,10 +1026,10 @@ footer {
         background-image: url('images/footer/html.ico');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 50px;
+        background-size: 40px;
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         content: "";
     }
 
@@ -1012,10 +1037,10 @@ footer {
         background-image: url('images/footer/css.ico');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 50px;
+        background-size: 40px;
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         content: "";
     }
 
@@ -1023,10 +1048,10 @@ footer {
         background-image: url('images/footer/cc.ico');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 50px;
+        background-size: 40px;
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         content: "";
     }
 
@@ -1034,10 +1059,10 @@ footer {
         background-image: url('images/footer/ally.ico');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 50px;
+        background-size: 40px;
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         content: "";
     }
 
@@ -1045,31 +1070,30 @@ footer {
         background-image: url('images/footer/gh.ico');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 50px;
+        background-size: 40px;
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         content: "";
     }
 }
 
 //Archives
 div.design-archives nav[role=navigation] {
-    padding-top: 25rem;
+    position: absolute;
+    bottom: 6rem;
+    width: 100%;
 
     @include medium {
-        padding-top: 22rem;
-    }
-
-    @include large {
-        padding-top: 15rem;
+        bottom: 10rem;
     }
 
     ul {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between !important;
+        gap: 1rem;
 
         li {
             list-style: none;

@@ -8,7 +8,7 @@
 
 body {
   font-size: 1.2em;
-  line-height: 1.5;
+  line-height: 1.6;
   font-family: "Montserrat", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
@@ -19,12 +19,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 0;
-  padding: 0;
 }
 @media (min-width: 37.5em) {
   #css-zen-garden {
     background-image: url("images/background/background_big.png");
+    max-height: 800vh;
   }
 }
 
@@ -133,6 +132,7 @@ div.page-wrapper p {
 }
 div.page-wrapper h3 {
   font-size: 1.4rem;
+  margin-bottom: 1.2rem;
 }
 
 div.design-selection {
@@ -504,17 +504,17 @@ div.design-selection ul li:nth-of-type(8):hover {
   position: relative;
 }
 
-.preamble[role=article] {
+div.preamble[role=article] {
   color: "Montserrat", sans-serif;
 }
 @media (min-width: 37.5em) {
-  .preamble[role=article] {
+  div.preamble[role=article] {
     margin-left: 20rem;
     margin-top: 30rem;
   }
 }
 
-.preamble::before {
+div.preamble::before {
   background-image: url("images/wall-e.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -523,22 +523,27 @@ div.design-selection ul li:nth-of-type(8):hover {
   width: 100%;
   height: 100px;
   content: "";
-  padding-bottom: 8rem;
+  padding-top: 20rem;
   transform: translatey(0px);
   -webkit-animation: wall-e 70s linear infinite forwards;
   animation: wall-e 70s linear infinite forwards;
 }
 @media (min-width: 37.5em) {
-  .preamble::before {
+  div.preamble::before {
     position: absolute;
     left: -10rem;
     top: 85rem;
   }
 }
+@media (min-width: 54.438em) {
+  div.preamble::before {
+    left: -20rem;
+  }
+}
 @media (min-width: 75em) {
-  .preamble::before {
-    left: -25rem;
-    top: 70rem;
+  div.preamble::before {
+    left: -30rem;
+    top: 85rem;
   }
 }
 
@@ -551,13 +556,13 @@ div.design-selection ul li:nth-of-type(8):hover {
   }
 }
 @media (min-width: 37.5em) {
-  .explanation {
+  div.explanation {
     margin-right: 20rem;
     margin-top: 13rem;
   }
 }
 
-.explanation::before {
+div.explanation::before {
   background-image: url("images/house.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -566,27 +571,27 @@ div.design-selection ul li:nth-of-type(8):hover {
   width: 100%;
   height: 250px;
   content: "";
-  padding-bottom: 10rem;
+  padding-top: 20rem;
   transform: translatey(0px);
   -webkit-animation: house 10s ease-in-out infinite;
   animation: house 10s ease-in-out infinite;
 }
 @media (min-width: 37.5em) {
-  .explanation::before {
+  div.explanation::before {
     position: absolute;
     right: -10rem;
-    top: -15rem;
+    top: -20rem;
   }
 }
 @media (min-width: 54.438em) {
-  .explanation::before {
+  div.explanation::before {
     right: -20rem;
   }
 }
 @media (min-width: 75em) {
-  .explanation::before {
-    right: -25rem;
-    top: 0rem;
+  div.explanation::before {
+    right: -30rem;
+    top: -15rem;
   }
 }
 
@@ -610,14 +615,17 @@ div.design-selection ul li:nth-of-type(8):hover {
     transform: translatey(0px);
   }
 }
+div.participation {
+  margin-bottom: 5rem !important;
+}
 @media (min-width: 37.5em) {
-  .participation {
+  div.participation {
     margin-left: 20rem;
     margin-top: 12rem;
   }
 }
 
-.participation::before {
+div.participation::before {
   background-image: url("images/airplane.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -626,26 +634,26 @@ div.design-selection ul li:nth-of-type(8):hover {
   width: 100%;
   height: 60px;
   content: "";
-  padding-bottom: 10rem;
+  padding-top: 20rem;
   transform: translatey(0px);
   -webkit-animation: airplane 10s ease-in-out infinite;
   animation: airplane 10s ease-in-out infinite;
 }
 @media (min-width: 37.5em) {
-  .participation::before {
+  div.participation::before {
     position: absolute;
     left: -10rem;
-    top: 39rem;
+    top: 29rem;
   }
 }
 @media (min-width: 54.438em) {
-  .participation::before {
-    left: -20rem;
+  div.participation::before {
+    left: -25rem;
   }
 }
 @media (min-width: 75em) {
-  .participation::before {
-    left: -25rem;
+  div.participation::before {
+    left: -rem;
     top: 25rem;
   }
 }
@@ -665,7 +673,7 @@ div.design-selection ul li:nth-of-type(8):hover {
     transform: translatey(0px);
   }
 }
-.benefits {
+div.benefits {
   background: -moz-linear-gradient(left, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e9dfc4), color-stop(1%, #e9dfc4), color-stop(2%, #ede3c8), color-stop(24%, #ede3c8), color-stop(25%, #ebddc3), color-stop(48%, #e9dfc4), color-stop(49%, #ebddc3), color-stop(52%, #e6d8bd), color-stop(53%, #e6d8bd), color-stop(54%, #e9dbc0), color-stop(55%, #e6d8bd), color-stop(56%, #e6d8bd), color-stop(57%, #e9dbc0), color-stop(58%, #e6d8bd), color-stop(73%, #e6d8bd), color-stop(74%, #e9dbc0), color-stop(98%, #e9dbc0), color-stop(100%, #ebddc3));
   background: -webkit-linear-gradient(left, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
@@ -676,16 +684,16 @@ div.design-selection ul li:nth-of-type(8):hover {
   background-repeat: repeat;
   border: 0.5em solid #A37C4D;
 }
-.benefits p {
+div.benefits p {
   padding: 0 2.5rem 2rem 2.5rem;
 }
 @media (min-width: 37.5em) {
-  .benefits p {
+  div.benefits p {
     font-size: 0.9rem;
   }
 }
 @media (min-width: 37.5em) {
-  .benefits {
+  div.benefits {
     margin-right: 20rem;
     margin-top: 10rem;
     padding-top: 2.5rem;
@@ -693,7 +701,7 @@ div.design-selection ul li:nth-of-type(8):hover {
   }
 }
 
-.benefits::before {
+div.benefits::before {
   background-image: url("images/rat.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -708,14 +716,14 @@ div.design-selection ul li:nth-of-type(8):hover {
   animation: rat 10s ease-in-out infinite;
 }
 @media (min-width: 37.5em) {
-  .benefits::before {
+  div.benefits::before {
     position: absolute;
-    right: -20%;
+    right: -10%;
   }
 }
 @media (min-width: 75em) {
-  .benefits::before {
-    bottom: 32rem;
+  div.benefits::before {
+    right: -20%;
   }
 }
 
@@ -736,40 +744,34 @@ div.design-selection ul li:nth-of-type(8):hover {
     transform: translatex(0) rotateY(0deg);
   }
 }
-.requirements {
+div.requirements {
   color: #FDFDFE;
   filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.75));
-  margin-top: 10rem;
+  padding-top: 5rem;
 }
 @media (min-width: 37.5em) {
-  .requirements {
-    margin-top: 4rem;
+  div.requirements {
+    padding-top: 20rem;
   }
 }
-.requirements p[role=contentinfo] {
+div.requirements p[role=contentinfo] {
   display: none;
 }
 
-.requirements::before {
+div.requirements::before {
   background-image: url("images/ant.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 15rem;
   display: block;
   width: 100%;
-  height: 250px;
+  height: 200px;
   content: "";
   -webkit-animation: ant 8s ease-in-out infinite;
   animation: ant 8s ease-in-out infinite;
-  padding-bottom: 10rem;
-}
-@media (min-width: 37.5em) {
-  .requirements::before {
-    padding: 0;
-  }
 }
 @media (min-width: 75em) {
-  .requirements::before {
+  div.requirements::before {
     left: -25rem;
     bottom: 10rem;
   }
@@ -786,9 +788,17 @@ div.design-selection ul li:nth-of-type(8):hover {
     transform: scale(1);
   }
 }
+div.requirements h3 {
+  margin-top: 10rem;
+}
+
+.sidebar[role=complementary] {
+  min-height: 35rem;
+}
+
 div.zen-resources ul {
   position: absolute;
-  bottom: 9rem;
+  bottom: 16rem;
   color: #ac6969;
   width: 100%;
   height: 13rem;
@@ -798,8 +808,9 @@ div.zen-resources ul {
     display: flex;
     flex: row nowrap;
     height: fit-content;
-    justify-content: center;
-    bottom: 5rem;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 15rem;
   }
 }
 div.zen-resources ul li {
@@ -809,22 +820,30 @@ div.zen-resources ul li {
   border-style: hidden hidden solid hidden;
   list-style: none;
   text-align: left;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 @media (min-width: 37.5em) {
   div.zen-resources ul li {
     text-align: center;
     border-style: solid;
     height: 7rem;
+    padding-top: 4%;
+    padding-bottom: 4%;
   }
 }
 @media (min-width: 45.313em) {
   div.zen-resources ul li {
     height: 5rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 }
 @media (min-width: 75em) {
   div.zen-resources ul li {
     height: 3rem;
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
 }
 div.zen-resources ul li a:link,
@@ -833,25 +852,43 @@ div.zen-resources ul li a:visited {
   color: #FDFDFE;
 }
 
+div.zen-resources::after {
+  content: "Styled by Diosa Temblor, Alex Lopez, and Hans Mardy for BYU-Idaho WDD-331. ";
+  font-size: 0.8rem;
+  color: #FDFDFE;
+  position: absolute;
+  bottom: 1rem;
+  display: block;
+  left: 5%;
+  right: 5%;
+}
+@media (min-width: 37.5em) {
+  div.zen-resources::after {
+    bottom: 3rem;
+  }
+}
+
 footer {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 1rem;
   position: absolute;
   left: 5%;
   right: 5%;
+  margin: 0;
+  bottom: -7rem;
 }
 @media (min-width: 37.5em) {
   footer {
-    margin-top: 2rem;
+    bottom: -10rem;
     gap: 1.5rem;
   }
 }
 @media (min-width: 75em) {
   footer {
-    margin-top: 1rem;
+    bottom: -8rem;
   }
 }
 footer a:link,
@@ -863,71 +900,69 @@ footer a:nth-of-type(1)::before {
   background-image: url("images/footer/html.ico");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50px;
+  background-size: 40px;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   content: "";
 }
 footer a:nth-of-type(2)::before {
   background-image: url("images/footer/css.ico");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50px;
+  background-size: 40px;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   content: "";
 }
 footer a:nth-of-type(3)::before {
   background-image: url("images/footer/cc.ico");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50px;
+  background-size: 40px;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   content: "";
 }
 footer a:nth-of-type(4)::before {
   background-image: url("images/footer/ally.ico");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50px;
+  background-size: 40px;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   content: "";
 }
 footer a:nth-of-type(5)::before {
   background-image: url("images/footer/gh.ico");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50px;
+  background-size: 40px;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   content: "";
 }
 
 div.design-archives nav[role=navigation] {
-  padding-top: 25rem;
+  position: absolute;
+  bottom: 6rem;
+  width: 100%;
 }
 @media (min-width: 37.5em) {
   div.design-archives nav[role=navigation] {
-    padding-top: 22rem;
-  }
-}
-@media (min-width: 75em) {
-  div.design-archives nav[role=navigation] {
-    padding-top: 15rem;
+    bottom: 10rem;
   }
 }
 div.design-archives nav[role=navigation] ul {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between !important;
+  gap: 1rem;
 }
 div.design-archives nav[role=navigation] ul li {
   list-style: none;
