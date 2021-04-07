@@ -77,7 +77,7 @@ div.page-wrapper .intro header[role=banner] h2 {
   }
 }
 div.page-wrapper .intro .summary[role=article] p:nth-of-type(1) {
-  margin: 3rem 0 40rem 0;
+  margin: 3rem 0 35rem 0;
   text-align: center;
   color: #FDFDFE;
   opacity: 0.7;
@@ -90,19 +90,17 @@ div.page-wrapper .intro .summary[role=article] p:nth-of-type(1) {
 div.page-wrapper .intro .summary[role=article] p:nth-of-type(2) {
   text-align: center;
   margin-bottom: 3rem;
-  color: #FDFDFE;
-  opacity: 0.7;
+  color: #0D0D0D;
 }
 @media (min-width: 37.5em) {
   div.page-wrapper .intro .summary[role=article] p:nth-of-type(2) {
-    margin-top: 55rem;
+    margin-top: 46rem;
   }
 }
 div.page-wrapper .intro .summary[role=article] p:nth-of-type(2) a:link,
 div.page-wrapper .intro .summary[role=article] p:nth-of-type(2) a:visited {
   text-decoration: none;
-  color: #FDFDFE;
-  opacity: 0.7;
+  color: #0D0D0D;
 }
 div.page-wrapper .summary,
 div.page-wrapper .preamble,
@@ -124,19 +122,15 @@ div.page-wrapper .summary,
 div.page-wrapper .preamble,
 div.page-wrapper .explanation,
 div.page-wrapper .participation,
-div.page-wrapper .benefits {
+div.page-wrapper .benefits,
+div.page-wrapper .requirements {
   margin-bottom: 3.5rem;
 }
 div.page-wrapper p {
   margin-bottom: 0.5rem;
   text-align: left;
 }
-div.page-wrapper .summary h3,
-div.page-wrapper .preamble h3,
-div.page-wrapper .explanation h3,
-div.page-wrapper .participation h3,
-div.page-wrapper .benefits h3,
-div.page-wrapper .requirements h3 {
+div.page-wrapper h3 {
   font-size: 1.4rem;
   margin-bottom: 1.2rem;
 }
@@ -179,7 +173,7 @@ div.design-selection ul {
 div.design-selection ul li {
   list-style: none;
   width: 100px;
-  height: 150px;
+  height: 130px;
   font-size: 0.7rem;
   display: flex;
   flex-flow: column;
@@ -550,7 +544,6 @@ div.preamble::before {
   div.preamble::before {
     left: -30rem;
     top: 85rem;
-    background-size: 12rem;
   }
 }
 
@@ -599,7 +592,6 @@ div.explanation::before {
   div.explanation::before {
     right: -30rem;
     top: -15rem;
-    background-size: 12rem;
   }
 }
 
@@ -663,7 +655,6 @@ div.participation::before {
   div.participation::before {
     left: -rem;
     top: 25rem;
-    background-size: 12rem;
   }
 }
 
@@ -760,7 +751,7 @@ div.requirements {
 }
 @media (min-width: 37.5em) {
   div.requirements {
-    padding-top: 35rem;
+    padding-top: 20rem;
   }
 }
 div.requirements p[role=contentinfo] {
@@ -797,19 +788,17 @@ div.requirements::before {
     transform: scale(1);
   }
 }
-@media (min-width: 75em) {
-  div.requirements h3 {
-    margin-top: 0rem;
-  }
+div.requirements h3 {
+  margin-top: 10rem;
 }
 
 .sidebar[role=complementary] {
-  height: 40rem;
+  min-height: 35rem;
 }
 
 div.zen-resources ul {
   position: absolute;
-  bottom: 13rem;
+  bottom: 16rem;
   color: #ac6969;
   width: 100%;
   height: 13rem;
@@ -864,7 +853,7 @@ div.zen-resources ul li a:visited {
 }
 
 div.zen-resources::after {
-  content: "Styled by Diosa Temblor, Alex Lopez, and Hans Mardy for BYU-Idaho WDD-331 Winter 2021. ";
+  content: "Styled by Diosa Temblor, Alex Lopez, and Hans Mardy for BYU-Idaho WDD-331. ";
   font-size: 0.8rem;
   color: #FDFDFE;
   position: absolute;
@@ -889,7 +878,7 @@ footer {
   left: 5%;
   right: 5%;
   margin: 0;
-  bottom: -11rem;
+  bottom: -7rem;
 }
 @media (min-width: 37.5em) {
   footer {
@@ -899,7 +888,7 @@ footer {
 }
 @media (min-width: 75em) {
   footer {
-    bottom: -12rem;
+    bottom: -8rem;
   }
 }
 footer a:link,
@@ -996,4 +985,4 @@ div.design-archives nav[role=navigation] ul .viewall::after {
   display: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

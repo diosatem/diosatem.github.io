@@ -153,7 +153,7 @@ div.page-wrapper {
 
         .summary[role=article] {
             & p:nth-of-type(1) {
-                margin: 3rem 0 35rem 0;
+                margin: 3rem 0 40rem 0;
                 text-align: center;
                 color: $secondary-color;
                 opacity: .7;
@@ -166,16 +166,18 @@ div.page-wrapper {
             & p:nth-of-type(2) {
                 text-align: center;
                 margin-bottom: 3rem;
-                color: $base-color;
+                color: $secondary-color;
+                opacity: .7;
 
                 @include medium {
-                    margin-top: 46rem;
+                    margin-top: 55rem;
                 }
 
                 a:link,
                 a:visited {
                     text-decoration: none;
-                    color: $base-color;
+                    color: $secondary-color;
+                    opacity: .7;
                 }
             }
         }
@@ -199,8 +201,7 @@ div.page-wrapper {
     .preamble,
     .explanation,
     .participation,
-    .benefits,
-    .requirements {
+    .benefits {
         margin-bottom: 3.5rem;
     }
 
@@ -211,7 +212,12 @@ div.page-wrapper {
     }
 
     //all subtitles
-    h3 {
+    .summary h3,
+    .preamble h3,
+    .explanation h3,
+    .participation h3,
+    .benefits h3,
+    .requirements h3 {
         font-size: 1.4rem;
         margin-bottom: 1.2rem;
     }
@@ -224,7 +230,7 @@ div.design-selection {
     top: 22rem;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: auto;    
 
     @include medium {
         margin-top: 5em;
@@ -255,7 +261,7 @@ div.design-selection {
         li {
             list-style: none;
             width: 100px;
-            height: 130px;
+            height: 150px;
             font-size: .7rem;
             display: flex;
             flex-flow: column;
@@ -657,6 +663,7 @@ div.preamble::before {
     @include large {
         left: -30rem;
         top: 85rem;
+        background-size: 12rem;
     }
 }
 
@@ -704,6 +711,7 @@ div.explanation::before {
     @include large {
         right: -30rem;
         top: -15rem;
+        background-size: 12rem;
     }
 }
 
@@ -769,6 +777,7 @@ div.participation::before {
     @include large {
         left: -rem;
         top: 25rem;
+        background-size: 12rem;
     }
 }
 
@@ -876,8 +885,12 @@ div.requirements {
     padding-top: 5rem;
 
     @include medium {
-        padding-top: 20rem;
+        padding-top: 35rem;
     }
+
+   // @include large {
+    //    padding-top: 5rem;
+   // }
 
     & p[role=contentinfo] {
         display: none;
@@ -917,17 +930,21 @@ div.requirements::before {
 }
 
 div.requirements h3 {
-    margin-top: 10rem;
+    //margin-top: 10rem;
+
+    @include large {
+        margin-top: 0rem;
+    }
 }
 
 .sidebar[role=complementary] {
-    min-height: 35rem;
+   height: 40rem;
 }
 
 //Resources
 div.zen-resources ul {
     position: absolute;
-    bottom: 16rem;
+    bottom: 13rem;
     color: rgb(172, 105, 105);
     width: 100%;
     height: 13rem;
@@ -956,19 +973,19 @@ div.zen-resources ul {
             border-style: solid;
             height: 7rem;
             padding-top: 4%;
-        padding-bottom: 4%;
+            padding-bottom: 4%;
         }
 
         @include medium-min-45 {
             height: 5rem;
             padding-top: 3%;
-        padding-bottom: 3%;
+            padding-bottom: 3%;
         }
 
         @include large {
             height: 3rem;
             padding-top: 1%;
-        padding-bottom: 1%;
+            padding-bottom: 1%;
         }
 
         a:link,
@@ -980,7 +997,7 @@ div.zen-resources ul {
 }
 
 div.zen-resources::after {
-    content: "Styled by Diosa Temblor, Alex Lopez, and Hans Mardy for BYU-Idaho WDD-331. ";
+    content: "Styled by Diosa Temblor, Alex Lopez, and Hans Mardy for BYU-Idaho WDD-331 Winter 2021. ";
     font-size: .8rem;
     color: $secondary-color;
     position: absolute;
@@ -1005,7 +1022,7 @@ footer {
     left: 5%;
     right: 5%;
     margin: 0;
-    bottom: -7rem;
+    bottom: -11rem;
 
     @include medium {
         bottom: -10rem;
@@ -1013,7 +1030,7 @@ footer {
     }
 
     @include large {
-        bottom: -8rem;
+        bottom: -12rem;
     }
 
     a:link,
