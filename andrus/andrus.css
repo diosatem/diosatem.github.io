@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+h1 {
+    color: whitesmoke;
+    margin-top: 230px;
+}
+
+div {
+    background-color: red;
+    padding: 20px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-bottom: 10px solid rgb(161, 147, 147);
+}
+
+div:hover {
+    background-color: blue;
+}
