@@ -1,0 +1,19 @@
+.lc_text-widget--btn.active {
+    background-color: #fff !important;
+}
+
+.lc_text-widget .circular-image {
+    background-position: 50% center;
+    width: 80px !important;
+    height: 80px !important;
+}
+
+#lc_text-widget--btn {
+    width: 100px !important;
+    height: 100px !important;
+    background-color: transparent !important;
+}
+
+.lc_text-widget--btn:hover {
+    box-shadow: none !important;
+}
